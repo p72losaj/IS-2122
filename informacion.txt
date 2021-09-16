@@ -1,1 +1,1 @@
-Fichero de información de las tareas realizadas y por realizar del proyecto
+Control de las funcionalidades realizadas y pendientes del proyecto de Ingenieria del Software

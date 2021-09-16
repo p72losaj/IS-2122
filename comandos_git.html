@@ -1,0 +1,104 @@
+<title>COMANDOS DE GIT</title>
+<h1>
+    COMPROBAR LA INSTALACIO DE GIT: git --version    
+</h1>
+
+<h1>CONFIGURACION DE GIT</h1>
+
+<h2>NOMBRE DEL ADMINISTRADOR: git config --global user.name "p72losaj"</h2>
+
+<h2>COMPROBAR LA INSTALACION: gitconfig--global user.email p72losaj@uco.es</h2>
+
+<h2>EDITOR DE TEXTO: gitconfig--global core.editor “gedit” </h2>
+
+<h2>HABILITAR COLOR DE LA INTERFAZ: gitconfig--global color.ui true</h2>
+
+<h2>LISTAR LA CONFIGURACION: gitconfig --list</h2>
+
+<h2>Almacenar los datos de acceso a github y no tener que volver a utilizarlo: git remote set-url origin git@github.com:p72losaj/IS-2122.git
+</h2>
+
+<h1>USO BASICO DE GIT </h1>
+
+<h2>CREAR UN REPOSITORIO:
+    <br> Crear la carpeta del proyecto: mkdir IS-2122
+    <br> Iniciar repositorio en un directorio:	git init IS-2122
+    <br> Acceder al directorio del proyecto: cd IS-2122 
+</h2>
+
+<h2>Añadir ficheros al area de staging o preparacion: 
+    <br> Anadir un fichero concreto: git add fichero.txt
+    <br> Anadir todos los ficheros posibles: git add -A
+</h2>
+
+<h2>Confirmar los cambios: git commit -m "Mensaje descriptivo"</h2>
+
+<h2>Ver estado o cambios del directorio: git STATUS</h2>
+
+<h2>Ver diferencia entre ficheros en el directorio y en el repositorio git:
+    <br> get diff
+    <br> get diff --color-words
+</h2>
+
+<h2> Ver diferencia entre ficheros preparados y el repositorio: git diff --staged </h2>
+
+<h2> Historial de commits: git log </h2>
+
+<h2> Dar formato al log: git config --global alias.hist </h2>
+
+<h2> Anadir etiqueta en el commit actual: git tag etiqueta </h2>
+
+<h2> Ignorar ficheros o directorios en el repositorio: fichero .gitignore </h2>
+
+<h2> Retirar archivos del stagging: git reset HEAD archivo </h2>
+
+<h2> Complementar/Modificar último commit: git commit --amend -m "Mensaje" </h2>
+
+<h2> Revertir ultimo commit: git revert HEAD</h2>
+
+<h2> Revertir a un commit especifico:
+    <br> git reset --soft id_commit
+    <br> git reset --mixed id_commit
+    <br> Volver al commit id_comit: git reset --hard id_commit
+</h2>
+
+<h2> Eliminar archivos
+    <br> git rm archivo
+    <br> git rm --cached archivo
+    <br> git commit -m "Mensaje"
+</h2>
+
+<h2> Mover o renombrar archivos
+    <br> git mv archivoAntiguo ArchivoNuevo
+    <br> git commit -m "Mensaje"
+</h2>
+
+<h2> Listar el contenido del repositorio: git ls-tree master</h2>
+
+<h2>Examinar el contenido de un commit: git shown id</h2>
+
+<h2>Comparar un commit con el actual: git diff id fichero</h2>
+
+<h1> GESTION DE RAMAS</h1>
+
+<h2> Ver listado de ramas: git branch</h2>
+
+<h2> Crear una rama: git branch nombre_rama</h2>
+
+<h2> Cambiarse a una rama: git checkout nombre_rama</h2>
+
+<h2> Integrar una rama en la actual: git merge nombre_rama</h2>
+
+<h2> Comparar ramas: git diff nombre_rama1 ... nombre_ramaN</h2>
+
+<h2> Renombrar ramas: git branch -m nombre_antiguo nombre_nuevo</h2>
+
+<h2> Eliminar ramas:
+    <br> git branch -d nombre_rama 
+    <br> git branch -D nombre_rama
+</h2>
+
+<h1>Crear/clonar repositorio</h1>
+
+<h2> Clonar repositorio remoto: git clone git@github.com:p72losaj/IS-2122.git</h2>
+
