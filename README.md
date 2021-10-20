@@ -63,4 +63,4 @@ HISTORIAS DE USUARIO
 12)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
 13)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
 14)  Como administrador, quiero disponder de una lista de reservas para gestionar la reserva de una máquina por un usuario.
-15) Como administrador, quiero disponer de la información personal de un usuario especifico.
+15) Como administrador, quiero disponer de la información personal de un usuario especifico para poder contactar con dicho usuario en caso de que sea necesario.
