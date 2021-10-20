@@ -54,12 +54,13 @@ HISTORIAS DE USUARIO
 1) Como usuario, quiero disponer de información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
 2) Como usuario, quiero disponer de una lista de mis máquinas reservadas para gestionar todas mis maquinas reservadas.
 3) Como usuario, quiero disponer de una lista de mis reservas para poder gestionar todas mis reservas.
-6) Como usuario, quiero disponer de una lista de las máquinas no reservadas y posibles fechas de reservas para poder realizar la reserva de una máquina.
-7) Como usuario, quiero disponer de mi información personal para poder modificar mis datos registrados en caso de alguna información personal no correcta.
-8) Como usuario, quiero disponer de toda la información sobre una máquina.
-9) Como usuario, quiero disponer de toda la información sobre una reserva.
-10) Como usuario, quiero disponer de información de contacto de un administrador.
-11) Como usuario, quiero disponer del tiempo restante de una reserva propia.
+6) Como usuario, quiero disponer de una lista de las máquinas no reservadas
+7) Como usuario, quiero disponer de una lisrta de las posibles fechas de reservas para poder realizar la reserva de una máquina.
+8) Como usuario, quiero disponer de mi información personal para poder modificar mis datos registrados en caso de alguna información personal no correcta.
+9) Como usuario, quiero disponer de toda la información sobre una máquina.
+10) Como usuario, quiero disponer de toda la información sobre una reserva.
+11) Como usuario, quiero disponer de información de contacto de un administrador.
+12) Como usuario, quiero disponer del tiempo restante de una reserva propia.
 
 12)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
 13)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
