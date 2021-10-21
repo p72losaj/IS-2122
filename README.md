@@ -51,7 +51,7 @@ Los requisitos no funcionales obtenidos son los siguientes:
 
 HISTORIAS DE USUARIO
 
-1) Como usuario, quiero disponer de información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
+1) Como usuario, quiero disponer de toda la información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
 2) Como usuario, quiero disponer de una lista de mis máquinas reservadas para gestionar todas mis maquinas reservadas.
 3) Como usuario, quiero disponer de una lista de mis reservas para poder gestionar todas mis reservas.
 6) Como usuario, quiero disponer de una lista de las máquinas no reservadas
