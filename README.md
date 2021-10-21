@@ -59,7 +59,10 @@ HISTORIAS DE USUARIO
 6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar si la reserva es compatible con mi horario.
 7) Como usuario, quiero disponer de información de contacto de un administrador para poder resolver dudas/problemas de cualquier máquina que tenga reservada.
 8) Como usuario, quiero disponer del tiempo restante de una reserva propia para gestionar el tiempo restante para la realización de mi proyecto.
-9)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
-10)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
-11)  Como administrador, quiero disponder de una lista de reservas para gestionar la reserva de una máquina por un usuario.
-12) Como administrador, quiero disponer de la información personal de un usuario especifico para poder contactar con dicho usuario en caso de que sea necesario.
+9) Como usuario quiero disponder de un formulario para crear la reserva de una maquina.
+10)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
+11)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
+12)  Como administrador, quiero disponder de una lista de reservas para gestionar la reserva de una máquina por un usuario.
+13) Como administrador, quiero disponer de la información personal de un usuario especifico para poder contactar con dicho usuario en caso de que sea necesario.
+14) Como administrador, quiero disponer de un formulario para crear una nueva maquina.
+
