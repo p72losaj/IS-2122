@@ -16,6 +16,10 @@ PRIORIDAD: 9
 
 ITERACION: 1
 
+# RESPONSABLE DE LA HISTORIA DE USUARIO
+
+RESPONSABLE: USUARIO
+
 # DESCRIPCION DE LA HISTORIA DE USUARIO
 
 DESCRIPCION: Como usuario, quiero disponer de toda la información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
