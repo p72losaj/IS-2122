@@ -30,6 +30,6 @@ VALIDACIONES:
 
 1) Se debe buscar la maquina en funcion del identificador de la maquina.
 
-2) Indicar error si el identificador de la maquina no esta registrado en la maquina.
+2) Indicar error si el identificador de la maquina no esta registrado en el sistema.
 
 3) Se debe mostrar toda la informacion de la maquina.
