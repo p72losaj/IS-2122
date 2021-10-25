@@ -59,11 +59,12 @@ HISTORIAS DE USUARIO
 6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar la información almacenada de dicha reserva.
 7) Como usuario, quiero disponer de información de contacto de un administrador para poder resolver dudas/problemas de cualquier máquina que tenga reservada.
 8) Como usuario, quiero disponer del tiempo restante de una reserva propia para gestionar el tiempo restante para la realización de mi proyecto.
-9) Como usuario quiero crear una reserva para realizar la reserva de una maquina
-10) Como usuario quiero cancelar una reserva para indicar la finalizacion del uso de una maquina que tengo reservada.
-10)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
-11)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
-12)  Como administrador, quiero disponer de una lista de reservas para gestionar la reserva de una máquina por un usuario.
-13) Como administrador, quiero disponer de la información personal de un usuario especifico para poder contactar con dicho usuario en caso de que sea necesario.
-14) Como administrador, quiero disponer de un formulario para crear una nueva maquina.
+9) Como usuario, quiero crear una reserva para realizar la reserva de una maquina
+10) Como usuario, quiero cancelar una reserva para indicar la finalizacion del uso de una maquina que tengo reservada.
+11) Como usuario/administrador, quiero disponer de un formulario para poder registrarme en el sistema. 
+12)  Como administrador/a quiero disponer de una lista de usuarios para comprobar la existencia de un usuario.
+13)  Como administrador, quiero disponer de una lista de máquinas para comprobar la existencia de una máquina.
+14)  Como administrador, quiero disponer de una lista de reservas para gestionar la reserva de una máquina por un usuario.
+15) Como administrador, quiero disponer de la información personal de un usuario especifico para poder contactar con dicho usuario en caso de que sea necesario.
+16) Como administrador, quiero disponer de un formulario para crear una nueva maquina.
 
