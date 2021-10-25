@@ -56,7 +56,7 @@ HISTORIAS DE USUARIO
 3) Como usuario, quiero disponer de una lista de mis reservas para poder gestionar todas mis reservas.
 4) Como usuario, quiero disponer de una lista de las máquinas no reservadas
 5) Como usuario, quiero disponer de mi información personal para poder modificar mis datos registrados en caso de alguna información personal no correcta.
-6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar si la reserva es compatible con mi horario.
+6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar la información almacenada de dicha reserva.
 7) Como usuario, quiero disponer de información de contacto de un administrador para poder resolver dudas/problemas de cualquier máquina que tenga reservada.
 8) Como usuario, quiero disponer del tiempo restante de una reserva propia para gestionar el tiempo restante para la realización de mi proyecto.
 9) Como usuario quiero crear una reserva para realizar la reserva de una maquina
