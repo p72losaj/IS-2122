@@ -63,7 +63,7 @@ HISTORIAS DE USUARIO
 10) Como usuario, quiero cancelar una reserva para indicar la finalizacion del uso de una maquina que tengo reservada.
 11) Como usuario/administrador, quiero disponer de un formulario para poder registrarme en el sistema. 
 12)  Como administrador/a quiero disponer de una lista de usuarios para obtener la informacion de todos los usuarios registrados en el sistema.
-13)  Como administrador, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
+13)  Como usuario/administrador, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
 14)  Como administrador, quiero disponer de una lista de reservas para obtener la información de todas las reservas registradas en el sistema.
 15) Como administrador, quiero disponer de la información personal de un usuario especifico para obtener la información personal de dicho usuario.
 16) Como administrador, quiero disponer de un formulario para añadir una nueva maquina en el sistema.
