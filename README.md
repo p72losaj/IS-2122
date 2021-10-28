@@ -83,14 +83,13 @@ CASOS DE USO
 8) MostrarReservaUsuario
 9) ModificarReservaUsuario
 10) MostrarInformacionAdministrador
-11) MostrarTiempoRestanteReserva
-12) ReservarMaquina
-13) CancelarReserva
-14) RegistrarUsuario
-15) ListaUsuariosRegistrados
-16) ListaMaquinasRegistradas
-17) ListaReservasRegistradas
-18) RegistrarMaquina
+11) ReservarMaquina
+12) CancelarReserva
+13) RegistrarUsuario
+14) ListaUsuariosRegistrados
+15) ListaMaquinasRegistradas
+16) ListaReservasRegistradas
+17) RegistrarMaquina
 
 #########################################################################################################################################
 
