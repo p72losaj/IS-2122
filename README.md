@@ -81,3 +81,44 @@ TIPOS DE RELACIONES ENTRE CLASES
 5. Agregación: Indica que una clase es parte de otra, pero tienen diferentes líneas de vida.
 6. Composición: Agregación donde la clase que forma parte de la otra no puede existir por sí misma.
 
+###################################################################################################
+
+MATRICES DE TRAZABILIDAD
+
+TIPOS DE MATRICES
+
+1. Requisitos funcionales frente a casos de uso
+
+a) Cada requisito debe estar cubierto, como mínimo, por un caso de uso.
+
+b) Todo caso de uso debe dar respuesta a uno o más requisitos
+
+c) Recomendación: realizarla al comienzo de la práctica, para así poder refinar los casos de uso en caso de ser necesario.
+
+2. Casos de uso frente a clases.
+
+a) Cada clase debe tener correspondencia con uno o varios casos de uso
+
+b) Todo caso de uso debe tener al menos una clase asociada
+
+c) Recomendación: realizarla tras terminar el diagrama de clases.
+
+#####################################################################################################
+
+DIAGRAMAS DE SECUENCIA
+
+1. ELEMENTOS
+
+a) Actor: Agente externo que participa en la interacción
+
+b) Línea de vida:  Indica la presencia (o no) del objeto. El periodo durante el cual el objeto está activo se denomina “activación”
+
+c) Mensaje: Comunicación entre dos líneas de vida. Deben ir numerados. 
+
+2. TIPOS DE BLOQUES
+
+a) Loop: Fragmento que se ejecuta varias veces
+
+b) Alt: Secuencias alternativas, se ejecuta la que cumple la condición.
+
+c) Opt: Fragmento opcional que se ejecuta solo si se cumple la condición.
