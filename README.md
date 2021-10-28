@@ -73,23 +73,27 @@ HISTORIAS DE USUARIO
 
 CASOS DE USO
 
-1) MostrarInformacionMaquina
-2) ModificarDatosMaquina
-3) ListaMaquinasReservadasUsuario
-4) ListaReservasUsuario
-5) ListaMaquinasLibres
-6) MostrarInformacionPersonalUsuario
-7) ModificarDatosUsuario
-8) MostrarReservaUsuario
-9) ModificarReservaUsuario
-10) MostrarInformacionAdministrador
-11) ReservarMaquina
-12) CancelarReserva
-13) RegistrarUsuario
-14) ListaUsuariosRegistrados
-15) ListaMaquinasRegistradas
-16) ListaReservasRegistradas
-17) RegistrarMaquina
+CU1: MostrarInformacionMaquina
+CU2:  BuscarMaquina
+CU3: ModificarDatosMaquina
+5) ListaMaquinasReservadasUsuario
+6) BuscarMaquinasReservadasUsuario
+7) ListaReservasUsuario
+8) BuscarReservasUsuario
+9) ListaMaquinasLibres
+10) MostrarInformacionPersonalUsuario
+11) ModificarDatosUsuario
+12) MostrarReservaUsuario
+13) ModificarReservaUsuario
+14) MostrarInformacionAdministrador
+15) ReservarMaquina
+16) CancelarReserva
+17) RegistrarUsuario
+18) ListaUsuariosRegistrados
+19) ListaMaquinasRegistradas
+20) ListaReservasRegistradas
+21) RegistrarMaquina
+
 
 #########################################################################################################################################
 
