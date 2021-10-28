@@ -68,6 +68,30 @@ HISTORIAS DE USUARIO
 15) Como administrador, quiero disponer de la información personal de un usuario especifico para obtener la información personal de dicho usuario.
 16) Como administrador, quiero disponer de un formulario para añadir una nueva maquina en el sistema.
 
+
+#########################################################################################################################################
+
+CASOS DE USO
+
+1) MostrarInformacionMaquina
+2) ModificarDatosMaquina
+3) ListaMaquinasReservadasUsuario
+4) ListaReservasUsuario
+5) ListaMaquinasLibres
+6) MostrarInformacionPersonalUsuario
+7) ModificarDatosUsuario
+8) MostrarReservaUsuario
+9) ModificarReservaUsuario
+10) MostrarInformacionAdministrador
+11) MostrarTiempoRestanteReserva
+12) ReservarMaquina
+13) CancelarReserva
+14) RegistrarUsuario
+15) ListaUsuariosRegistrados
+16) ListaMaquinasRegistradas
+17) ListaReservasRegistradas
+18) RegistrarMaquina
+
 #########################################################################################################################################
 
 DIAGRAMA DE CLASES
