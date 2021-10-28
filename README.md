@@ -73,35 +73,41 @@ HISTORIAS DE USUARIO
 
 CASOS DE USO
 
-CU1: MostrarInformacionMaquina
+CU1: MostrarInformacionMaquina (usuario)
 
-CU2:  BuscarMaquina
+CU2: ModificarDatosMaquina (Administrador)
 
-CU3: ModificarDatosMaquina
+CU3: ListaMaquinasReservadasUsuario (usuario)
 
-CU4: ListaMaquinasReservadasUsuario
+CU4: ListaReservasUsuario (usuario)
 
-CU5: BuscarMaquinasUsuario
+CU5: RealizarReserva (usuario)
 
-CU6: ListaReservasUsuario
+CU6: ListaMaquinasLibres (usuario)
 
-CU7: BuscarReservasUsuario
+CU7: MostrarInformacionPersonalUsuario (administrador)
 
-CU8: RealizarReserva
+CU8: ModificarDatosUsuario (usuario)
 
-9) ListaMaquinasLibres
-10) MostrarInformacionPersonalUsuario
-11) ModificarDatosUsuario
-12) MostrarReservaUsuario
-13) ModificarReservaUsuario
-14) MostrarInformacionAdministrador
-16) CancelarReserva
-17) RegistrarUsuario
-18) ListaUsuariosRegistrados
-19) ListaMaquinasRegistradas
-20) ListaReservasRegistradas
-21) RegistrarMaquina
+CU9: MostrarReservaUsuario
 
+CU10: ModificarReservaUsuario (usuario+administrador)
+
+CU11: MostrarInformacionAdministrador (usuario)
+
+CU12:  CancelarReserva (usuario/administrador)
+
+CU13:  RegistrarUsuario (usuario/administrador)
+
+CU14:  ListaUsuariosRegistrados (administrador)
+
+CU15: ListaMaquinasRegistradas (usuario/administrador)
+
+CU16: ListaReservasRegistradas (administrador)
+
+CU17:  RegistrarMaquina (administrador)
+
+CU18: EliminarMaquina (administrador)
 
 #########################################################################################################################################
 
