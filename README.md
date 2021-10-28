@@ -68,3 +68,16 @@ HISTORIAS DE USUARIO
 15) Como administrador, quiero disponer de la información personal de un usuario especifico para obtener la información personal de dicho usuario.
 16) Como administrador, quiero disponer de un formulario para añadir una nueva maquina en el sistema.
 
+#########################################################################################################################################
+
+DIAGRAMA DE CLASES
+
+TIPOS DE RELACIONES ENTRE CLASES
+
+1. Asociación: Es una conexión funcional y de comunicación entre clases. Suele indicar la cardinalidad.
+2. Dependencia: Tipo de asociación donde una clase utiliza otra clase, y la definición de una clase se ve influenciada por los cambios en la otra.
+3. Herencia: Representan una relación entre una clase “padre” y una o varias clases “hijas”.
+4. Realización: Indica cómo se debe realizar una implementación de una interfaz.
+5. Agregación: Indica que una clase es parte de otra, pero tienen diferentes líneas de vida.
+6. Composición: Agregación donde la clase que forma parte de la otra no puede existir por sí misma.
+
