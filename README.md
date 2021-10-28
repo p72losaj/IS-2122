@@ -83,15 +83,18 @@ CU4: ListaMaquinasReservadasUsuario
 
 CU5: BuscarMaquinasUsuario
 
-7) ListaReservasUsuario
-8) BuscarReservasUsuario
+CU6: ListaReservasUsuario
+
+CU7: BuscarReservasUsuario
+
+CU8: RealizarReserva
+
 9) ListaMaquinasLibres
 10) MostrarInformacionPersonalUsuario
 11) ModificarDatosUsuario
 12) MostrarReservaUsuario
 13) ModificarReservaUsuario
 14) MostrarInformacionAdministrador
-15) ReservarMaquina
 16) CancelarReserva
 17) RegistrarUsuario
 18) ListaUsuariosRegistrados
