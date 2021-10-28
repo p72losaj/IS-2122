@@ -74,10 +74,15 @@ HISTORIAS DE USUARIO
 CASOS DE USO
 
 CU1: MostrarInformacionMaquina
+
 CU2:  BuscarMaquina
+
 CU3: ModificarDatosMaquina
-5) ListaMaquinasReservadasUsuario
-6) BuscarMaquinasReservadasUsuario
+
+CU4: ListaMaquinasReservadasUsuario
+
+CU5: BuscarMaquinasUsuario
+
 7) ListaReservasUsuario
 8) BuscarReservasUsuario
 9) ListaMaquinasLibres
