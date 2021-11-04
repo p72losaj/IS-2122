@@ -20,34 +20,54 @@ Los requisitos funcionales obtenidos son los siguientes:
 NUEVO EN LA PRACTICA3
 
 RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y sus núcleos.
+
 RF2) El usuario debe ser capaz de modificar los datos de cualquiera de sus reservas.
+
 RF3) El usuario debe ser capaz de obtener una lista con la información de todas sus reservas.
+
 RF4) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
+
 RF5) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
+
 RF6) El usuario debe ser capaz de reservar una máquina en cualquier fecha.
 
 RF7) El usuario debe ser capaz de obtener la información de las máquinas con recursos disponibles
+
 RF8) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
+
 RF9) El usuario debe ser capaz de obtener una lista con la información de todas las máquinas registradas en el sistema
+
 RF10) El usuario debe ser capaz de obtener toda su información personal.
+
 RF11) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
 
-RF12) El administrador debe ser capaz de modificar los datos de cualquier reserva.
-RF13) El administrador debe ser capaz de cancelar cualquier reserva.
-RF14) El administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
-RF15) El administrador debe ser capaz de obtener la informacion de una reserva concreta.
+RF12) Cualquier administrador debe ser capaz de modificar los datos de cualquier reserva.
 
-RF16) El administrador debe ser capaz de dar de alta a cualquier máquina.
-RF17) El administrador debe ser capaz de obtener una lista con la información de todas las maquinas registradas
-RF18) El administrador debe ser capaz de obtener la informacion de una maquina concreta
-RF19) El administrador debe ser capaz de modificar los datos de cualquier máquina registrada
-RF20) El administrador debe ser capaz de eliminar cualquier maquina registrada
+RF13) Cualquier administrador debe ser capaz de cancelar cualquier reserva.
 
-RF21) El administrador debe ser capaz de registrar los datos de cualquier usuario en el sistema
-RF22) El administrador debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
-RF23) El administrador debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
-RF24) El administrador debe ser capaz de modificar los datos de cualquier usuario.
-RF25) El administrador debe ser capaz de eliminar a cualquier usuario registrado
+RF14) Cualquier administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
+
+RF15) Cualquier administrador debe ser capaz de obtener la informacion de una reserva concreta.
+
+RF16) El administrador con rol de gestión de máquinas debe ser capaz de dar de alta a cualquier máquina.
+
+RF17) El administrador con rol de gestión de máquinas debe ser capaz de obtener una lista con la información de todas las maquinas registradas
+
+RF18) El administrador con rol de gestión de máquinas debe ser capaz de obtener la informacion de una maquina concreta
+
+RF19) El administrador con rol de gestión de máquinas debe ser capaz de modificar los datos de cualquier máquina registrada
+
+RF20) El administrador con rol de gestión de máquina debe ser capaz de eliminar cualquier maquina registrada
+
+RF21) El administrador con rol de gestion de usuarios debe ser capaz de registrar los datos de cualquier usuario en el sistema
+
+RF22) El administrador con rol de gestion de usuarios debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
+
+RF23) El administrador con rol de gestion de usuarios debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
+
+RF24) El administrador con rol de gestion de usuarios debe ser capaz de modificar los datos de cualquier usuario.
+
+RF25) El administrador con rol de gestion de usuarios debe ser capaz de eliminar a cualquier usuario registrado
 
 ####################################################################################################
 
@@ -59,8 +79,12 @@ Los requisitos de informacion obtenidos son los siguientes:
 NUEVO EN PRACTICA3
 
 RI1) El sistema debe almacenar información sobre el usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
-RI2)  El sistema debe almacenar la siguiente información personal del usuario: Nombre,email,DNI, tipo de usuario, numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
-RI3)  El sistema debe almacenar de una maquina su identificador y sus nucleos
+
+RI2)  El sistema debe almacenar la siguiente información personal del usuario espectador: Nombre,email,DNI, tipo de usuario, numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+RI3)  El sistema debe almacenar la siguiente informacion de una maquina: identificador de la maquina y su numero de nucleos
+
+RI4) El sistema debe almacenar la siguiente informacion de los administradores: Nombre,email,DNI,tipo de usuario, rol de administrador,  numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
 
 #########################################################################################################
 3- No funcionales: Expresan cómo debe comportarse el programa
@@ -76,10 +100,18 @@ Los requisitos no funcionales obtenidos son los siguientes:
 NUEVO EN PRACTICA3
 
 RN1)  En caso de caída, debe solucionarse el problema en un tiempo máximo de 10/15 minutos.
+
 RN2)  Un usuario no puede reservar si se supera su límite (numero de nucleos a reservar de una maquina al mismo tiempo no supera un maximo y el limite de tiempo de una reserva no supera un maximo ) o si la máquina no tiene recursos suficientes para el proyecto del usuario.
+
 RN3)  El sistema debe registrar 2 tipos de usuarios: usuario normal y usuario administrador
+
 RN4)  El sistema debe comprobar que el usuario y la máquina son únicos ( no deben repetirse).
+
 RN5)  El lenguaje de programación será c++
+
+RN6) El sistema debe registrar 2 tipos de administradores: administrador de usuarios y administrador de maquinas
+
+RN7) El sistema debe recomendar al usuario, en caso de que una máquina no disponga de recursos disponibles, al menos una máquina con recursos disponibles.
 
 ##########################################################################################################################
 
