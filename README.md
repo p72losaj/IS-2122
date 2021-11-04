@@ -16,22 +16,53 @@ y distribución justa de dichos recursos entre todos los usuarios.
 
 Los requisitos funcionales obtenidos son los siguientes:
 
-1)  El usuario debe ser capaz de reservar una máquina y sus núcleos.
-2)  El sistema debe permitir al usuario modificar/eliminar sus reservas.
-3)  El sistema debe permitir realizar reservas indefinidas y programadas.
-4)  El administrador tiene permisos para modificar/eliminar una reserva
-5)  El administrador dar de alta/eliminar una máquina 
-7)  El administrador modificar las características de cualquier máquina.
-8)  Si una máquina está reservada, el sistema debe aportar al usuario información sobre el tiempo de reserva y el número de núcleos de dicha máquina.
+##################################################################################
+NUEVO EN LA PRACTICA3
+
+RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y sus núcleos.
+RF2) El usuario debe ser capaz de modificar los datos de cualquiera de sus reservas.
+RF3) El usuario debe ser capaz de obtener una lista con la información de todas sus reservas.
+RF4) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
+RF6) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
+RF7) El usuario debe ser capaz de reservar una máquina en cualquier fecha.
+
+RF8) El usuario debe ser capaz de obtener la información de las máquinas con recursos disponibles
+RF9) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
+RF10) El usuario debe ser capaz de obtener una lista con la información de todas las máquinas registradas en el sistema
+RF11) El usuario debe ser capaz de obtener toda su información personal.
+RF12) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
+
+RF13) El administrador debe ser capaz de modificar los datos de cualquier reserva.
+RF14) El administrador debe ser capaz de cancelar cualquier reserva.
+RF15) El administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
+RF16) El administrador debe ser capaz de obtener la informacion de una reserva concreta.
+
+RF17) El administrador debe ser capaz de dar de alta a cualquier máquina.
+RF18) El administrador debe ser capaz de obtener una lista con la información de todas las maquinas registradas
+RF19) El administrador debe ser capaz de obtener la informacion de una maquina concreta
+RF20) El administrador debe ser capaz de modificar los datos de cualquier máquina registrada
+RF21) El administrador debe ser capaz de eliminar cualquier maquina registrada
+
+RF22) El administrador debe ser capaz de registrar los datos de cualquier usuario en el sistema
+RF23) El administrador debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
+RF24) El administrador debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
+RF25) El administrador debe ser capaz de modificar los datos de cualquier usuario.
+RF26) El administrador debe ser capaz de eliminar a cualquier usuario registrado
+
+####################################################################################################
 
 2- Información: Detallan la información que necesita manejar el sistema y cómo se organiza.
 
 Los requisitos de informacion obtenidos son los siguientes:
 
-1) El sistema debe almacenar información sobre el usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
-2)  El sistema debe almacenar la siguiente información personal del usuario: Nombre,email,DNI, tipo de usuario.
-3)  El sistema debe almacenar de una maquina su identificador y sus nucleos
+########################################################################################################
+NUEVO EN PRACTICA3
 
+RI1) El sistema debe almacenar información sobre el usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
+RI2)  El sistema debe almacenar la siguiente información personal del usuario: Nombre,email,DNI, tipo de usuario, numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+RI3)  El sistema debe almacenar de una maquina su identificador y sus nucleos
+
+#########################################################################################################
 3- No funcionales: Expresan cómo debe comportarse el programa
 
 + Indican restricciones al sistema que pueden afectar a la calidad del servicio
@@ -40,33 +71,41 @@ Los requisitos de informacion obtenidos son los siguientes:
 
 Los requisitos no funcionales obtenidos son los siguientes:
 
-1)  En caso de caída, debe solucionarse el problema en un tiempo máximo de 10/15 minutos.
-2)  Un usuario puede realizar un número máximo de recursos y cada reserva tiene un numero maximo de dias.
-3)  Debe realizarse una copia de seguridad del sistema.
-4)  El sistema debe registrar 2 tipos de usuarios: usuario normal y usuario administrador
-5)  El sistema debe comprobar que el usuario y la máquina son únicos ( no deben repetirse).
-6)  El lenguaje de programación será c++
+################################################################################################
+
+NUEVO EN PRACTICA3
+
+RN1)  En caso de caída, debe solucionarse el problema en un tiempo máximo de 10/15 minutos.
+RN2)  Un usuario no puede reservar si se supera su límite (numero de nucleos a reservar de una maquina al mismo tiempo no supera un maximo y el limite de tiempo de una reserva no supera un maximo ) o si la máquina no tiene recursos suficientes para el proyecto del usuario.
+RN3)  El sistema debe registrar 2 tipos de usuarios: usuario normal y usuario administrador
+RN4)  El sistema debe comprobar que el usuario y la máquina son únicos ( no deben repetirse).
+RN5)  El lenguaje de programación será c++
 
 ##########################################################################################################################
 
 HISTORIAS DE USUARIO
 
-1) Como usuario, quiero disponer de toda la información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
-2) Como usuario, quiero disponer de una lista de mis máquinas reservadas para gestionar todas mis maquinas reservadas.
-3) Como usuario, quiero disponer de una lista de mis reservas para poder gestionar todas mis reservas.
-4) Como usuario, quiero disponer de una lista de las máquinas no reservadas
-5) Como usuario, quiero disponer de mi información personal para poder modificar mis datos registrados en caso de alguna información personal no correcta.
-6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar la información almacenada de dicha reserva.
-7) Como usuario, quiero disponer de información de contacto de un administrador para poder resolver dudas/problemas de cualquier máquina que tenga reservada.
-8) Como usuario, quiero disponer del tiempo restante de una reserva propia para gestionar el tiempo restante para la realización de mi proyecto.
-9) Como usuario, quiero disponer de un formulario para realizar la reserva de una maquina.
-10) Como usuario, quiero cancelar una reserva para indicar la finalizacion del uso de una maquina que tengo reservada.
-11) Como usuario/administrador, quiero disponer de un formulario para poder registrarme en el sistema. 
-12)  Como administrador/a quiero disponer de una lista de usuarios para obtener la informacion de todos los usuarios registrados en el sistema.
-13)  Como usuario/administrador, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
-14)  Como administrador, quiero disponer de una lista de reservas para obtener la información de todas las reservas registradas en el sistema.
-15) Como administrador, quiero disponer de la información personal de un usuario especifico para obtener la información personal de dicho usuario.
-16) Como administrador, quiero disponer de un formulario para añadir una nueva maquina en el sistema.
+#################################################################################################
+
+NUEVO EN PRACTICA3
+
+HU1) Como usuario, quiero disponer de toda la información sobre una máquina para comprobar si dicha máquina es compatible con mi proyecto.
+
+
+HU3) Como usuario, quiero disponer de una lista de mis reservas para poder gestionar todas mis reservas.
+HU4) Como usuario, quiero disponer de una lista de las máquinas no reservadas
+HU5) Como usuario, quiero disponer de mi información personal para poder modificar mis datos registrados en caso de alguna información personal no correcta.
+HU6) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar la información almacenada de dicha reserva.
+HU7) Como usuario, quiero disponer de información de contacto de un administrador para poder resolver dudas/problemas de cualquier máquina que tenga reservada.
+HU8) Como usuario, quiero disponer del tiempo restante de una reserva propia para gestionar el tiempo restante para la realización de mi proyecto.
+HU9) Como usuario, quiero disponer de un formulario para realizar la reserva de una maquina.
+HU10) Como usuario, quiero cancelar una reserva para indicar la finalizacion del uso de una maquina que tengo reservada.
+HU11) Como usuario/administrador, quiero disponer de un formulario para poder registrarme en el sistema. 
+HU12)  Como administrador/a quiero disponer de una lista de usuarios para obtener la informacion de todos los usuarios registrados en el sistema.
+HU13)  Como usuario/administrador, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
+HU14)  Como administrador, quiero disponer de una lista de reservas para obtener la información de todas las reservas registradas en el sistema.
+HU15) Como administrador, quiero disponer de la información personal de un usuario especifico para obtener la información personal de dicho usuario.
+HU16) Como administrador, quiero disponer de un formulario para añadir una nueva maquina en el sistema.
 
 
 #########################################################################################################################################
