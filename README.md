@@ -86,6 +86,8 @@ RI3)  El sistema debe almacenar la siguiente informacion de una maquina: identif
 
 RI4) El sistema debe almacenar la siguiente informacion de los administradores: Nombre,email,DNI,tipo de usuario, rol de administrador,  numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
 
+RI5) El sistema debe almacenar la siguiente informaciñon de una reseva: Identificador de la reserva, identificador de la máquina, dni del usuario que ha realizado la reserva y la fecha límite de la reserva
+
 #########################################################################################################
 3- No funcionales: Expresan cómo debe comportarse el programa
 
