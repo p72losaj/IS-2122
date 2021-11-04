@@ -23,31 +23,31 @@ RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y su
 RF2) El usuario debe ser capaz de modificar los datos de cualquiera de sus reservas.
 RF3) El usuario debe ser capaz de obtener una lista con la información de todas sus reservas.
 RF4) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
-RF6) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
-RF7) El usuario debe ser capaz de reservar una máquina en cualquier fecha.
+RF5) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
+RF6) El usuario debe ser capaz de reservar una máquina en cualquier fecha.
 
-RF8) El usuario debe ser capaz de obtener la información de las máquinas con recursos disponibles
-RF9) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
-RF10) El usuario debe ser capaz de obtener una lista con la información de todas las máquinas registradas en el sistema
-RF11) El usuario debe ser capaz de obtener toda su información personal.
-RF12) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
+RF7) El usuario debe ser capaz de obtener la información de las máquinas con recursos disponibles
+RF8) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
+RF9) El usuario debe ser capaz de obtener una lista con la información de todas las máquinas registradas en el sistema
+RF10) El usuario debe ser capaz de obtener toda su información personal.
+RF11) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
 
-RF13) El administrador debe ser capaz de modificar los datos de cualquier reserva.
-RF14) El administrador debe ser capaz de cancelar cualquier reserva.
-RF15) El administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
-RF16) El administrador debe ser capaz de obtener la informacion de una reserva concreta.
+RF12) El administrador debe ser capaz de modificar los datos de cualquier reserva.
+RF13) El administrador debe ser capaz de cancelar cualquier reserva.
+RF14) El administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
+RF15) El administrador debe ser capaz de obtener la informacion de una reserva concreta.
 
-RF17) El administrador debe ser capaz de dar de alta a cualquier máquina.
-RF18) El administrador debe ser capaz de obtener una lista con la información de todas las maquinas registradas
-RF19) El administrador debe ser capaz de obtener la informacion de una maquina concreta
-RF20) El administrador debe ser capaz de modificar los datos de cualquier máquina registrada
-RF21) El administrador debe ser capaz de eliminar cualquier maquina registrada
+RF16) El administrador debe ser capaz de dar de alta a cualquier máquina.
+RF17) El administrador debe ser capaz de obtener una lista con la información de todas las maquinas registradas
+RF18) El administrador debe ser capaz de obtener la informacion de una maquina concreta
+RF19) El administrador debe ser capaz de modificar los datos de cualquier máquina registrada
+RF20) El administrador debe ser capaz de eliminar cualquier maquina registrada
 
-RF22) El administrador debe ser capaz de registrar los datos de cualquier usuario en el sistema
-RF23) El administrador debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
-RF24) El administrador debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
-RF25) El administrador debe ser capaz de modificar los datos de cualquier usuario.
-RF26) El administrador debe ser capaz de eliminar a cualquier usuario registrado
+RF21) El administrador debe ser capaz de registrar los datos de cualquier usuario en el sistema
+RF22) El administrador debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
+RF23) El administrador debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
+RF24) El administrador debe ser capaz de modificar los datos de cualquier usuario.
+RF25) El administrador debe ser capaz de eliminar a cualquier usuario registrado
 
 ####################################################################################################
 
