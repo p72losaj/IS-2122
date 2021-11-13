@@ -51,15 +51,15 @@ RF14) Cualquier administrador debe ser capaz de obtener una lista con la informa
 
 RF15) Cualquier administrador debe ser capaz de obtener la informacion de una reserva concreta.
 
-RF16) El administrador con rol de gestion de maquinas debe ser capaz de dar de alta a cualquier máquina.
+RF16) El administrador con rol de gestion de maquinas debe ser capaz de dar de alta a cualquier maquina.
 
-RF17) El administrador con rol de gestión de máquinas debe ser capaz de obtener una lista con la información de todas las maquinas registradas
+RF17) El administrador con rol de gestion de maquinas debe ser capaz de obtener una lista con la informacion de todas las maquinas registradas
 
-RF18) El administrador con rol de gestión de máquinas debe ser capaz de obtener la informacion de una maquina concreta
+RF18) El administrador con rol de gestion de maquinas debe ser capaz de obtener la informacion de una maquina concreta
 
-RF19) El administrador con rol de gestión de máquinas debe ser capaz de modificar los datos de cualquier máquina registrada
+RF19) El administrador con rol de gestion de maquinas debe ser capaz de modificar los datos de cualquier maquina registrada
 
-RF20) El administrador con rol de gestión de máquina debe ser capaz de eliminar cualquier maquina registrada
+RF20) El administrador con rol de gestion de maquina debe ser capaz de eliminar cualquier maquina registrada
 
 RF21) El administrador con rol de gestion de usuarios debe ser capaz de registrar los datos de cualquier usuario en el sistema
 
@@ -73,7 +73,7 @@ RF25) El administrador con rol de gestion de usuarios debe ser capaz de eliminar
 
 ###############################
 
-2- Información: Detallan la información que necesita manejar el sistema y cómo se organiza.
+2- Informacion: Detallan la informacion que necesita manejar el sistema y como se organiza.
 
 Los requisitos de informacion obtenidos son los siguientes:
 
@@ -81,19 +81,23 @@ Los requisitos de informacion obtenidos son los siguientes:
 
 NUEVO EN PRACTICA3
 
-RI1) El sistema debe almacenar información sobre el usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
+RI1) El sistema debe almacenar informacion sobre el usuario que ha realizado la reserva, la maquina que se ha reservado, 
+el numero de recursos de la máquina reservados y la fecha de reserva.
 
-RI2)  El sistema debe almacenar la siguiente información personal del usuario espectador: Nombre,email,DNI, tipo de usuario, numero de núcleos que puede reservar al mismo tiempo, l�mite de tiempo de las reservas.
+RI2)  El sistema debe almacenar la siguiente informacion personal del usuario espectador: Nombre,email,DNI, tipo de usuario, numero de nucleos
+que puede reservar al mismo tiempo y limtite de tiempo de las reservas.
 
 RI3)  El sistema debe almacenar la siguiente informacion de una maquina: identificador de la maquina y su numero de nucleos
 
-RI4) El sistema debe almacenar la siguiente informacion de los administradores: Nombre,email,DNI,tipo de usuario, rol de administrador,  numero de núcleos que puede reservar al mismo tiempo, l�mite de tiempo de las reservas.
+RI4) El sistema debe almacenar la siguiente informacion de los administradores: Nombre,email,DNI,tipo de usuario, rol de administrador,  
+numero de nucleos que puede reservar al mismo tiempo, limite de tiempo de las reservas.
 
-RI5) El sistema debe almacenar la siguiente informaciñon de una reseva: Identificador de la reserva, identificador de la máquina, dni del usuario que ha realizado la reserva y la fecha l�mite de la reserva
+RI5) El sistema debe almacenar la siguiente informacion de una reseva: Identificador de la reserva, identificador de la maquina,
+dni del usuario que ha realizado la reserva y la fecha limite de la reserva.
 
 ###############################
 
-3- No funcionales: Expresan cómo debe comportarse el programa
+3- No funcionales: Expresan como debe comportarse el programa
 
 + Indican restricciones al sistema que pueden afectar a la calidad del servicio
 
@@ -105,9 +109,10 @@ Los requisitos no funcionales obtenidos son los siguientes:
 
 NUEVO EN PRACTICA3
 
-RN1)  En caso de caida, debe solucionarse el problema en un tiempo máximo de 10/15 minutos.
+RN1)  En caso de caida, debe solucionarse el problema en un tiempo maximo de 10/15 minutos.
 
-RN2)  Un usuario no puede reservar si se supera su limite (numero de nucleos a reservar de una maquina al mismo tiempo no supera un maximo y el limite de tiempo de una reserva no supera un maximo ) o si la maquina no tiene recursos suficientes para el proyecto del usuario.
+RN2)  Un usuario no puede reservar si se supera su limite (numero de nucleos a reservar de una maquina al mismo tiempo no supera un maximo y 
+el limite de tiempo de una reserva no supera un maximo ) o si la maquina no tiene recursos suficientes para el proyecto del usuario.
 
 RN3)  El sistema debe registrar 2 tipos de usuarios: usuario normal y usuario administrador
 
@@ -127,7 +132,7 @@ HISTORIAS DE USUARIO
 
 NUEVO EN PRACTICA3
 
-############# GESTION DE MAQUINAS ################## 
+############# GESTION DE RESERVAS ################## 
 
 HU1) Como usuario, quiero disponer de un formulario para poder reservar una maquina y sus nucleos en cualquier fecha.
 
@@ -145,47 +150,61 @@ HU7) Como usuario, quiero cancelar una reserva para indicar la finalizacion del 
 
 HU8) Como administrador, quiero cancelar una reserva para finalizar el uso de una maquina por parte de un usuario.
 
-############################################
+HU9) Como usuario, quiero disponer de toda la informacion sobre una reserva para comprobar la informacion de mi reserva.
 
+HU10) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder comprobar los datos de una reserva.
 
+############# GESTION DE MAQUINAS ################## 
 
-HU5) Como usuario, quiero disponer de toda la informacion sobre una reserva para comprobar la informacion almacenada de dicha reserva.
+HU11) Como usuario, quiero ser capaz de obtener la informacion de una maquina para poder comprobar la informacion de dicha maquina.
 
-HU6) Como usuario, quiero ser capaz de obtener una lista de máquinas con recursos disponibles para comprobar cuales máquinas tienen recursos disponibles.
+HU12) Como administrador con rol de gestion de maquinas, quiero ser capaz de obtener la informacion de una maquina para poder comprobar la informacion de dicha maquina.
 
-HU7) Como usuario, quiero ser capaz de obtener la información de una máquina para poder comprobar la información de la máquina.
+HU13) Como usuario, quiero ser capaz de obtener una lista de maquinas con recursos disponibles para comprobar las maquinas con recursos disponibles.
 
-HU8) Como usuario, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
+HU14) Como administrador con rol de gestion de maquinas, quiero ser capaz de obtener una lista de maquinas con recursos disponibles para comprobar las maquinas con recursos disponibles.
 
-HU9) Como usuario, quiero ser capaz de obtener mi información personal para poder comprobar si mis datos registrados en el sistema son correctos.
+HU15) Como usuario, quiero ser capaz de obtener una lista de maquinas para comprobar las maquinas registradas en el sistema.
 
-HU10) Como usuario, quiero ser capaz de obtener la información de contacto de cualquier administrador del sistema para poder contactar con 
-cualquier administrador.
+HU16) Como administrador con rol de gestion de maquinas, quiero ser capaz de obtener una lista de maquinas para comprobar las maquinas registradas en el sistema.
 
-HU11) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder comprobar los datos de una reserva.
+HU17) Como administrador con rol de gestion de maquinas, quiero ser capaz de registrar los datos de una maquina para registrar una nueva maquina en el sistema.
 
-HU12) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder modificar los datos de la reserva.
+HU18) Como administrador con rol de gestion de maquinas, quiero ser capaz de modificar los datos de una maquina para modificar los datos registrados de una maquina.
 
-HU15) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder dar de alta a 
-cualquier máquina.
+HU19) Como administrador con rol de gestion de maquinas, quiero ser capaz de eliminar maquina para eliminar los datos registrados de una maquina.
 
-HU16) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder comprobar las máquinas registradas en el sistema.
+############# GESTION DE USUARIOS ################## 
 
-HU17) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder comprobar los datos de dicha máquina.
+HU20) Como usuario, quiero ser capaz de obtener mi informacion personal para poder comprobar si mis datos personales estan correctamente registrados en el sistema.
 
-HU18) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder modificar los datos de dicha máquina.
+HU21) Como administrador con rol de gestion de usuarios, quiero ser capaz de obtener la informacion personal de un usuario para poder 
+comprobar si los datos personales del usuario estan correctamente registrados en el sistema.
 
-HU19) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder eliminar la máquina del sistema.
+HU22) Como usuario, quiero ser capaz de modificar mis datos personales para poder corregir algun dato personal registrado erroneamente en el sistema.
 
-HU20) Como administrador con rol de gestión de usuarios, quiero ser capaz de obtener un formulario de registro de usuario para poder registrar un nuevo usuario en el sistema.
+HU23) Como administrador con rol de gestion de usuarios, quiero ser capaz de modificar los datos personales de un usuario para poder corregir los datos
+personales registrados erroneamente de un usuario en el sistema
 
-HU21) Como administrador con rol de gestión de usuarios, quiero ser capaz de disponer de una lista de usuarios para comprobar los usuarios registrados en el sistema.
+HU24) Como administrador con rol de gestion de usuarios, quiero ser capaz de modificar mis datos personales para poder corregir los datos
+personales registrados erroneamente de un usuario en el sistema
 
-HU22) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder comprobar los datos personales de un usuario.
+HU25) Como usuario, quiero ser capaz de obtener la informacion de contacto de cualquier administrador del sistema para poder contactar con dicho administrador.
 
-HU23) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder modificar los datos personales de un usuario.
+HU26) Como administrador con rol de gestion de usuarios, quiero ser capaz de obtener la informacion de contacto de cualquier administrador del 
+sistema para poder contactar con dicho administrador.
 
-HU24) Como administrador con rol de gestión de usuarios, quiero disponer de una lista de usuarios para poder eliminar a un usuario registrado del sistema.
+HU27) Como usuario, quiero registrarme en el sistema para poder utilizar el sistema.
+
+HU28) Como administrador con rol de gestion de usuarios, quiero registrar los datos de un usuario en el sistema para permitir a dicho usuario utilizar el sistema.
+
+HU29) Como administrador con rol de gestion de usuarios, quiero registrar mis datos personales en el sistema para poder utilizar las funcionalidades del sistema.
+
+HU30) Como administrador con rol de gestion de usuarios, quiero disponer de una lista de todos usuarios registrados en el sistema para poder comprobar 
+los usuarios registrados
+
+HU31) Como administrador con rol de gestion de usuarios, quiero eliminar un usuario para poder eliminar los datos del usuario del sistema.
+
 
 ###############################
 
