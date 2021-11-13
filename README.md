@@ -13,7 +13,7 @@ y distribucion justa de dichos recursos entre todos los usuarios.
 
 # Requisitos del sistema
 
-1-Funcionales:  Expresan qué debe hacer el sistema; cómo debe reaccionar ante ciertas entradas.
+1-Funcionales:  Expresan que debe hacer el sistema; como debe reaccionar ante ciertas entradas.
 
 Los requisitos funcionales obtenidos son los siguientes:
 
@@ -21,27 +21,27 @@ Los requisitos funcionales obtenidos son los siguientes:
 
 NUEVO EN LA PRACTICA3
 
-RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y sus núcleos.
+RF1) El usuario debe ser capaz de realizar la reserva de cualquier maquina y sus nucleos.
 
 RF2) El usuario debe ser capaz de modificar los datos de cualquiera de sus reservas.
 
-RF3) El usuario debe ser capaz de obtener una lista con la información de todas sus reservas.
+RF3) El usuario debe ser capaz de obtener una lista con la informacion de todas sus reservas.
 
 RF4) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
 
-RF5) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
+RF5) El usuario debe ser capaz de obtener la informacion de cualquiera de sus reservas.
 
-RF6) El usuario debe ser capaz de reservar una máquina en cualquier fecha.
+RF6) El usuario debe ser capaz de reservar una maquina en cualquier fecha.
 
-RF7) El usuario debe ser capaz de obtener la información de las máquinas con recursos disponibles
+RF7) El usuario debe ser capaz de obtener la informacion de las maquinas con recursos disponibles
 
-RF8) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
+RF8) El usuario debe ser capaz de obtener la informacin de cualquier maquina registrada en el sistema.
 
-RF9) El usuario debe ser capaz de obtener una lista con la información de todas las máquinas registradas en el sistema
+RF9) El usuario debe ser capaz de obtener una lista con la informacion de todas las maquinas registradas en el sistema
 
-RF10) El usuario debe ser capaz de obtener toda su información personal.
+RF10) El usuario debe ser capaz de obtener toda su informacion personal.
 
-RF11) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
+RF11) El usuario debe ser capaz de obtener la informacion de contacto de cualquier administrador del sistema.
 
 RF12) Cualquier administrador debe ser capaz de modificar los datos de cualquier reserva.
 
@@ -51,7 +51,7 @@ RF14) Cualquier administrador debe ser capaz de obtener una lista con la informa
 
 RF15) Cualquier administrador debe ser capaz de obtener la informacion de una reserva concreta.
 
-RF16) El administrador con rol de gestión de máquinas debe ser capaz de dar de alta a cualquier máquina.
+RF16) El administrador con rol de gestion de maquinas debe ser capaz de dar de alta a cualquier máquina.
 
 RF17) El administrador con rol de gestión de máquinas debe ser capaz de obtener una lista con la información de todas las maquinas registradas
 
