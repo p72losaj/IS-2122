@@ -127,21 +127,35 @@ HISTORIAS DE USUARIO
 
 NUEVO EN PRACTICA3
 
+############# GESTION DE MAQUINAS ################## 
+
 HU1) Como usuario, quiero disponer de un formulario para poder reservar una maquina y sus nucleos en cualquier fecha.
 
-HU2) Como usuario, quiero disponer de un formulario para poder modificar los datos de una reserva.
+HU2) Como administrador, quiero disponer de un formulario para poder reservar una maquina y sus nucleos en cualquier fecha.
 
-HU3) Como usuario, quiero disponer de una lista de mis reservas para poder comprobar la información de las máquinas que tengo reservadas.
+HU3) Como usuario, quiero disponer de un formulario para poder modificar los datos de una reserva.
 
-HU4) Como usuario, quiero disponer de una funcionalidad de cancelacion de reservas para poder cancelar cualquiera de mis reservas.
+HU4) Como administrador, quiero disponer de un formulario para poder modificar los datos de una reserva.
 
-HU5) Como usuario, quiero disponer de toda la informacion de una reserva propia para poder comprobar los datos de una de mis reservas.
+HU5) Como usuario, quiero disponer de una lista de mis reservas para poder comprobar la información de las máquinas que tengo reservadas.
 
-HU6) Como usuario, quiero ser capaz de obtener una lista de máquinas con recursos para comprobar cuales máquinas tienen recursos disponibles.
+HU6) Como administrador, quiero ser capaz de obtener una lista de reservas para poder comprobar las reservas registradas en el sistema.
+
+HU7) Como usuario, quiero cancelar una reserva para indicar la finalización del uso de una maquina que tengo reservada.
+
+HU8) Como administrador, quiero cancelar una reserva para finalizar el uso de una maquina por parte de un usuario.
+
+############################################
+
+
+
+HU5) Como usuario, quiero disponer de toda la información sobre una reserva para comprobar la información almacenada de dicha reserva.
+
+HU6) Como usuario, quiero ser capaz de obtener una lista de máquinas con recursos disponibles para comprobar cuales máquinas tienen recursos disponibles.
 
 HU7) Como usuario, quiero ser capaz de obtener la información de una máquina para poder comprobar la información de la máquina.
 
-HU8) Como usuario, quiero ser capaz de obtener una lista de máquinas para poder comprobar las máquinas registradas en el sistema.
+HU8) Como usuario, quiero disponer de una lista de máquinas para obtener la información de todas las máquinas registradas en el sistema.
 
 HU9) Como usuario, quiero ser capaz de obtener mi información personal para poder comprobar si mis datos registrados en el sistema son correctos.
 
@@ -151,10 +165,6 @@ cualquier administrador.
 HU11) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder comprobar los datos de una reserva.
 
 HU12) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder modificar los datos de la reserva.
-
-HU13) Como administrador, quiero poder ser capaz de obtener los datos de una reserva para poder cancelar la reserva.
-
-HU14) Como administrador, quiero ser capaz de obtener una lista de reservas para poder comprobar las reservas registradas en el sistema.
 
 HU15) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder dar de alta a 
 cualquier máquina.
