@@ -9,14 +9,16 @@ Proyecto de IS
 
 y distribución justa de dichos recursos entre todos los usuarios.
 
-############################################################################################################################################
+###############################
+
 # Requisitos del sistema
 
 1-Funcionales:  Expresan qué debe hacer el sistema; cómo debe reaccionar ante ciertas entradas.
 
 Los requisitos funcionales obtenidos son los siguientes:
 
-##################################################################################
+###############################
+
 NUEVO EN LA PRACTICA3
 
 RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y sus núcleos.
@@ -69,13 +71,14 @@ RF24) El administrador con rol de gestion de usuarios debe ser capaz de modifica
 
 RF25) El administrador con rol de gestion de usuarios debe ser capaz de eliminar a cualquier usuario registrado
 
-####################################################################################################
+###############################
 
 2- Información: Detallan la información que necesita manejar el sistema y cómo se organiza.
 
 Los requisitos de informacion obtenidos son los siguientes:
 
-########################################################################################################
+###############################
+
 NUEVO EN PRACTICA3
 
 RI1) El sistema debe almacenar información sobre el usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
@@ -88,7 +91,8 @@ RI4) El sistema debe almacenar la siguiente informacion de los administradores: 
 
 RI5) El sistema debe almacenar la siguiente informaciñon de una reseva: Identificador de la reserva, identificador de la máquina, dni del usuario que ha realizado la reserva y la fecha límite de la reserva
 
-#########################################################################################################
+###############################
+
 3- No funcionales: Expresan cómo debe comportarse el programa
 
 + Indican restricciones al sistema que pueden afectar a la calidad del servicio
@@ -97,7 +101,7 @@ RI5) El sistema debe almacenar la siguiente informaciñon de una reseva: Identif
 
 Los requisitos no funcionales obtenidos son los siguientes:
 
-################################################################################################
+###############################
 
 NUEVO EN PRACTICA3
 
@@ -115,7 +119,7 @@ RN6) El sistema debe registrar 2 tipos de administradores: administrador de usua
 
 RN7) El sistema debe recomendar al usuario, en caso de que una máquina no disponga de recursos disponibles, al menos una máquina con recursos disponibles.
 
-##########################################################################################################################
+###############################
 
 HISTORIAS DE USUARIO
 
@@ -123,7 +127,7 @@ HISTORIAS DE USUARIO
 
 NUEVO EN PRACTICA3
 
-HU1) Como usuario, quiero disponer de un formulario para poder reservar una maquina y sus nucleos.
+HU1) Como usuario, quiero disponer de un formulario para poder reservar una maquina y sus nucleos en cualquier fecha.
 
 HU2) Como usuario, quiero disponer de un formulario para poder modificar los datos de una reserva.
 
@@ -133,49 +137,47 @@ HU4) Como usuario, quiero disponer de una funcionalidad de cancelacion de reserv
 
 HU5) Como usuario, quiero disponer de toda la informacion de una reserva propia para poder comprobar los datos de una de mis reservas.
 
-HU6) Como usuario quiero disponer de un formulario para poder realizar la reserva de una maquina en cualquier fecha.
+HU6) Como usuario, quiero ser capaz de obtener una lista de máquinas con recursos para comprobar cuales máquinas tienen recursos disponibles.
 
-HU7) Como usuario, quiero ser capaz de obtener una lista de máquinas con recursos para comprobar cuales máquinas tienen recursos disponibles.
+HU7) Como usuario, quiero ser capaz de obtener la información de una máquina para poder comprobar la información de la máquina.
 
-HU8) Como usuario, quiero ser capaz de obtener la información de una máquina para poder comprobar la información de la máquina.
+HU8) Como usuario, quiero ser capaz de obtener una lista de máquinas para poder comprobar las máquinas registradas en el sistema.
 
-HU9) Como usuario, quiero ser capaz de obtener una lista de máquinas para poder comprobar las máquinas registradas en el sistema.
+HU9) Como usuario, quiero ser capaz de obtener mi información personal para poder comprobar si mis datos registrados en el sistema son correctos.
 
-HU10) Como usuario, quiero ser capaz de obtener mi información personal para poder comprobar si mis datos registrados en el sistema son correctos.
-
-HU11) Como usuario, quiero ser capaz de obtener la información de contacto de cualquier administrador del sistema para poder contactar con 
+HU10) Como usuario, quiero ser capaz de obtener la información de contacto de cualquier administrador del sistema para poder contactar con 
 cualquier administrador.
 
-HU12) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder comprobar los datos de una reserva.
+HU11) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder comprobar los datos de una reserva.
 
-HU13) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder modificar los datos de la reserva.
+HU12) Como administrador, quiero ser capaz de obtener los datos de una reserva para poder modificar los datos de la reserva.
 
-HU14) Como administrador, quiero poder ser capaz de obtener los datos de una reserva para poder cancelar la reserva.
+HU13) Como administrador, quiero poder ser capaz de obtener los datos de una reserva para poder cancelar la reserva.
 
-HU15) Como administrador, quiero ser capaz de obtener una lista de reservas para poder comprobar las reservas registradas en el sistema.
+HU14) Como administrador, quiero ser capaz de obtener una lista de reservas para poder comprobar las reservas registradas en el sistema.
 
-HU16) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder dar de alta a 
+HU15) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder dar de alta a 
 cualquier máquina.
 
-HU17) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder comprobar las máquinas registradas en el sistema.
+HU16) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder comprobar las máquinas registradas en el sistema.
 
-HU18) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder comprobar los datos de dicha máquina.
+HU17) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder comprobar los datos de dicha máquina.
 
-HU19) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder modificar los datos de dicha máquina.
+HU18) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener la información de una máquina para poder modificar los datos de dicha máquina.
 
-HU20) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder eliminar la máquina del sistema.
+HU19) Como administrador con rol de gestión de máquinas, quiero ser capaz de obtener una lista de máquinas registradas para poder eliminar la máquina del sistema.
 
-HU21) Como administrador con rol de gestión de usuarios, quiero ser capaz de obtener un formulario de registro de usuario para poder registrar un nuevo usuario en el sistema.
+HU20) Como administrador con rol de gestión de usuarios, quiero ser capaz de obtener un formulario de registro de usuario para poder registrar un nuevo usuario en el sistema.
 
-HU22) Como administrador con rol de gestión de usuarios, quiero ser capaz de disponer de una lista de usuarios para comprobar los usuarios registrados en el sistema.
+HU21) Como administrador con rol de gestión de usuarios, quiero ser capaz de disponer de una lista de usuarios para comprobar los usuarios registrados en el sistema.
 
-HU23) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder comprobar los datos personales de un usuario.
+HU22) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder comprobar los datos personales de un usuario.
 
-HU24) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder modificar los datos personales de un usuario.
+HU23) Como administrador con rol de gestión de usuarios, quiero disponer de la información de un usuario para poder modificar los datos personales de un usuario.
 
-HU25) Como administrador con rol de gestión de usuarios, quiero disponer de una lista de usuarios para poder eliminar a un usuario registrado del sistema.
+HU24) Como administrador con rol de gestión de usuarios, quiero disponer de una lista de usuarios para poder eliminar a un usuario registrado del sistema.
 
-#########################################################################################################################################
+###############################
 
 CASOS DE USO
 
