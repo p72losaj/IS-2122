@@ -207,73 +207,23 @@ HU29) Como administrador con rol de gestion de usuarios, quiero eliminar un usua
 
 CASOS DE USO
 
-CU1: ReservarMaquina (usuario o administrador)
+CU1: ReservarMaquina (espectador)
 
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
+CU2: ReservarMaquina2 (administrador)
 
-+ Se comprobara si el usuario/administrador tiene numero de nucleos disponibles para reservar
+CU3: MostrarReserva (usuario)
 
-+ Se pedira el identificador de la maquina
+CU4: MostrarReserva2 (administrador)
 
-+ Se comprobara si la maquina esta registrada
+CU5: MostrarReservas (usuario)
 
-+ Se comprobara si la maquina tiene recursos disponibles
+CU6: MostrarReservas2 (administrador)
 
-+ Se pediran los recursos a reservar de la maquina
+CU7: ModificarReserva (usuario)
 
-+ Se comprobara si los recursos a reservar estan disponibles en la maquina
-
-+ Se pedira la fecha limite de la reserva
-
-+ Se comprobara si la fecha es valida
-
-+ Se comprobara si el tiempo de reserva de la maquina supera el limite de tiempo de reserva del usuario/administrador
-
-+ Se notificara si se ha realizado la reserva de la maquina
+CU8: ModificarReserva2 (administrador)
 
 ###############################
-
-CU2: MostrarReserva (usuario o administrador)
-
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
-
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Se comprobara si la maquina esta reservada por el usuario
-
-+ Se mostrara la siguiente informacion: Identificador de la maquina, recursos reservados de la maquina, fecha limite de la reserva, dni del autor de la reserva
-
-###############################
-
-CU3: ListarReservas (usuario o administrador)
-
-+ Se comprobara si el usuario o el administrador esta registrado
-
-+ Caso usuario: Se mostrara una lista de reservas con la informacion de cada reserva del usuario
-
-+ Caso administrador: Se mostrara una lista de reservas con la informacion de cada reserva registrada en el sistema
-
-###############################
-
-CU4: ModificarReserva (usuario o administrador)
-
-+ Se comprobara si el usuario o administrador esta registrado
-
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Caso usuario: Se comprobara si el usuario es autor de la reserva
-
-+ Se podran modificar la fecha limite de la reserva y los recursos de la maquina
-
-+ Se comprobara si la nueva fecha limite de la reserva es valida
-
-+ Se comprobara si la maquina tiene los recursos disponibles indicados por el usuario o administrador
-
-+ Se notificara si se ha realizado la modificacion de la reserva
 
 ###############################
 
