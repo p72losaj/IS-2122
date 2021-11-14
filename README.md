@@ -178,13 +178,13 @@ HU19) Como administrador con rol de gestion de maquinas, quiero ser capaz de eli
 
 HU20) Como usuario, quiero ser capaz de obtener mi informacion personal para poder comprobar si mis datos personales estan correctamente registrados en el sistema.
 
-HU21) Como administrador con rol de gestion de usuarios, quiero ser capaz de obtener la informacion personal de un usuario para poder 
-comprobar si los datos personales del usuario estan correctamente registrados en el sistema.
+HU21) Como administrador con rol de gestion de usuarios, quiero ser capaz de obtener los datos registrados de un usuario para poder comprobar 
+todos los datos del usuario
 
 HU22) Como usuario, quiero ser capaz de modificar mis datos personales para poder corregir algun dato personal registrado erroneamente en el sistema.
 
-HU23) Como administrador con rol de gestion de usuarios, quiero ser capaz de modificar los datos personales de un usuario para poder corregir los datos
-personales registrados erroneamente de un usuario en el sistema
+HU23) Como administrador con rol de gestion de usuarios, quiero ser capaz de modificar los datos registrados de un usuario para poder modificar cualquier
+dato registrado del usuario en el sistema
 
 HU24) Como administrador con rol de gestion de usuarios, quiero ser capaz de modificar mis datos personales para poder corregir los datos
 personales registrados erroneamente de un usuario en el sistema
@@ -194,60 +194,316 @@ HU25) Como usuario, quiero ser capaz de obtener la informacion de contacto de cu
 HU26) Como administrador con rol de gestion de usuarios, quiero ser capaz de obtener la informacion de contacto de cualquier administrador del 
 sistema para poder contactar con dicho administrador.
 
-HU27) Como usuario, quiero registrarme en el sistema para poder utilizar el sistema.
+HU27) Como administrador con rol de gestion de usuarios, quiero registrar los datos de un usuario o administrador en el sistema para permitir a dicho usuario
+o administrador utilizar el sistema.
 
-HU28) Como administrador con rol de gestion de usuarios, quiero registrar los datos de un usuario en el sistema para permitir a dicho usuario utilizar el sistema.
-
-HU29) Como administrador con rol de gestion de usuarios, quiero registrar mis datos personales en el sistema para poder utilizar las funcionalidades del sistema.
-
-HU30) Como administrador con rol de gestion de usuarios, quiero disponer de una lista de todos usuarios registrados en el sistema para poder comprobar 
+HU28) Como administrador con rol de gestion de usuarios, quiero disponer de una lista de todos usuarios registrados en el sistema para poder comprobar 
 los usuarios registrados
 
-HU31) Como administrador con rol de gestion de usuarios, quiero eliminar un usuario para poder eliminar los datos del usuario del sistema.
+HU29) Como administrador con rol de gestion de usuarios, quiero eliminar un usuario para poder eliminar los datos del usuario del sistema.
 
 
 ###############################
 
 CASOS DE USO
 
-CU1: MostrarInformacionMaquina (usuario)
+CU1: ReservarMaquina (usuario o administrador)
 
-CU2: ModificarDatosMaquina (Administrador)
++ Se comprobara si el usuario/administrador esta registrado en el sistema
 
-CU3: ListaMaquinasReservadasUsuario
- (usuario)
++ Se comprobara si el usuario/administrador tiene numero de nucleos disponibles para reservar
 
-CU4: ListaReservasUsuario (usuario)
++ Se pedira el identificador de la maquina
 
-CU5: RealizarReserva (usuario)
++ Se comprobara si la maquina esta registrada
 
-CU6: ListaMaquinasLibres (usuario)
++ Se comprobara si la maquina tiene recursos disponibles
 
-CU7: MostrarInformacionPersonalUsuario (administrador)
++ Se pediran los recursos a reservar de la maquina
 
-CU8: ModificarDatosUsuario (usuario)
++ Se comprobara si los recursos a reservar estan disponibles en la maquina
 
-CU9: MostrarReservaUsuario
++ Se pedira la fecha limite de la reserva
 
-CU10: ModificarReservaUsuario (usuario+administrador)
++ Se comprobara si la fecha es valida
 
-CU11: MostrarInformacionAdministrador (usuario)
++ Se comprobara si el tiempo de reserva de la maquina supera el limite de tiempo de reserva del usuario/administrador
 
-CU12:  CancelarReserva (usuario/administrador)
++ Se notificara si se ha realizado la reserva de la maquina
 
-CU13:  RegistrarUsuario (usuario/administrador)
+###############################
 
-CU14:  ListaUsuariosRegistrados (administrador)
+CU2: MostrarReserva (usuario o administrador)
 
-CU15: ListaMaquinasRegistradas (usuario/administrador)
++ Se comprobara si el usuario/administrador esta registrado en el sistema
 
-CU16: ListaReservasRegistradas (administrador)
++ Se pedira el identificador de la maquina
 
-CU17:  RegistrarMaquina (administrador)
++ Se comprobara si la maquina esta registrada en el sistema
 
-CU18: EliminarMaquina (administrador)
++ Se comprobara si la maquina esta reservada por el usuario
 
-#########################################################################################################################################
++ Se mostrara la siguiente informacion: Identificador de la maquina, recursos reservados de la maquina, fecha limite de la reserva, dni del autor de la reserva
+
+###############################
+
+CU3: ListarReservas (usuario o administrador)
+
++ Se comprobara si el usuario o el administrador esta registrado
+
++ Caso usuario: Se mostrara una lista de reservas con la informacion de cada reserva del usuario
+
++ Caso administrador: Se mostrara una lista de reservas con la informacion de cada reserva registrada en el sistema
+
+###############################
+
+CU4: ModificarReserva (usuario o administrador)
+
++ Se comprobara si el usuario o administrador esta registrado
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta registrada en el sistema
+
++ Caso usuario: Se comprobara si el usuario es autor de la reserva
+
++ Se podran modificar la fecha limite de la reserva y los recursos de la maquina
+
++ Se comprobara si la nueva fecha limite de la reserva es valida
+
++ Se comprobara si la maquina tiene los recursos disponibles indicados por el usuario o administrador
+
++ Se notificara si se ha realizado la modificacion de la reserva
+
+###############################
+
+CU5: CancelarReserva (usuario o administrador)
+
++ Se comprobara si el usuario o administrador esta registrado
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta reservada
+
++ Caso usuario: Se comprobara si el usuario es autor de la reserva
+
++ Se notificara si se ha cancelado la reserva 
+
+###############################
+
+CU6: RegistrarMaquina (administrador con rol de gestion de maquinas)
+
++ Se comprobara si el administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta registrada en el sistema
+
++ Se pedira el numero de recursos de la maquina
+
++ Se notificara si se ha registrado la maquina
+
+###############################
+
+CU7: MostrarMaquina (usuario o administrador con rol de gestion de maquinas)
+
++ Se comprobara si el usuario/administrador esta registrado
+
++ Caso administrador: Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se mostrara la lista de maquinas registradas en el sistema
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta registrada en el sistema
+
++ Se mostrara la siguiente informacion: Identificador de la maquina (unico) y los recursos de la maquina
+
+###############################
+
+CU8: ListarMaquinas (usuario o administrador con rol de gestion de maquinas)
+
++ Se comprobara si el usuario/administrador esta registrado en el sistema
+
++ Caso administrador: Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se mostrara una lista de las maquinas registradas en el sistema
+
+###############################
+
+CU9: ListarMaquinasDisponibles (usuario o administrador con rol de gestion de maquinas)
+
++ Se comprobara si el usuario/administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se mostrara una lista de maquinas con recursos disponibles
+
+###############################
+
+CU10: ModificarMaquina (administrador con rol de gestion de maquinas)
+
++ Se comprobara si el administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se mostrara una lista de maquinas registradas en el sistema
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta registrada en el sistema
+
++ Se mostrara los recursos de la maquina
+
++ Se pediran los nuevos recursos de la maquina
+
++ Se notificara si se ha realizado la modificacion de los recursos de la maquina
+
+###############################
+
+CU11: EliminarMaquina (administrador con rol de gestion de maquinas)
+
++ Se comprobara si el administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de maquinas
+
++ Se mostrara una lista de maquinas registradas en el sistema
+
++ Se pedira el identificador de la maquina
+
++ Se comprobara si la maquina esta registrada en el sistema
+
++ Se pedira confirmacion de eliminacion de la maquina
+
++ Se noficara si se ha realizado la eliminacion de la maquina
+
+###############################
+
+CU12: MostrarUsuario (usuario/administrador con rol de gestion de usuarios)
+
++ Se comprobara si el usuario/administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de usuarios
+
++ Caso administrador: Se mostrara una lista de los usuarios registrados en el sistema
+
++ Se pedira el dni del usuario
+
++ Se comprobara si el dni a buscar esta registrado en el sistema
+
++ Se comprobara si el dni buscado pertenece a un usuario o a un administrador
+
+1. Dni pertenece a un usuario: Se mostrara la siguiente informacion -> Nombre,email,DNI, tipo de usuario, 
+
+numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+2. DNI pertence a un administrador: Se mostrara la siguiente informacion -> Nombre,email,DNI,tipo de usuario, rol de administrador, 
+
+numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+###############################
+
+CU13: ModificarUsuario (usuario/administrador con rol de gestion de usuarios)
+
++ Se comprobara si el usuario/administrador esta registrado en el sistema
+
++ Se comprobara si el administrador tiene rol de gestion de usuarios
+
++ Se mostrara una lista de los usuarios registrados en el sistema
+
++ Se pedira el dni del usuario
+
++ Se comprobara si el dni a buscar esta registrado en el sistema
+
++ Se comprobara si el dni buscado pertenece a un usuario o a un administrador
+
+1. DNI pertenece a un usuario:
+
++ Caso espectador: Podra modificar -> nombre, email
+
++ Caso de administrador: Podra modificar -> nombre, email, numero de nucleos que puede reservar al mismo tiempo, limite de tiempo de las reservas
+
+2. DNI pertenece a un administrador:
+
++ Se comprobara si el dni pertenece al administrador
+
++ Se podra modificar -> nombre, email, numero de nucleos que puede reservar al mismo tiempo, limite de tiempo de las reservas
+
+###################################
+
+CU14: RegistrarUsuario (administrador con rol de gestion de usuarios)
+
++ Se comprobara si se desea registrar un espectador o un administrador
+
+1. Registro de un espectador
+
++ Se comprobara si el administrador esta registrado
+
++ Se comprobara si el administrador tiene rol de gestion de recursos
+
++ Se pedira el dni del usuario a registrar
+
++ Se comprobara si el dni del nuevo usuario ya esta registrado
+
++ Se registraran los siguientes datos del usuario -> Nombre,email,DNI,tipo de usuario,
+
+numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
++ Se notificara si se ha realizado el registro del usuario
+
+2. Registro de un administrador
+
++ Se pedira el dni del nuevo administrador
+
++ Se comprobara si el dni del nuevo administrador esta registrado
+
++ Se registraran los siguientes datos del administrador -> Nombre,email,DNI,tipo de usuario, rol de administrador, 
+
+numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+###################################
+
+CU15: ListarUsuarios (administrador con rol de gestion de usuarios)
+
++ Se comprobara si el administrador esta registrado
+
++ Se comprobara si el administrador tiene rol de gestion de usuarios
+
++ Se mostrara una lista con los datos de los usuarios registrados en el sistema
+
+###################################
+
+CU16: EliminarUsuario (administrador con rol de gestion de usuarios)
+
++ Se comprobara si el administrador esta registrado
+
++ Se comprobara si el administrador tiene rol de gestion de usuarios
+
++ Se mostrara una lista con los datos de los usuarios registrados en el sistema
+
++ Se pedira el dni del usuario a eliminar
+
++ Se comprobara si el dni introducido esta registrado
+
++ Se comprobara si el dni pertenece a un espectador o a un administrador
+
+1. Dni pertenece a un espectador
+
++ Se pedira confirmacion para eliminar los datos del usuario
+
++ Se notificara si se han eliminado los datos del usuario
+
+2. Dni pertenece a un administrador
+
++ Se comprobara si el dni pertenece al administrador que ha accedido a la funcionalidad
+
++ Se pedira confirmacion para eliminar los datos del usuario
+
++ Se notificara si se han eliminado los datos del usuario
+
+#################################
 
 DIAGRAMA DE CLASES
 
