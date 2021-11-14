@@ -237,177 +237,27 @@ CU14: MostrarMaquinas (espectador)
 
 CU15: MostrarMaquinas (administrador con rol de gestion de maquinas)
 
-###############################
+CU16: MostrarMaquinasDisponibles (espectador)
 
-CU9: ListarMaquinasDisponibles (usuario o administrador con rol de gestion de maquinas)
+CU17: MostrarMaquinasDisponibles (administrador con rol de gestion de maquinas)
 
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
+CU18: ModificarMaquina (administrador con rol de gestion de maquinas)
 
-+ Se comprobara si el administrador tiene rol de gestion de maquinas
+CU19: EliminarMaquina (administrador con rol de gestion de maquinas)
 
-+ Se mostrara una lista de maquinas con recursos disponibles
+CU20: MostrarUsuario (espectador)
 
-###############################
+CU21: MostrarUsuario2 (administrador con rol de gestion de usuarios)
 
-CU10: ModificarMaquina (administrador con rol de gestion de maquinas)
+CU22: ModificarUsuario (usuario)
 
-+ Se comprobara si el administrador esta registrado en el sistema
+CU23: ModificarUsuario2 (administrador con rol de gestion de usuarios)
 
-+ Se comprobara si el administrador tiene rol de gestion de maquinas
+CU24: RegistrarUsuario (administrador con rol de gestion de usuarios)
 
-+ Se mostrara una lista de maquinas registradas en el sistema
+CU25: MostrarUsuarios (administrador con rol de gestion de usuarios)
 
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Se mostrara los recursos de la maquina
-
-+ Se pediran los nuevos recursos de la maquina
-
-+ Se notificara si se ha realizado la modificacion de los recursos de la maquina
-
-###############################
-
-CU11: EliminarMaquina (administrador con rol de gestion de maquinas)
-
-+ Se comprobara si el administrador esta registrado en el sistema
-
-+ Se comprobara si el administrador tiene rol de gestion de maquinas
-
-+ Se mostrara una lista de maquinas registradas en el sistema
-
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Se pedira confirmacion de eliminacion de la maquina
-
-+ Se noficara si se ha realizado la eliminacion de la maquina
-
-###############################
-
-CU12: MostrarUsuario (usuario/administrador con rol de gestion de usuarios)
-
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
-
-+ Se comprobara si el administrador tiene rol de gestion de usuarios
-
-+ Caso administrador: Se mostrara una lista de los usuarios registrados en el sistema
-
-+ Se pedira el dni del usuario
-
-+ Se comprobara si el dni a buscar esta registrado en el sistema
-
-+ Se comprobara si el dni buscado pertenece a un usuario o a un administrador
-
-1. Dni pertenece a un usuario: Se mostrara la siguiente informacion -> Nombre,email,DNI, tipo de usuario, 
-
-numero de n˙cleos que puede reservar al mismo tiempo, lÌmite de tiempo de las reservas.
-
-2. DNI pertence a un administrador: Se mostrara la siguiente informacion -> Nombre,email,DNI,tipo de usuario, rol de administrador, 
-
-numero de n˙cleos que puede reservar al mismo tiempo, lÌmite de tiempo de las reservas.
-
-###############################
-
-CU13: ModificarUsuario (usuario/administrador con rol de gestion de usuarios)
-
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
-
-+ Se comprobara si el administrador tiene rol de gestion de usuarios
-
-+ Se mostrara una lista de los usuarios registrados en el sistema
-
-+ Se pedira el dni del usuario
-
-+ Se comprobara si el dni a buscar esta registrado en el sistema
-
-+ Se comprobara si el dni buscado pertenece a un usuario o a un administrador
-
-1. DNI pertenece a un usuario:
-
-+ Caso espectador: Podra modificar -> nombre, email
-
-+ Caso de administrador: Podra modificar -> nombre, email, numero de nucleos que puede reservar al mismo tiempo, limite de tiempo de las reservas
-
-2. DNI pertenece a un administrador:
-
-+ Se comprobara si el dni pertenece al administrador
-
-+ Se podra modificar -> nombre, email, numero de nucleos que puede reservar al mismo tiempo, limite de tiempo de las reservas
-
-###################################
-
-CU14: RegistrarUsuario (administrador con rol de gestion de usuarios)
-
-+ Se comprobara si se desea registrar un espectador o un administrador
-
-1. Registro de un espectador
-
-+ Se comprobara si el administrador esta registrado
-
-+ Se comprobara si el administrador tiene rol de gestion de recursos
-
-+ Se pedira el dni del usuario a registrar
-
-+ Se comprobara si el dni del nuevo usuario ya esta registrado
-
-+ Se registraran los siguientes datos del usuario -> Nombre,email,DNI,tipo de usuario,
-
-numero de n˙cleos que puede reservar al mismo tiempo, lÌmite de tiempo de las reservas.
-
-+ Se notificara si se ha realizado el registro del usuario
-
-2. Registro de un administrador
-
-+ Se pedira el dni del nuevo administrador
-
-+ Se comprobara si el dni del nuevo administrador esta registrado
-
-+ Se registraran los siguientes datos del administrador -> Nombre,email,DNI,tipo de usuario, rol de administrador, 
-
-numero de n˙cleos que puede reservar al mismo tiempo, lÌmite de tiempo de las reservas.
-
-###################################
-
-CU15: ListarUsuarios (administrador con rol de gestion de usuarios)
-
-+ Se comprobara si el administrador esta registrado
-
-+ Se comprobara si el administrador tiene rol de gestion de usuarios
-
-+ Se mostrara una lista con los datos de los usuarios registrados en el sistema
-
-###################################
-
-CU16: EliminarUsuario (administrador con rol de gestion de usuarios)
-
-+ Se comprobara si el administrador esta registrado
-
-+ Se comprobara si el administrador tiene rol de gestion de usuarios
-
-+ Se mostrara una lista con los datos de los usuarios registrados en el sistema
-
-+ Se pedira el dni del usuario a eliminar
-
-+ Se comprobara si el dni introducido esta registrado
-
-+ Se comprobara si el dni pertenece a un espectador o a un administrador
-
-1. Dni pertenece a un espectador
-
-+ Se pedira confirmacion para eliminar los datos del usuario
-
-+ Se notificara si se han eliminado los datos del usuario
-
-2. Dni pertenece a un administrador
-
-+ Se comprobara si el dni pertenece al administrador que ha accedido a la funcionalidad
-
-+ Se pedira confirmacion para eliminar los datos del usuario
-
-+ Se notificara si se han eliminado los datos del usuario
+CU26: EliminarUsuario (administrador con rol de gestion de usuarios)
 
 #################################
 
@@ -415,14 +265,14 @@ DIAGRAMA DE CLASES
 
 TIPOS DE RELACIONES ENTRE CLASES
 
-1. Asociaci√≥n: Es una conexi√≥n funcional y de comunicaci√≥n entre clases. Suele indicar la cardinalidad.
-2. Dependencia: Tipo de asociaci√≥n donde una clase utiliza otra clase, y la definici√≥n de una clase se ve influenciada por los cambios en la otra.
-3. Herencia: Representan una relaci√≥n entre una clase ‚Äúpadre‚Ä? y una o varias clases ‚Äúhijas‚Ä?.
-4. Realizaci√≥n: Indica c√≥mo se debe realizar una implementaci√≥n de una interfaz.
-5. Agregaci√≥n: Indica que una clase es parte de otra, pero tienen diferentes l√neas de vida.
-6. Composici√≥n: Agregaci√≥n donde la clase que forma parte de la otra no puede existir por s√ misma.
+1. Asociacion: Es una conexion funcional y de comunicacion entre clases. Suele indicar la cardinalidad.
+2. Dependencia: Tipo de asociacion donde una clase utiliza otra clase, y la definicion de una clase se ve influenciada por los cambios en la otra.
+3. Herencia: Representan una relacion entre una clase padre y una o varias clases hijas
+4. Realizacion: Indica como se debe realizar una implementacion de una interfaz.
+5. Agregacion: Indica que una clase es parte de otra, pero tienen diferentes lineas de vida.
+6. Composicion: Agregacion donde la clase que forma parte de la otra no puede existir por si misma.
 
-###################################################################################################
+#################################
 
 MATRICES DE TRAZABILIDAD
 
@@ -430,11 +280,11 @@ TIPOS DE MATRICES
 
 1. Requisitos funcionales frente a casos de uso
 
-a) Cada requisito debe estar cubierto, como m√nimo, por un caso de uso.
+a) Cada requisito debe estar cubierto, como minimo, por un caso de uso.
 
-b) Todo caso de uso debe dar respuesta a uno o m√°s requisitos
+b) Todo caso de uso debe dar respuesta a uno o mas requisitos
 
-c) Recomendaci√≥n: realizarla al comienzo de la pr√°ctica, para as√ poder refinar los casos de uso en caso de ser necesario.
+c) Recomendacion: realizarla al comienzo de la practica, para asi poder refinar los casos de uso en caso de ser necesario.
 
 2. Casos de uso frente a clases.
 
@@ -442,25 +292,25 @@ a) Cada clase debe tener correspondencia con uno o varios casos de uso
 
 b) Todo caso de uso debe tener al menos una clase asociada
 
-c) Recomendaci√≥n: realizarla tras terminar el diagrama de clases.
+c) Recomendacion: realizarla tras terminar el diagrama de clases.
 
-#####################################################################################################
+#################################
 
 DIAGRAMAS DE SECUENCIA
 
 1. ELEMENTOS
 
-a) Actor: Agente externo que participa en la interacci√≥n
+a) Actor: Agente externo que participa en la interaccion
 
-b) L√nea de vida:  Indica la presencia (o no) del objeto. El periodo durante el cual el objeto est√° activo se denomina ‚Äúactivaci√≥n‚Ä?
+b) Linea de vida:  Indica la presencia (o no) del objeto. El periodo durante el cual el objeto esta activo se denomina ‚Äúactivaci√≥n‚Ä?
 
-c) Mensaje: Comunicaci√≥n entre dos l√neas de vida. Deben ir numerados. 
+c) Mensaje: Comunicacion entre dos lineas de vida. Deben ir numerados. 
 
 2. TIPOS DE BLOQUES
 
 a) Loop: Fragmento que se ejecuta varias veces
 
-b) Alt: Secuencias alternativas, se ejecuta la que cumple la condici√≥n.
+b) Alt: Secuencias alternativas, se ejecuta la que cumple la condicion.
 
-c) Opt: Fragmento opcional que se ejecuta solo si se cumple la condici√≥n.
+c) Opt: Fragmento opcional que se ejecuta solo si se cumple la condicion.
 
