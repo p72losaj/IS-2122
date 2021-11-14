@@ -227,25 +227,13 @@ CU9: CancelarReserva (espectador)
 
 CU10: CancelarReserva (administrador)
 
-CU11:  RegistrarMaquina (administrador con rol de gestion de maquinas)
+CU11: RegistrarMaquina (administrador con rol de gestion de maquinas)
 
+CU12: MostrarMaquina (espectador)
 
+CU13: MostrarMaquina (administrador con rol de gestion de maquinas)
 
-###############################
-
-CU7: MostrarMaquina (usuario o administrador con rol de gestion de maquinas)
-
-+ Se comprobara si el usuario/administrador esta registrado
-
-+ Caso administrador: Se comprobara si el administrador tiene rol de gestion de maquinas
-
-+ Se mostrara la lista de maquinas registradas en el sistema
-
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Se mostrara la siguiente informacion: Identificador de la maquina (unico) y los recursos de la maquina
+CU14: MostrarMaquinas (espectador)
 
 ###############################
 
