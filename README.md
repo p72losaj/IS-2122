@@ -211,49 +211,25 @@ CU1: ReservarMaquina (espectador)
 
 CU2: ReservarMaquina2 (administrador)
 
-CU3: MostrarReserva (usuario)
+CU3: MostrarReserva (espectador)
 
 CU4: MostrarReserva2 (administrador)
 
-CU5: MostrarReservas (usuario)
+CU5: MostrarReservas (espectador)
 
 CU6: MostrarReservas2 (administrador)
 
-CU7: ModificarReserva (usuario)
+CU7: ModificarReserva (espectador)
 
 CU8: ModificarReserva2 (administrador)
 
-###############################
+CU9: CancelarReserva (espectador)
 
-###############################
+CU10: CancelarReserva (administrador)
 
-CU5: CancelarReserva (usuario o administrador)
+CU11:  RegistrarMaquina (administrador con rol de gestion de maquinas)
 
-+ Se comprobara si el usuario o administrador esta registrado
 
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta reservada
-
-+ Caso usuario: Se comprobara si el usuario es autor de la reserva
-
-+ Se notificara si se ha cancelado la reserva 
-
-###############################
-
-CU6: RegistrarMaquina (administrador con rol de gestion de maquinas)
-
-+ Se comprobara si el administrador esta registrado en el sistema
-
-+ Se comprobara si el administrador tiene rol de gestion de maquinas
-
-+ Se pedira el identificador de la maquina
-
-+ Se comprobara si la maquina esta registrada en el sistema
-
-+ Se pedira el numero de recursos de la maquina
-
-+ Se notificara si se ha registrado la maquina
 
 ###############################
 
