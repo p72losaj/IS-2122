@@ -235,15 +235,7 @@ CU13: MostrarMaquina (administrador con rol de gestion de maquinas)
 
 CU14: MostrarMaquinas (espectador)
 
-###############################
-
-CU8: ListarMaquinas (usuario o administrador con rol de gestion de maquinas)
-
-+ Se comprobara si el usuario/administrador esta registrado en el sistema
-
-+ Caso administrador: Se comprobara si el administrador tiene rol de gestion de maquinas
-
-+ Se mostrara una lista de las maquinas registradas en el sistema
+CU15: MostrarMaquinas (administrador con rol de gestion de maquinas)
 
 ###############################
 
