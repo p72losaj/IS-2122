@@ -207,21 +207,21 @@ CU8: ModificarReserva2 (administrador)
 
 CU9: CancelarReserva (espectador)
 
-CU10: CancelarReserva (administrador)
+CU10: CancelarReserva2 (administrador)
 
 CU11: RegistrarMaquina (administrador con rol de gestion de maquinas)
 
 CU12: MostrarMaquina (espectador)
 
-CU13: MostrarMaquina (administrador con rol de gestion de maquinas)
+CU13: MostrarMaquina2 (administrador con rol de gestion de maquinas)
 
 CU14: MostrarMaquinas (espectador)
 
-CU15: MostrarMaquinas (administrador con rol de gestion de maquinas)
+CU15: MostrarMaquinas2 (administrador con rol de gestion de maquinas)
 
 CU16: MostrarMaquinasDisponibles (espectador)
 
-CU17: MostrarMaquinasDisponibles (administrador con rol de gestion de maquinas)
+CU17: MostrarMaquinasDisponibles2 (administrador con rol de gestion de maquinas)
 
 CU18: ModificarMaquina (administrador con rol de gestion de maquinas)
 
@@ -240,6 +240,8 @@ CU24: RegistrarUsuario (administrador con rol de gestion de usuarios)
 CU25: MostrarUsuarios (administrador con rol de gestion de usuarios)
 
 CU26: EliminarUsuario (administrador con rol de gestion de usuarios)
+
+CU27: MostrarAdministrador (usuario)
 
 #################################
 
