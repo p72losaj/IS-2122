@@ -64,7 +64,7 @@ Los requisitos de informacion obtenidos son los siguientes:
 NUEVO EN PRACTICA3
 
 RI1) El sistema debe almacenar informacion sobre el usuario que ha realizado la reserva, la maquina que se ha reservado, 
-el numero de recursos de la mÃ¡quina reservados y la fecha de reserva.
+el numero de recursos de la maquina reservados y la fecha de reserva.
 
 RI2)  El sistema debe almacenar la siguiente informacion personal del usuario espectador: Nombre,email,DNI, tipo de usuario, numero de nucleos
 que puede reservar al mismo tiempo y limtite de tiempo de las reservas.
@@ -298,3 +298,255 @@ b) Alt: Secuencias alternativas, se ejecuta la que cumple la condicion.
 
 c) Opt: Fragmento opcional que se ejecuta solo si se cumple la condicion.
 
+
+###DIAGRAMAS DE CLASE#############
+
+
+CLASE USUARIO: Almacena la informacion principal de los usuarios, ademas de ser la clase padre de los distintos tipos de usuarios
+(usuario normal, administrador).
+
+Atributos:
+
+- Nombre:String -> Nombre del usuario
+
+- Email: String -> Email del usuario
+
+- DNI: String -> Dni del usuario (unico)
+
+- TipoUsuario: enum -> Tipo de usuario (normal o administrador)
+
+- NucleosReservables: int -> Numero de nucleos de máquina que puede reservar al mismo tiempo el usuario
+
+- TiempoReserva: int -> Limite de tiempo en dias de las reservas del usuario
+
+Operaciones:
+
++ getNombre(): String -> Obtiene el nombre del usuario
+
++ setNombre(): void -> Modifica el nombre del usuario
+
+* nombre: string -> Nuevo nombre del usuario
+
++ getEmail(): String -> Obtiene el email del usuario
+
++ setEmail(): void -> Modifica el email del usuario
+
+* email: string -> Nuevo email del usuario
+
++ getDni(): String -> Obtiene el dni del usuario
+
++ setDni(): void -> Modifica el dni del usuario
+
+* dni: string -> Nuevo dni del usuario
+
++ getTipoUsuario(): enum -> Obtiene el tipo del usuario
+
++ setUsuario(): void -> Modifica el tipo del usuario
+
+* tipo: enum -> Nuevo tipo del usuario
+
++ getNucleosUsuario(): int -> Obtiene el numero de nucleos de maquina que puede reservar al mismo tiempo del usuario
+
++ setNucleosUsuario(): void -> Modifica el numero de nucleos de maquina reservables al mismo tiempo del usuario
+
+* nuecleos: int -> Nuevo numero de nucleos de maquina reservables del usuario
+
++ getTiempoReserva(): int -> Obtiene el limite de tiempo en dias de las reservas del usuario
+
++ setTiempoReserva(): void  -> Modifica el limite de tiempo en dias de las reservas del usuario
+
+* dia: int -> Nuevo tiempo limite de reserva en dias
+
++ registrarReserva(): void -> Realiza el registro de una reserva
+
+* dni: String -> Dni del usuario
+
+* idMaquina: int -> Identificador de la maquina a reservar
+
+* nucleosMaquina: int -> Numero de nucleos a reservar de la maquina
+
+* fecha: Date -> Fecha limite de la reserva (dd/mm/yyyy)
+
++ mostrarReserva(): void -> Muestra la informacion de una reserva
+
+* idMaquina: int -> Identificador de la maquina
+
+* dni: string -> dni del usuario
+
++ mostrarReservas(): void -> Muestra una lista de reservas
+
++ modificarReserva(): void -> Modifica los datos de una reserva
+
+* idMaquina: int -> Identificador de la maquina
+
+* dni: string -> dni del usuario
+
++ cancelarReserva(): void -> Elimina los datos de una reserva y libera los recursos de la maquina reservados
+
+* idMaquina: int -> Identificador de la maquina
+
+* dni: string -> dni del usuario
+
+#################################
+
+CLASE USUARIO_NORMAL : clase que gestiona los datos unicos de un usuario normal y da acceso a sus reservas, ademas de permitir comprobar sus reservas activas
+
+-> Hereda de la clase USUARIO
+
+Operaciones:
+
++ mostrarMaquina(): void -> Muestra la informacion de una maquina
+
+* idMaquina: int -> Identificador de la maquina
+
++ mostrarMaquinas(): void -> Muestra una lista de maquinas
+
++ mostrarMaquinasDisponibles(): void -> Muestra una lista de las maquinas con recursos disponibles
+
++ mostrarUsuario(): void -> Muestra la informacion personal del usuario (nombre,dni,email,tipoUsuario)
+
+* dni: string -> dni del usuario
+
++ modificarUsuario(): void -> Modifica los datos personales del usuario (nombre,email)
+
+* dni: string -> dni del usuario
+
++ mostrarAdministrador(): void -> Muestra los datos de contacto de un administrador (dni,rolAdministrador,email)
+
+* dni: string -> dni del administrador
+
+#################################
+
+CLASE ADMINISTRADOR : Clase que gestiona los datos unicos de un administrador y da acceso a las reservas registradas en el sistema, ademas de permitir gestionar 
+las reservas registradas en el sistema.
+-> Hereda de la clase usuario
+
+Atributos:
+
+- rolAdministrador: enum -> Rol del administrador
+
+Operaciones:
+
++ getRol(): enum -> Obtiene el rol del administrador
+
++ setRol(): void -> Modifica el rol del administrador
+
+* rol: enum -> Nuevo rol del administrador
+
+
+
+#################################
+
+CLASE ADMINISTRADOR_USUARIOS: Clase que gestiona las funcionalidades sobre los usuarios.
+-> Hereda de la clase administrador
+
+Operaciones:
+
++ mostrarUsuario(): void -> Muestra toda la informacion registrada de un usuario
+
+* dni: string -> dni del usuario
+
++ modificarUsuario(): void -> Modifica los datos registrados de un usuario
+
+* dni: string -> dni del usuario
+
++ registrarUsuario(): void -> Registra los datos de un nuevo usuario
+
+* dni: string -> dni del usuario a registrar
+
++ mostrarUsuarios(): void -> Muestra una lista de los usuarios registrados
+
+#################################
+
+CLASE ADMINISTRADOR_MAQUINA : Clase que gestiona las funcionalidades sobre una maquina
+-> Hereda de la clase administrador
+
+Operaciones:
+
++ registrarMaquina(): void -> Registra los datos de una maquina
+
+* idMaquina: int -> Identificador de la maquina. debe ser unico
+
+* nucleos: int -> Numero de nucleos de la maquina
+
++ mostrarMaquina(): void -> Muestra la informacion de una maquina
+
+* idMaquina: int -> Identificador de la maquina
+
++ mostrarMaquinas(): void -> Muestra una lista de maquinas
+
++ mostrarMaquinasDisponibles(): void -> Muestra una lista de las maquinas con recursos disponibles
+
++ modificarMaquina(): void -> Modifica los datos de una maquina
+
+* idMaquina: int -> Identificador de la maquina
+
+* recursos: int -> Nuevo numero de recursos de la maquina
+
++ eliminarMaquina(): void -> Elimina los datos de una maquina
+
+* idMaquina: int -> Identificador de la maquina
+
+#################################
+
+CLASE MAQUINA: Clase que almacena la informacion de una maquina
+
+Atributos:
+
+- idMaquina: Identificador de la maquina (unico)
+
+- nNucleos: Numero de nucleos de la maquina
+
+Operaciones:
+
++ getIdMaquina(): int -> Obtiene el identificador de la maquina
+
++ setIdMaquina(): void -> Modifica el identificador de la maquina
+
+* id: int -> Nuevo identificador de la maquina.
+
++ getNucleos(): int -> Obtiene el numero de nucleos de la maquina
+
++ setNucleos(): void -> Modifica el numero de nucleos de la maquina
+
+* nucleos: int -> Nuevo numero de nucleos de la maquina
+
+#################################
+
+CLASE RESERVA: Clase que almacena la informacion de una reserva.
+-> Depende de la existencia de la clase usuario y de la clase maquina
+Atributos:
+
+- dniUsuario: String -> dni del usuario autor de la reserva
+
+- idMaquina: int -> Identificador de la maquina reservada.
+
+- nRecursos: int -> Numero de recursos reservados de la maquina
+
+- fecha: Date -> Fecha limite de la reserva (dd/mm/yyyy)
+
+Operaciones:
+
++ getDni():string -> Obtiene el dni del autor de la reserva
+
++ setDni(): void -> Modifica el dni del autor de la reserva
+
+* dni: string -> nuevo dni del usuario
+
++ getIdMaquina(): int -> Obtiene el identificador de la maquina
+
++ setIdMaquina(): void -> Modifica el identificador de la maquina
+
+* id: int -> Nuevo identificador de la maquina
+
++ getRecursos(): int -> Obtiene el numero de recursos reservados de la maquina
+
++ setRecursos(): void -> Modifica el numero de recursos reservados de la maquina
+
+* recursos: int -> Nuevos recursos reservados de la maquina
+
++ getFecha(): date -> Obtiene la fecha limite de la reserva
+
++ setFecha(): void -> Modifica la fecha limite de la reserva
+
+* nFecha: Date -> Nueva fecha limite de la reserva
