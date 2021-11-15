@@ -21,55 +21,57 @@ Los requisitos funcionales obtenidos son los siguientes:
 
 NUEVO EN LA PRACTICA3
 
-RF1) El usuario debe ser capaz de realizar la reserva de cualquier maquina y sus nucleos.
+RF1) El usuario debe ser capaz de realizar la reserva de cualquier máquina y sus núcleos, en cualquier fecha.
 
-RF2) El usuario debe ser capaz de modificar los datos de cualquiera de sus reservas.
+RF2) Cualquier administrador debe ser capaz de realizar la reserva de cualquier maquina y sus nucleos, en cualquier fecha.
 
-RF3) El usuario debe ser capaz de obtener una lista con la informacion de todas sus reservas.
+RF3) El usuario debe ser capaz de modificar los datos de sus reservas.
 
-RF4) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
+RF4) Cualquier administrador debe ser capaz de modificar los datos de una reserva.
 
-RF5) El usuario debe ser capaz de obtener la informacion de cualquiera de sus reservas.
+RF5) El usuario debe ser capaz de obtener una lista de sus reservas.
 
-RF6) El usuario debe ser capaz de reservar una maquina en cualquier fecha.
+RF6) Cualquier administrador debe ser capaz de obtener una lista de las reservas registradas.
 
-RF7) El usuario debe ser capaz de obtener la informacion de las maquinas con recursos disponibles
+RF7) El usuario debe ser capaz de cancelar cualquiera de sus reservas.
 
-RF8) El usuario debe ser capaz de obtener la informacin de cualquier maquina registrada en el sistema.
+RF8) Cualquier administrador debe ser capaz de cancelar cualquier reserva registrada en el sistema.
 
-RF9) El usuario debe ser capaz de obtener una lista con la informacion de todas las maquinas registradas en el sistema
+RF9) El usuario debe ser capaz de obtener la información de cualquiera de sus reservas.
 
-RF10) El usuario debe ser capaz de obtener toda su informacion personal.
+RF10) Cualquier administrador debe ser capaz de obtener la información de cualquier reserva.
 
-RF11) El usuario debe ser capaz de obtener la informacion de contacto de cualquier administrador del sistema.
+RF11) El usuario debe ser capaz de obtener una lista de máquinas con recursos disponibles 
 
-RF12) Cualquier administrador debe ser capaz de modificar los datos de cualquier reserva.
+RF12) El administrador con rol de gestion de maquinas debe ser capaz de obtener una lista de máquinas con recursos disponibles 
 
-RF13) Cualquier administrador debe ser capaz de cancelar cualquier reserva.
+RF13) El usuario debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
 
-RF14) Cualquier administrador debe ser capaz de obtener una lista con la informacion de todas las reservas registradas en el sistema.
+RF14) El administrador con rol de gestion de maquinas debe ser capaz de obtener la información de cualquier máquina registrada en el sistema.
 
-RF15) Cualquier administrador debe ser capaz de obtener la informacion de una reserva concreta.
+RF15) El usuario debe ser capaz de obtener una lista de las maquinas registradas
 
-RF16) El administrador con rol de gestion de maquinas debe ser capaz de dar de alta a cualquier maquina.
+RF16) El administrador con rol de gestion de maquinas debe ser capaz de obtener una lista de las maquinas registradas
 
-RF17) El administrador con rol de gestion de maquinas debe ser capaz de obtener una lista con la informacion de todas las maquinas registradas
+RF17) El administrador con rol de gestion de maquinas debe ser capaz de registrar los datos de una maquina.
 
-RF18) El administrador con rol de gestion de maquinas debe ser capaz de obtener la informacion de una maquina concreta
+RF18) El administrador con rol de gestion de maquinas debe ser capaz de modificar los datos de una maquina.
 
-RF19) El administrador con rol de gestion de maquinas debe ser capaz de modificar los datos de cualquier maquina registrada
+RF19) El administrador con rol de gestion de maquinas debe ser capaz de eliminar los datos de cualquier maquina.
 
-RF20) El administrador con rol de gestion de maquina debe ser capaz de eliminar cualquier maquina registrada
+RF20) El usuario debe ser capaz de obtener sus datos personales.
 
-RF21) El administrador con rol de gestion de usuarios debe ser capaz de registrar los datos de cualquier usuario en el sistema
+RF21) El administrador con rol de gestion de usuarios debe ser capaz de obtener toda la informacion de cualquier usuario
 
-RF22) El administrador con rol de gestion de usuarios debe ser capaz de obtener una lista con los datos de todos los usuarios registrados
+RF22) El administrador con rol de gestion de usuarios debe ser capaz de registrar los datos de un usuario.
 
-RF23) El administrador con rol de gestion de usuarios debe ser capaz de obtener la informacion de cualquier usuario registrado en el sistema.
+RF23) El usuario debe ser capaz de obtener la información de contacto de cualquier administrador del sistema.
 
-RF24) El administrador con rol de gestion de usuarios debe ser capaz de modificar los datos de cualquier usuario.
+RF24) El administrador con rol de gestion de usuarios debe ser capaz de modificar los datos de un usuario.
 
-RF25) El administrador con rol de gestion de usuarios debe ser capaz de eliminar a cualquier usuario registrado
+RF25) El administrador con rol de gestión de usuarios debe ser capaz de eliminar los datos de un usuario
+
+RF26) El administrador con rol de gestion de usuarios debe ser capaz de obtener una lista de los usuarios registrados en el sistema
 
 ###############################
 
