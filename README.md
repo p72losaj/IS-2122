@@ -241,6 +241,8 @@ CU25: MostrarUsuarios (administrador con rol de gestion de usuarios)
 
 CU26: EliminarUsuario (administrador con rol de gestion de usuarios)
 
+CU27: MostrarAdministrador (usuario)
+
 #################################
 
 DIAGRAMA DE CLASES
