@@ -1,0 +1,7 @@
+# Comandos de ejecucion del CMakelists
+
+1- Posicionarse en el directorio con el CmakeLists.txt
+
+2- Ejecutar los comandos: mkdir build && cd build && cmake ..
+
+3- Ejecutar el comando: make

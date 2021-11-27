@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.cpp
+iostream
+-
+MainProgram.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.hpp
+string
+-
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.hpp
+
