@@ -1,6 +1,6 @@
 Expresan qué debe hacer el sistema, así como la reacción del sistema ante ciertas entradas.
 
-RF1) El usuario debe ser capaz de gestionar reservas (registrar una reserva,obtener una reserva,modificar una reserva,cancelar una reserva,obtener lista de reservas).
+RF1) El usuario debe ser capaz de gestionar sus reservas (registrar una reserva,obtener una de sus reservas,modificar sus reserva,cancelar sus reserva,obtener lista de sus reservas).
 
 RF2) Cualquier administrador debe ser capaz de gestionar los datos de cualquier reserva (crear una reserva,modificar una reserva,eliminar una reserva,obtener una reserva, obtener lista de reservas)
 
@@ -12,4 +12,4 @@ RF5) El usuario debe ser capaz de obtener sus datos personales, obtener los dato
 
 RF6) El administrador con rol de gestion de usuarios debe ser capaz de gestionar usuarios (registrar un usuario,obtener datos de un usuario,modificar datos de un usuario,eliminar un usuario, obtener lista de usuarios registrados)
 
-
+RF7) El cliente accedera al sistema mediante su dni y una contrasena

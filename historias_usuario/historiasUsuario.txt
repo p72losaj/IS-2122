@@ -28,8 +28,17 @@ HU9: RegistrarMaquina -> Como administrador con rol de gestión de maquinas, qui
 
 HU10: ModificarMaquina -> Como administrador con rol de gestion de maquinas, quiero ser capaz de modificar los datos de una maquina para modificar los datos registrados de una maquina.
 
-##################################################################################
-Conversaciones:
+HU11: EliminarMaquina -> Como administrador con rol de gestion de maquinas, quiero ser capaz de eliminar maquina para eliminar los datos registrados de una maquina.
 
-28/10/2021: El cliente expresa que quiere un administrador con rol de gestión de usuarios que posee todas las funcionalidades con respecto a las maquinas
-28/10/2021: Se considera crear un nuevo atributo a los administradores, que indique el rol del administrador.
+#############FUNCIONALIDADES CLIENTE##################
+
+HU12: RegistrarCliente -> Como administrador con rol de gestion de usuarios, quiero registrar los datos de un cliente en el sistema para permitir a dicho cliente utilizar el sistema.
+
+HU13: MostrarCliente -> Como cliente, quiero ser capaz de obtener los datos de un cliente para poder comprobar los datos registrados de dicho cliente.
+
+HU14: ModificarCliente -> Como cliente, quiero ser capaz de modificar los datos de un cliente para poder corregir datos registrados no correctos
+
+HU15: ListarClientes -> Como administrador con rol de gestion de usuarios, quiero disponer de una lista de clientes para obtener los clientes registrados en el sistema
+
+HU16: EliminarCliente -> Como administrador con rol de gestion de usuarios, quiero eliminar un cliente para poder bloquear el acceso al sistema de dicho cliente.
+
