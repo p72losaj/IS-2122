@@ -1,0 +1,21 @@
+##### DOCUMENTACION DE LAS HISTORIAS DE USUARIO #############
+
+## HISTORIAS DE USUARIO DE FUNCIONALIDADES DE RESERVA ###############
+
+HU1: ReservarMaquina -> Como cliente, quiero disponer de un formulario para poder reservar una máquina y sus núcleos en cualquier fecha.
+
+HU2: ModificarReserva -> Como cliente, quiero disponer de un formulario para poder modificar los datos de una reserva.
+
+HU3: ListarReservas -> Como cliente, quiero disponer de una lista de reservas para poder comprobar la información de las reservas 
+
+registradas.
+
+HU4: CancelarReserva -> Como cliente, quiero cancelar una reserva para indicar la finalización de la reserva de los núcleos de una
+
+máquina.
+
+HU5: MostrarReserva -> Como cliente, quiero obtener los datos de una reserva para comprobar la informacion de una reserva.
+
+HU6: MostrarMaquina -> Como cliente, quiero mostrar la información de una maquina para poder comprobar la información registrada de dicha maquina.
+
+
