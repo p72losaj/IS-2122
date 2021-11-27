@@ -177,6 +177,33 @@ cliente.cpp.s:
 	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/cliente.cpp.s
 .PHONY : cliente.cpp.s
 
+usuario.o: usuario.cpp.o
+
+.PHONY : usuario.o
+
+# target to build an object file
+usuario.cpp.o:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/usuario.cpp.o
+.PHONY : usuario.cpp.o
+
+usuario.i: usuario.cpp.i
+
+.PHONY : usuario.i
+
+# target to preprocess a source file
+usuario.cpp.i:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/usuario.cpp.i
+.PHONY : usuario.cpp.i
+
+usuario.s: usuario.cpp.s
+
+.PHONY : usuario.s
+
+# target to generate assembly for a file
+usuario.cpp.s:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/usuario.cpp.s
+.PHONY : usuario.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"
+	@echo "... usuario.o"
+	@echo "... usuario.i"
+	@echo "... usuario.s"
 .PHONY : help
 
 

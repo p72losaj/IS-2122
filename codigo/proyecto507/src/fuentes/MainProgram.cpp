@@ -2,11 +2,19 @@
 
 #include "MainProgram.hpp"
 
+#include <stdio.h>
+#include <stdlib.h>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 int main(){
     int opcion = -1; 
+    // Vector de usuarios
+    std::vector<Usuario> usuarios;
+    // Vector de administradores
+    //std::vector<Administrador> administradores;
     while(opcion != 0){
         menuPrincipal();
         cout << "Introduzca una opcion: ";
@@ -42,6 +50,9 @@ int main(){
                 cin >> nucleos;
                 if(nucleos < 0) cerr << "Numero de nucleos no puede ser negativo" << endl;
             }
+
+            // Registro de un usuario
+            
         }
         cout << "######################################" << endl;
     }

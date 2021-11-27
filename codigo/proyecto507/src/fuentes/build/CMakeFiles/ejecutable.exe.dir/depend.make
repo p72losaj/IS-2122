@@ -3,7 +3,13 @@
 
 CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.o: ../MainProgram.cpp
 CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.o: ../MainProgram.hpp
+CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.o: ../cliente.hpp
+CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.o: ../usuario.hpp
 
 CMakeFiles/ejecutable.exe.dir/cliente.cpp.o: ../cliente.cpp
 CMakeFiles/ejecutable.exe.dir/cliente.cpp.o: ../cliente.hpp
+
+CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../cliente.hpp
+CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../usuario.cpp
+CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../usuario.hpp
 
