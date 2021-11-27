@@ -1,0 +1,52 @@
+
+Clase: USUARIO
+
+Descripcion: Almacena la información principal de los usuarios, además de ser la clase padre de los distintos tipos de usuarios (usuario normal, administrador).
+
+Atributos:
+
+- Nombre (String): Nombre del usuario
+
+- Email (String): Email del usuario
+
+- Dni (String): Dni del usuario
+
+- TipoUsuario (String): Tipo del usuario
+
+- NucleosReservables (int): Numero de nucleos de maquina que puede reservar al mismo tiempo
+
+- TiempoReserva (int): Limite de tiempo en dias de las reservas del usuario
+
+Operaciones:
+
++ getNombre(): String. Obtiene el nombre del usuario
+
++ setNombre(): void. Modifica el nombre del usuario
+
+* Parametro nombre: String. Nuevo nombre del usuario
+
++ getEmail(): String. Obtiene el email del usuario
+
++ setEmail(): void. Modifica el email del usuario
+
+* Parametro email: string. Nuevo email del usuario
+
++ getDni(): String. Obtiene el dni del usuario
+
++ setDni(): void. Modifica el dni del usuario
+
+* Parametro dni: string. Nuevo dni del usuario
+
++ getTipoUsuario(): enum. Obtiene el tipo del usuario
+
++ setTipoUsuario(): void. Modifica el tipo del usuario
+
+* Parametro tipo: string. Nuevo tipo del usuario
+
++ getNucleosUsuario(): int. Obtiene el numero de nucleos de maquina que puede reservar al mismo tiempo del usuario
+
++ setNucleosUsuario(): void. Modifica el numero de nucleos de maquina reservables al mismo tiempo del usuario
+
+* Parametro nucleos: int. Nuevo numero de nucleos de maquina reservables del usuario
+
+
