@@ -16,6 +16,20 @@ máquina.
 
 HU5: MostrarReserva -> Como cliente, quiero obtener los datos de una reserva para comprobar la informacion de una reserva.
 
+#### HISTORIAS DE USUARIO DE FUNCIONALIDADES DE MAQUINA #######################
+
 HU6: MostrarMaquina -> Como cliente, quiero mostrar la información de una maquina para poder comprobar la información registrada de dicha maquina.
 
+HU7: ListaMaquinasDisponibles -> Como cliente, quiero ser capaz de obtener una lista de maquinas con recursos disponibles para comprobar las maquinas con recursos disponibles.
 
+HU8: ListaMaquinas -> Como cliente, quiero ser capaz de obtener una lista de maquinas para comprobar las maquinas registradas en el sistema.
+
+HU9: RegistrarMaquina -> Como administrador con rol de gestión de maquinas, quiero ser capaz de registrar los datos de una maquina para registrar una nueva maquina en el sistema.
+
+HU10: ModificarMaquina -> Como administrador con rol de gestion de maquinas, quiero ser capaz de modificar los datos de una maquina para modificar los datos registrados de una maquina.
+
+##################################################################################
+Conversaciones:
+
+28/10/2021: El cliente expresa que quiere un administrador con rol de gestión de usuarios que posee todas las funcionalidades con respecto a las maquinas
+28/10/2021: Se considera crear un nuevo atributo a los administradores, que indique el rol del administrador.
