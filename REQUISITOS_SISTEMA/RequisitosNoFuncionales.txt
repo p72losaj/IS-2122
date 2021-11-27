@@ -1,0 +1,15 @@
+Expresan cómo debe comportarse el programa.
+
+RN1) En caso de caída, debe solucionarse el problema en un tiempo máximo de 10/15 minutos.
+
+RN2) Un cliente no puede reservar si se supera su límite (numero de nucleos a reservar de una maquina al mismo tiempo no supera un maximo y el limite de tiempo de una reserva no supera un maximo ) o si la máquina no tiene recursos suficientes para el proyecto del usuario.
+
+RN3) El sistema debe registrar 2 tipos de clientes: usuario y administrador.
+
+RN4) El sistema debe comprobar que el usuario y la máquina son únicos ( no deben repetirse).
+
+RN5) El lenguaje de programación será c++
+
+RN6) El sistema debe registrar 2 tipos de administradores: administrador de usuarios y administrador de maquinas.
+
+RN7) El sistema debe recomendar al cliente, en caso de que una máquina no disponga de recursos disponibles, al menos una máquina con recursos disponibles.

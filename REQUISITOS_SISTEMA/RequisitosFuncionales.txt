@@ -1,0 +1,15 @@
+Expresan qué debe hacer el sistema, así como la reacción del sistema ante ciertas entradas.
+
+RF1) El usuario debe ser capaz de gestionar reservas (registrar una reserva,obtener una reserva,modificar una reserva,cancelar una reserva,obtener lista de reservas).
+
+RF2) Cualquier administrador debe ser capaz de gestionar los datos de cualquier reserva (crear una reserva,modificar una reserva,eliminar una reserva,obtener una reserva, obtener lista de reservas)
+
+RF3) El usuario debe ser capaz de gestionar máquinas (obtener una lista de máquinas con recursos disponibles, obtener una maquina, obtener lista maquinas registradas)
+
+RF4) El administrador con rol de gestion de maquinas debe ser capaz gestionar maquinas (registrar maquina,obtener una lista de máquinas con recursos disponibles, mostrar maquina,modificar recursos maquina, eliminar maquina, obtener lista maquinas registradas).
+
+RF5) El usuario debe ser capaz de obtener sus datos personales, obtener los datos de contacto de un administrador, modificar sus datos personales.
+
+RF6) El administrador con rol de gestion de usuarios debe ser capaz de gestionar usuarios (registrar un usuario,obtener datos de un usuario,modificar datos de un usuario,eliminar un usuario, obtener lista de usuarios registrados)
+
+

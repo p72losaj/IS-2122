@@ -1,0 +1,11 @@
+Detallan la información que necesita manejar el sistema y cómo se organiza.
+
+RI1) El sistema debe almacenar información sobre una reserva: dni del usuario que ha realizado la reserva, la máquina que se ha reservado, el número de recursos de la máquina reservados y la fecha de reserva.
+
+RI2) El sistema debe almacenar la siguiente información personal de un usuario: Nombre,email,DNI, tipo de usuario, numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+RI3) El sistema debe almacenar la siguiente información de una maquina: identificador de la maquina y su número de núcleos
+
+RI4) El sistema debe almacenar la siguiente informacion de un administrador: Nombre,email,DNI,tipo de usuario, rol de administrador, numero de núcleos que puede reservar al mismo tiempo, límite de tiempo de las reservas.
+
+RI5) El sistema debe almacenar la siguiente información de una reserva: Identificador de la reserva, identificador de la máquina, dni del usuario que ha realizado la reserva y la fecha límite de la reserva
