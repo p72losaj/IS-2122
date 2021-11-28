@@ -16,6 +16,12 @@ CONTEXTO:
 
 4. La fecha a reservar debe ser válida.
 
+5. El cliente tiene nucleos de reserva disponibles.
+
+6. La fecha de reserva no supera el limite de tiempo de reserva del cliente.
+
+7. La fecha de reserva es posterior a la fecha actual
+
 ACTOR PRINCIPAL: Cliente (Usuario o administrador)
 
 ESCENARIO PRINCIPAL:
