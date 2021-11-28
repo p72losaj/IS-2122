@@ -32,9 +32,27 @@ usuario.hpp
 administrador.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.cpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 cliente.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorUsuarios.cpp
+administradorUsuarios.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorUsuarios.hpp
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorUsuarios.hpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+string
+-
+stdio.h
+-
+stdlib.h
+-
 
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
 string

@@ -177,6 +177,33 @@ administrador.cpp.s:
 	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administrador.cpp.s
 .PHONY : administrador.cpp.s
 
+administradorUsuarios.o: administradorUsuarios.cpp.o
+
+.PHONY : administradorUsuarios.o
+
+# target to build an object file
+administradorUsuarios.cpp.o:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o
+.PHONY : administradorUsuarios.cpp.o
+
+administradorUsuarios.i: administradorUsuarios.cpp.i
+
+.PHONY : administradorUsuarios.i
+
+# target to preprocess a source file
+administradorUsuarios.cpp.i:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.i
+.PHONY : administradorUsuarios.cpp.i
+
+administradorUsuarios.s: administradorUsuarios.cpp.s
+
+.PHONY : administradorUsuarios.s
+
+# target to generate assembly for a file
+administradorUsuarios.cpp.s:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.s
+.PHONY : administradorUsuarios.cpp.s
+
 cliente.o: cliente.cpp.o
 
 .PHONY : cliente.o
@@ -246,6 +273,9 @@ help:
 	@echo "... administrador.o"
 	@echo "... administrador.i"
 	@echo "... administrador.s"
+	@echo "... administradorUsuarios.o"
+	@echo "... administradorUsuarios.i"
+	@echo "... administradorUsuarios.s"
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"

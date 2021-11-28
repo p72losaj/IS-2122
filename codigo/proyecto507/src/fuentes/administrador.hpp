@@ -6,7 +6,8 @@ Autor: Jaime Lorenzo Sanchez
 #ifndef ADMINISTRADOR_HPP
 #define ADMINISTRADOR_HPP
 #include "cliente.hpp"
-class ADMINISTRADOR: public Cliente{
+
+class ADMINISTRADOR: public CLIENTE{
     private:
     string rolAdministrador; // Rol del administrador
     public:
@@ -22,6 +23,16 @@ class ADMINISTRADOR: public Cliente{
     }
     inline string getRol(){ return this->rolAdministrador;}
     inline void setRol(string rol){ this->rolAdministrador = rol;}
+    // Funcion que muestra los datos de un administrador
+    void mostrarAdministrador(ADMINISTRADOR administrador);
+    // Funcion que muestra los administradores registrados en el sistema
+    void mostrarAdministradores(std::vector<ADMINISTRADOR> administradores);
+    // Funcion que modifica los datos de un administrador
+    void modificarAdministrador(ADMINISTRADOR administrador, std::vector<ADMINISTRADOR> &administradores);
+    // Funcion que registra los datos de un administrador
+    void registrarAdministrador(ADMINISTRADOR administrador, std::vector<ADMINISTRADOR> &administradores);
+    // Funcion que elimina los datos de un administrador
+    void eliminarAdministrador(string dni,std::vector<ADMINISTRADOR> &administradores);
 };
 
 #endif

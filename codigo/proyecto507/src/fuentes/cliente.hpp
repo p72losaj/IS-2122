@@ -13,7 +13,7 @@
 using namespace std;
 // Clase cliente
 
-class Cliente{
+class CLIENTE{
     private: 
         string nombre; // Nombre del cliente
         string email; // email del cliente
@@ -23,7 +23,7 @@ class Cliente{
         int nucleosReservables = 0; // Numero de núcleos de máquina reservables al mismo tiempo
         int tiempoReserva = 0; // tiempo maximo de reserva en dias
     public:
-        Cliente(){}
+        CLIENTE(){}
         inline string getNombre(){ return this->nombre;}
         inline void setNombre(string nombre){ this->nombre = nombre;}
         inline string getEmail(){ return this->email;}
@@ -38,7 +38,6 @@ class Cliente{
         inline void setNucleosCliente(int nucleos){ this->nucleosReservables = nucleos;}
         inline int getTiempoReserva(){ return this->tiempoReserva;}
         inline void setTiempoReserva(int limite){ this->tiempoReserva = limite;}
-        void mostrarCliente(string dni);
 };
 
 

@@ -11,6 +11,11 @@ CMakeFiles/ejecutable.exe.dir/administrador.cpp.o: ../administrador.cpp
 CMakeFiles/ejecutable.exe.dir/administrador.cpp.o: ../administrador.hpp
 CMakeFiles/ejecutable.exe.dir/administrador.cpp.o: ../cliente.hpp
 
+CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o: ../administrador.hpp
+CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o: ../administradorUsuarios.cpp
+CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o: ../administradorUsuarios.hpp
+CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o: ../cliente.hpp
+
 CMakeFiles/ejecutable.exe.dir/cliente.cpp.o: ../cliente.cpp
 CMakeFiles/ejecutable.exe.dir/cliente.cpp.o: ../cliente.hpp
 

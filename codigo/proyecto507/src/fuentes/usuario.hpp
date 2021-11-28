@@ -10,7 +10,7 @@ Autor: Jaime Lorenzo Sanchez
 #include "cliente.hpp"
 using namespace std;
 
-class USUARIO: public Cliente{
+class USUARIO: public CLIENTE{
     public:
     // Constructor de clase
     USUARIO(string nombre, string email,string contrasena, string dni,string tipo, int nucleos, int limite){
@@ -23,7 +23,14 @@ class USUARIO: public Cliente{
         this->setTiempoReserva(limite);
     }
     // Funcion que modifica los datos personales del usuario
-    void modificarUsuario(USUARIO &usuario);
+    void modificarUsuario(USUARIO &usuario, std::vector<USUARIO> &usuarios);
+    // Funcion que muestra los datos de un usuario
+    void mostrarUsuario(USUARIO usuario);
+    // Funcion que muestra los datos de los usuarios registrados
+    void mostrarUsuarios(std::vector<USUARIO> usuarios);
+    // Funcion que elimina los datos de un usuario
+    void eliminarUsuario(string dni, std::vector<USUARIO> &usuarios);
+
 };
 
 #endif
