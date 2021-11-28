@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 #include "usuario.hpp"
@@ -16,47 +17,13 @@ int main(){
     std::vector<USUARIO> usuarios;
     // Vector de administradores
     std::vector<ADMINISTRADOR> administradores;
-    // Acceso al sistema
-    while(opcion != 0){
-        menuPrincipal();
-        cout << "Introduzca una opcion: ";
-        cin >> opcion;
-        // Registro de un cliente
-        if(opcion == 1){
-            // Nombre del cliente
-            string nombre;
-            cout << "Introduzca su nombre: ";
-            cin >> nombre;
-            // email del cliente
-            string email;
-            cout << "Introduzca su email: ";
-            cin >> email;
-            // Contrasena del cliente
-            string contrasena;
-            cout << "Introduzca su contrasena: ";
-            cin >> contrasena;
-            // Tipo del cliente
-            string tipoCliente;
-            menuTipoUsuario();
-            cout << "Elige el tipo de usuario: "; 
-            int opcionCliente;
-            cin >> opcionCliente;
-            // Cliente es un usuario
-            if(opcionCliente == 1) tipoCliente = "usuario";
-            else if(opcionCliente == 2) tipoCliente = "administrador";
-            else cout << "Error: Tipo de usuario no valido" << endl;
-            if(tipoCliente.size() != 0){
-                // Numero de recursos del cliente
-                int nucleos;
-                cout << "Introduzca el numero de nucleos que puede reservar al mismo tiempo: ";
-                cin >> nucleos;
-                if(nucleos < 0) cerr << "Numero de nucleos no puede ser negativo" << endl;
-            }
-
-            // Registro de un usuario
-            
-        }
-        cout << "######################################" << endl;
+    // Lectura de los usuarios registrados en el sistema
+    leerAdministradores("../../ficheros/administradores.txt",administradores);
+    for(int i=0; i < administradores.size(); i++){
+        cout << administradores[i].getNombre()<<","<<
+            administradores[i].getEmail()<<","<<administradores[i].getContrasena()<<","<<
+            administradores[i].getTipoCliente()<<","<<administradores[i].getNucleosCliente()
+            <<","<<administradores[i].getTiempoReserva()<<","<<administradores[i].getRol()<<endl;
     }
 }
 
@@ -70,4 +37,44 @@ void menuPrincipal(){
     cout << "MENU DE FUNCIONALIDADES IMPLEMENTADAS" << endl;
     cout << "0. Salir del sistema" << endl;
     cout << "1. Registrar un cliente" << endl;
+}
+
+void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &administradores){
+    ADMINISTRADOR administrador; // Clase divisa
+    ifstream fichero;
+    fichero.open(nombreFichero.c_str(),ios::in);
+    string cadena;
+    int valor = 0;
+    if(fichero.is_open()){
+        while(!fichero.eof()){
+            // Nombre del administrador
+            fichero >> cadena;
+            administrador.setNombre(cadena);
+            // email del administrador
+            fichero >> cadena;
+            administrador.setEmail(cadena);
+            // Contrasena del administrador
+            fichero >> cadena;
+            administrador.setContrasena(cadena);
+            // Tipo de cliente
+            fichero >> cadena;
+            administrador.setTipoCliente(cadena);
+            // Numero de nucleos reservables al mismo tiempo
+            fichero >> valor;
+            administrador.setNucleosCliente(valor);
+            // Tiempo de reserva limite del cliente
+            fichero >> valor;
+            administrador.setTiempoReserva(valor);
+            // Rol del administrador
+            fichero >> cadena;
+            administrador.setRol(cadena);
+            if(administrador.getNombre() != "usuarios"){
+                // Anadimos los datos del administrador
+                administradores.push_back(administrador);
+            }
+        }
+    }
+    else{
+        cout << "Fichero" << nombreFichero << " no encontrado" << endl;   
+    }
 }

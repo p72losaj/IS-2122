@@ -11,6 +11,8 @@ class ADMINISTRADOR: public CLIENTE{
     private:
     string rolAdministrador; // Rol del administrador
     public:
+    // Constructor de clase vacio
+    ADMINISTRADOR(){}
     // Constructor de clase
     ADMINISTRADOR(string nombre,string email,string contrasena,string dni,string tipo, int nucleos,int limite){
         this->setNombre(nombre);

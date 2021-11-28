@@ -1,6 +1,8 @@
 # Comandos de ejecucion del CMakelists
 
-1- Posicionarse en el directorio con el CmakeLists.txt
+1- Posicionarse en el directorio con el CmakeLists.txt -> Esto es muy importante pues si no no se podra leer los ficheros de datos,
+
+pues la lectura se hace desde la ubicacion del ejecutable.
 
 2- Ejecutar los comandos: mkdir build && cd build && cmake ..
 

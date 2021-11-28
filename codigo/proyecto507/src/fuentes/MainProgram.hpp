@@ -26,5 +26,6 @@ void leerUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios);
 void escribirAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> administradores);
 
 // Funcion que obtiene los administradores registrados en un fichero de texto
-void leerAdministradores(string nombreFichero, std::vector<ADMINISTRADOR> administradores);
+void leerAdministradores(string nombreFichero, std::vector<ADMINISTRADOR> &administradores);
+
 #endif
