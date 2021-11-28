@@ -1,0 +1,59 @@
+####CASO DE USO DE RESERVA DE UNA MAQUINA ###########
+
+CASO DE USO: ReservarMaquina
+
+IDENTIFICADOR: CU1
+
+OBJETIVO: El cliente desea realizar la reserva de una maquina.
+
+CONTEXTO:
+
+1. El cliente debe estar registrado en el sistema.
+
+2. La maquina tiene que estar registrada en el sistema.
+
+3. El identificador de la maquina tiene que ser único.
+
+4. La fecha a reservar debe ser válida.
+
+ACTOR PRINCIPAL: Cliente (Usuario o administrador)
+
+ESCENARIO PRINCIPAL:
+
+1. El cliente accede al sistema mediante su dni y su contraseña.
+
+2. El sistema muestra un menu de funcionalidades (usuario,maquina,reserva)
+
+3. El cliente accede al menu de reserva.
+
+4. El sistema muestra el menu de funcionalidades de reservas.
+
+5. El cliente accede a la funcionalidad de reservar una maquina.
+
+6. El sistema pide el identificador de la maquina a reservar.
+
+7. El cliente introduce el identificador de la máquina.
+
+8. El sistema pide los recursos a reservar de la máquina.
+
+9. El cliente introduce los recursos a reservar de la máquina.
+
+10. El sistema pide la fecha límite de la reserva.
+
+11. El cliente introduce una fecha de reserva.
+
+12. El sistema registra los datos de la reserva.
+
+EXTENSIONES:
+
+2.a) El sistema notifica error si el cliente no esta registrado
+
+6.a) El sistema notifica error si el cliente no tiene recursos de máquina disponibles a reservar.
+
+10.a) El sistema notifica que la máquina indicada no dispone de los recursos a reservar. La máquina muestra una máquina con recursos disponibles. Se vuelve al paso 6.
+
+10.b) El sistema notifica que no hay máquinas con los recursos indicados por el usuario.
+
+12.a) El sistema notifica error si la fecha introducida no es valida.
+
+12.b) El sistema notifica error si el cliente ha superado su tiempo limite de reserva. Repite el paso 10.
