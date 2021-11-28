@@ -1,0 +1,18 @@
+##### Funcionalidad de mostrar reservas ######################	
+CASO DE USO: MostrarReservas
+IDENTIFICADOR: CU3
+OBJETIVO: El cliente quiere obtener la información de las reservas registradas en el sistema.
+CONTEXTO:
+1. El cliente debe estar registrado.
+2. Si el cliente es un usuario, debe ser autor de las reservas.
+ACTOR PRINCIPAL: CLIENTE (USUARIO/ADMINISTRADOR)
+ESCENARIO PRINCIPAL
+1. El cliente accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de los tipos de funcionalidades (usuario,maquina,reserva)
+3. El cliente accede al menu de reserva.
+4. El sistema muestra un menu de funcionalidades
+5. El cliente accede a la funcionalidad de mostrar reservas.
+6. El sistema muestra una lista de reservas.
+EXTENSIONES
+2.a) El sistema notifica error si el cliente no está registrado.
+6.a) Si el cliente es un usuario, el sistema muestra una lista de las reservas cuyo autor sea el usuario.
