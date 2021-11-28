@@ -12,4 +12,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Generamos el ejecutable
 
-add_executable(ejecutable.exe MainProgram.cpp cliente.cpp usuario.cpp )
+add_executable(ejecutable.exe MainProgram.cpp cliente.cpp usuario.cpp administrador.cpp)

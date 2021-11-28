@@ -150,6 +150,33 @@ MainProgram.cpp.s:
 	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.s
 .PHONY : MainProgram.cpp.s
 
+administrador.o: administrador.cpp.o
+
+.PHONY : administrador.o
+
+# target to build an object file
+administrador.cpp.o:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administrador.cpp.o
+.PHONY : administrador.cpp.o
+
+administrador.i: administrador.cpp.i
+
+.PHONY : administrador.i
+
+# target to preprocess a source file
+administrador.cpp.i:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administrador.cpp.i
+.PHONY : administrador.cpp.i
+
+administrador.s: administrador.cpp.s
+
+.PHONY : administrador.s
+
+# target to generate assembly for a file
+administrador.cpp.s:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/administrador.cpp.s
+.PHONY : administrador.cpp.s
+
 cliente.o: cliente.cpp.o
 
 .PHONY : cliente.o
@@ -216,6 +243,9 @@ help:
 	@echo "... MainProgram.o"
 	@echo "... MainProgram.i"
 	@echo "... MainProgram.s"
+	@echo "... administrador.o"
+	@echo "... administrador.i"
+	@echo "... administrador.s"
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"

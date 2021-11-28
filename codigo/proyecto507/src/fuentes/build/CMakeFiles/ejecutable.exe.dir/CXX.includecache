@@ -19,12 +19,22 @@ string
 -
 vector
 -
+usuario.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.hpp
 vector
 -
 usuario.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+cliente.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
 
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
 string

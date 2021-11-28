@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/MainProgram.cpp.o"
+  "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/administrador.cpp.o"
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/cliente.cpp.o"
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/usuario.cpp.o"
   )

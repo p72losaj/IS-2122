@@ -38,7 +38,7 @@ class Cliente{
         inline void setNucleosCliente(int nucleos){ this->nucleosReservables = nucleos;}
         inline int getTiempoReserva(){ return this->tiempoReserva;}
         inline void setTiempoReserva(int limite){ this->tiempoReserva = limite;}
-        inline void mostrarCliente(string dni);
+        void mostrarCliente(string dni);
 };
 
 

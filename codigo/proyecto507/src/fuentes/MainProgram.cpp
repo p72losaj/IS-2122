@@ -1,20 +1,22 @@
 #include <iostream>
 
 #include "MainProgram.hpp"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
 #include <vector>
 
 using namespace std;
+#include "usuario.hpp"
+#include "administrador.hpp"
 
 int main(){
     int opcion = -1; 
     // Vector de usuarios
-    std::vector<Usuario> usuarios;
+    std::vector<USUARIO> usuarios;
     // Vector de administradores
-    //std::vector<Administrador> administradores;
+    std::vector<ADMINISTRADOR> administradores;
+    // Acceso al sistema
     while(opcion != 0){
         menuPrincipal();
         cout << "Introduzca una opcion: ";
