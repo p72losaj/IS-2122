@@ -5,11 +5,12 @@
 #include <stdlib.h>
 #include <string>
 #include <vector>
-#include <fstream>
 
 using namespace std;
+
 #include "usuario.hpp"
 #include "administrador.hpp"
+#include "funcionalidades.hpp"
 
 int main(){
     int opcion = -1; 
@@ -17,64 +18,25 @@ int main(){
     std::vector<USUARIO> usuarios;
     // Vector de administradores
     std::vector<ADMINISTRADOR> administradores;
+    USUARIO usuario; // Usuario que ha accedido al sistema
+    ADMINISTRADOR administrador;
     // Lectura de los usuarios registrados en el sistema
-    leerAdministradores("../../ficheros/administradores.txt",administradores);
-    for(int i=0; i < administradores.size(); i++){
-        cout << administradores[i].getNombre()<<","<<
-            administradores[i].getEmail()<<","<<administradores[i].getContrasena()<<","<<
-            administradores[i].getTipoCliente()<<","<<administradores[i].getNucleosCliente()
-            <<","<<administradores[i].getTiempoReserva()<<","<<administradores[i].getRol()<<endl;
+    string ficheroAdministradores = "../../ficheros/administradores.txt";
+    string ficheroUsuarios = "../../ficheros/usuarios.txt";
+    leerAdministradores(ficheroAdministradores,administradores);
+    // Acceso al sistema
+    int acceso = accederSistema(usuarios,administradores,usuario,administrador);
+    if(acceso == 0){
+        cout << "Error al acceder al sistema"<<endl;
     }
-}
-
-void menuTipoUsuario(){
-    cout << "MENU DE TIPO DE USUARIO" << endl;
-    cout << "1. Usuario" << endl;
-    cout << "2. Administrador" << endl;
-}
-
-void menuPrincipal(){
-    cout << "MENU DE FUNCIONALIDADES IMPLEMENTADAS" << endl;
-    cout << "0. Salir del sistema" << endl;
-    cout << "1. Registrar un cliente" << endl;
-}
-
-void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &administradores){
-    ADMINISTRADOR administrador; // Clase divisa
-    ifstream fichero;
-    fichero.open(nombreFichero.c_str(),ios::in);
-    string cadena;
-    int valor = 0;
-    if(fichero.is_open()){
-        while(!fichero.eof()){
-            // Nombre del administrador
-            fichero >> cadena;
-            administrador.setNombre(cadena);
-            // email del administrador
-            fichero >> cadena;
-            administrador.setEmail(cadena);
-            // Contrasena del administrador
-            fichero >> cadena;
-            administrador.setContrasena(cadena);
-            // Tipo de cliente
-            fichero >> cadena;
-            administrador.setTipoCliente(cadena);
-            // Numero de nucleos reservables al mismo tiempo
-            fichero >> valor;
-            administrador.setNucleosCliente(valor);
-            // Tiempo de reserva limite del cliente
-            fichero >> valor;
-            administrador.setTiempoReserva(valor);
-            // Rol del administrador
-            fichero >> cadena;
-            administrador.setRol(cadena);
-            if(administrador.getNombre() != "usuarios"){
-                // Anadimos los datos del administrador
-                administradores.push_back(administrador);
-            }
-        }
+    // Funcionalidades de usuario
+    else if(acceso == 1){
+        
     }
+    // Funcionalidades de administrador
     else{
-        cout << "Fichero" << nombreFichero << " no encontrado" << endl;   
+        FuncionalidadesAdministrador(administrador,administradores,usuarios,ficheroAdministradores,ficheroUsuarios);
     }
+
 }
+

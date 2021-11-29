@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorMaquina.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/administradorMaquina.cpp.o"
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorUsuarios.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o"
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/cliente.cpp.o"
+  "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/funcionalidades.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o"
   "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.cpp" "/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir/usuario.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

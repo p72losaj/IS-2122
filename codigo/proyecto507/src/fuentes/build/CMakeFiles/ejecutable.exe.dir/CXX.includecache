@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.cpp
-iostream
--
-MainProgram.hpp
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.cpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+administradorMaquina.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorMaquina.hpp
+usuario.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
 stdio.h
 -
 stdlib.h
@@ -19,24 +21,22 @@ string
 -
 vector
 -
+iostream
+-
 fstream
 -
-usuario.hpp
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
-administrador.hpp
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
-
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/MainProgram.hpp
-vector
--
-usuario.hpp
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
-administrador.hpp
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 cliente.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
+usuario.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+vector
+-
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administradorMaquina.hpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
 string

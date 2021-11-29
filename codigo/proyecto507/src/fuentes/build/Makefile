@@ -258,6 +258,33 @@ cliente.cpp.s:
 	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/cliente.cpp.s
 .PHONY : cliente.cpp.s
 
+funcionalidades.o: funcionalidades.cpp.o
+
+.PHONY : funcionalidades.o
+
+# target to build an object file
+funcionalidades.cpp.o:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o
+.PHONY : funcionalidades.cpp.o
+
+funcionalidades.i: funcionalidades.cpp.i
+
+.PHONY : funcionalidades.i
+
+# target to preprocess a source file
+funcionalidades.cpp.i:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.i
+.PHONY : funcionalidades.cpp.i
+
+funcionalidades.s: funcionalidades.cpp.s
+
+.PHONY : funcionalidades.s
+
+# target to generate assembly for a file
+funcionalidades.cpp.s:
+	$(MAKE) -f CMakeFiles/ejecutable.exe.dir/build.make CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.s
+.PHONY : funcionalidades.cpp.s
+
 usuario.o: usuario.cpp.o
 
 .PHONY : usuario.o
@@ -309,6 +336,9 @@ help:
 	@echo "... cliente.o"
 	@echo "... cliente.i"
 	@echo "... cliente.s"
+	@echo "... funcionalidades.o"
+	@echo "... funcionalidades.i"
+	@echo "... funcionalidades.s"
 	@echo "... usuario.o"
 	@echo "... usuario.i"
 	@echo "... usuario.s"

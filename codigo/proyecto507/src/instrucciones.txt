@@ -7,3 +7,11 @@ pues la lectura se hace desde la ubicacion del ejecutable.
 2- Ejecutar los comandos: mkdir build && cd build && cmake ..
 
 3- Ejecutar el comando: make
+
+# Acceso al sistema
+
+Se ha implementado un acceso de administrador usando los siguientes datos:
+
+DNI: 31872814N
+
+CONTRASENA: is

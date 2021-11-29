@@ -12,6 +12,8 @@ using namespace std;
 
 class USUARIO: public CLIENTE{
     public:
+    // CONSTRUCTOR DE CLASE VACIO
+    USUARIO(){};
     // Constructor de clase
     USUARIO(string nombre, string email,string contrasena, string dni,string tipo, int nucleos, int limite){
         this->setNombre(nombre);
@@ -30,7 +32,8 @@ class USUARIO: public CLIENTE{
     void mostrarUsuarios(std::vector<USUARIO> usuarios);
     // Funcion que elimina los datos de un usuario
     void eliminarUsuario(string dni, std::vector<USUARIO> &usuarios);
-
+    // Funcion que registra los datos de un usuario
+    bool registrarUsuario(USUARIO usuario,std::vector<USUARIO> &usuarios);
 };
 
 #endif

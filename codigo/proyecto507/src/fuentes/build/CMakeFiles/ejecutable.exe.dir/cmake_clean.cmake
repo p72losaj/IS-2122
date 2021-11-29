@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ejecutable.exe.dir/administradorMaquina.cpp.o"
   "CMakeFiles/ejecutable.exe.dir/administradorUsuarios.cpp.o"
   "CMakeFiles/ejecutable.exe.dir/cliente.cpp.o"
+  "CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o"
   "CMakeFiles/ejecutable.exe.dir/usuario.cpp.o"
   "ejecutable.exe"
   "ejecutable.exe.pdb"

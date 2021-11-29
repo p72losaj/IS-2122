@@ -15,7 +15,7 @@ using namespace std;
 
 class CLIENTE{
     private: 
-        string nombre; // Nombre del cliente
+        string nombre; ; // Nombre del cliente
         string email; // email del cliente
         string dni; // dni del cliente
         string contrasena; // contrasena del usuario
@@ -23,7 +23,6 @@ class CLIENTE{
         int nucleosReservables = 0; // Numero de núcleos de máquina reservables al mismo tiempo
         int tiempoReserva = 0; // tiempo maximo de reserva en dias
     public:
-        CLIENTE(){}
         inline string getNombre(){ return this->nombre;}
         inline void setNombre(string nombre){ this->nombre = nombre;}
         inline string getEmail(){ return this->email;}
