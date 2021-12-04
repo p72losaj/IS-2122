@@ -1,0 +1,39 @@
+CASO DE USO: ModificarCliente
+
+IDENTIFICADOR: CU13
+
+OBJETIVO: El cliente quiere modificar los datos de un cliente
+
+CONTEXTO:
+
+1. El cliente que inicia sesión en el sistema debe estar registrado
+2. Si el cliente que inicia sesión en el sistema es un administrador, debe tener rol de gestión de usuarios.
+3. Si el cliente que inicia sesión en el sistema es un administrador, debe poder modificar cualquier dato del cliente a modificar
+4. Si el cliente que inicia sesión en el sistema es un usuario, sólo puede modificar sus datos personales (nombre,correo,dni,contraseña)
+5. El cliente a modificar sus datos debe estar registrado en el sistema.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador con rol de gestión de usuarios)
+
+ESCENARIO PRINCIPAL
+
+1. El cliente accede al sistema mediante su dni y contraseña
+2. El sistema muestra un menu de tipos de funcionalidades del sistema (usuarios, máquinas, reservas)
+3. El cliente accede al menú de funcionalidades de usuarios.
+4. El sistema muestra un menú de funcionalidades de usuarios.
+5. El cliente accede a la funcionalidad de modificar los datos de un cliente.
+6. El sistema pide el dni del cliente a modificar.
+7. El cliente introduce el dni del cliente a modificar.
+8. El sistema pide los nuevos datos del cliente a modificar.
+9. El cliente introduce los nuevos datos del cliente a modificar
+10. El sistema modifica los datos del cliente a modificar.
+
+EXTENSIONES
+
+2a) El sistema notifica error si el cliente no está registrado en el sistema.
+4a) Si el cliente es un administrador, el sistema notifica error si no tiene rol de gestión de usuarios.
+8.a) El sistema notifica error si el dni del cliente a modificar no está registrado en el sistema
+8.b) Si el cliente es un usuario, el sistema notifica error si el dni introducido no coincide con el dni del usuario.
+8.c) Si el cliente es un usuario, el sistema pedirá los siguientes nuevos datos del usuario: nombre,correo,dni,contraseña
+8.d) Si el cliente es un administrador, el sistema pedirá los siguientes nuevos datos del usuario: nombre,correo,dni,contraseña,número de recursos de máquinas reservables al mismo tiempo, límite de tiempo para la reserva de una máquina.
+10.a) El sistema notifica error si el nuevo dni del cliente a modificar ya está registrado en el sistema.
+10.b) Si se ha modificado el dni del cliente a modificar, el sistema modifica el dni autor de las reservas realizadas por el cliente a modificar (CU4: ModificarReserva).

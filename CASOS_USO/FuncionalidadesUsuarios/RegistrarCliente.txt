@@ -1,0 +1,30 @@
+CASO DE USO: RegistrarCliente
+
+IDENTIFICADOR: CU14
+
+OBJETIVO: El administrador con rol de gestión de usuarios quiere registrar en el sistema los datos de un nuevo cliente.
+
+CONTEXTO:
+
+1. El administrador que inicia sesión en el sistema debe estar registrado en el sistema.
+2. El administrador que inicia sesión en el sistema debe tener rol de gestión de usuarios.
+3. El nuevo cliente a registrar no debe estar registrado en el sistema.
+
+ACTOR PRINCIPAL: Administrador con rol de gestión de usuarios.
+
+ESCENARIO PRINCIPAL
+
+1. El administrador accede al sistema mediante su dni y contraseña
+2. El sistema muestra un menu de los tipos de funcionalidades del sistema (usuarios,maquinas,reservas)
+3. El administrador accede al menú de funcionalidades de usuarios.
+4. El sistema muestra un menú de funcionalidades de usuarios.
+5. El administrador accede al menú de registrar un usuario.
+6. El sistema pide los datos del cliente a registrar.
+7. El administrador introduce los datos del cliente a registrar
+8. El sistema registra en el sistema los datos del cliente a registrar.
+
+EXTENSIONES
+
+2a) El sistema notifica error si el administrador no está registrado en el sistema.
+4a) El sistema notifica error si el administrador no tiene rol de gestión de usuarios.
+8a) El sistema notifica error si el dni del cliente a registrar ya estaba registrado en el sistema.
