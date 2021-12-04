@@ -100,7 +100,10 @@ bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero){
     // Abrimos el fichero
     fichero.open(nombrefichero.c_str(), ios::app);
     if(fichero.is_open()){
-        fichero << endl;
+        if(administradores.size() != 0){
+            // Escribimos en la siguiente linea 
+            fichero << endl;
+        }
         fichero << administrador.getDni() << " ";
         fichero << administrador.getNombre() << " ";
         fichero << administrador.getEmail()<< " ";

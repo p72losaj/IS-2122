@@ -30,11 +30,11 @@ class ADMINISTRADOR: public CLIENTE{
 // Funcion que muestra los datos de un administrador
 void mostrarAdministrador(ADMINISTRADOR administrador);
 // Funcion que muestra los administradores registrados en el sistema
-void mostrarAdministradores(std::vector<ADMINISTRADOR> administradores);
+void mostrarAdministradores();
 // Funcion que modifica los datos de un administrador
-void modificarAdministrador(ADMINISTRADOR administrador, std::vector<ADMINISTRADOR> &administradores);
+void modificarAdministrador(ADMINISTRADOR administrador);
 // Funcion que elimina los datos de un administrador
-void eliminarAdministrador(string dni,std::vector<ADMINISTRADOR> &administradores);
+void eliminarAdministrador(string dni);
 // Funcion que registra los datos de un administrador
 bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero);
 // Declaracion de las funcionalidades de administrador
