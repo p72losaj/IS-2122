@@ -1,0 +1,33 @@
+
+CASO DE USO: CancelarReserva
+
+IDENTIFICADOR: CU5
+
+OBJETIVO: El cliente desea cancelar una reserva
+
+CONTEXTO:
+
+1. El cliente debe estar registrado
+2. La reserva a cancelar debe estar registrada
+3. Si el cliente es un espectador,debe ser autor de la reserva.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador)
+
+ESCENARIO PRINCIPAL
+
+1. El cliente accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de tipo de funcionalidades (usuario,maquina,reserva).
+3. El cliente accede al menu de funcionalidades de reserva.
+4. El sistema muestra un menu de funcionalidades para las reservas
+5. El cliente accede a la funcionalidad de cancelar una reserva.
+6. El sistema pide el identificador de la maquina a cancelar su reserva.
+7. El cliente introduce el identificador de la maquina registrada en la reserva
+8. El sistema cancela la reserva.
+
+EXTENSIONES:
+
+2.a) El sistema notifica error si el cliente no esta registrado
+7.a) El sistema notifica error si la maquina no esta registrada
+7.b) Si el cliente es un usuario, el sistema notifica error si no es el autor de la reserva.
+7.c) El sistema libera los recursos reservados de la maquina (CUX: ModificarMáquina)
+

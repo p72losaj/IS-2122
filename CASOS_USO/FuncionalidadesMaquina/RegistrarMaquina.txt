@@ -1,0 +1,33 @@
+CASO DE USO: RegistrarMaquina
+
+IDENTIFICADOR: CU6
+
+OBJETIVO: El administrador desea registrar los datos de una máquina.
+
+CONTEXTO
+
+1. El administrador debe estar registrado.
+2. El administrador tiene que tener rol de gestion de maquinas.
+3. La maquina no debe estar registrada.
+4. El identificador de la maquina debe ser unico
+
+ACTOR PRINCIPAL: Administrador con rol de gestión de máquinas.
+
+ESCENARIO PRINCIPAL:
+
+1. El administrador accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de tipos de funcionalidades (usuario,maquina,reserva)
+3. El administrador accede a las funcionalidades de maquina
+4. El sistema muestra un menu de funcionalidades.
+5. El administrador accede a la funcionalidad de registrar máquina.
+6. El sistema pide los datos de la máquina.
+7. El administrador introduce los datos de la máquina.
+8. El sistema registra los datos de la máquina.
+
+EXTENSIONES:
+
+2.a) El sistema notifica error si el administrador no esta registrado.
+4.a) El sistema notifica error si el administrador no tiene rol de gestión de máquinas.
+8.a) El sistema notifica error si el identificador de la máquina ya está registrado.
+
+
