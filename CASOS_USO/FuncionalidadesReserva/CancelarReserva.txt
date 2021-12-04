@@ -29,5 +29,5 @@ EXTENSIONES:
 2.a) El sistema notifica error si el cliente no esta registrado
 7.a) El sistema notifica error si la maquina no esta registrada
 7.b) Si el cliente es un usuario, el sistema notifica error si no es el autor de la reserva.
-7.c) El sistema libera los recursos reservados de la maquina (CUX: ModificarMáquina)
+7.c) El sistema libera los recursos reservados de la maquina (CU10: ModificarMáquina)
 

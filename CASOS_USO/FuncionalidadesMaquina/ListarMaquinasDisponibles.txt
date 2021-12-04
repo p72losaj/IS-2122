@@ -1,0 +1,28 @@
+CASO DE USO: ListarMaquinasDisponibles
+
+IDENTIFICADOR: CU9
+
+OBJETIVO: El cliente quiere obtener una lista de las máquinas con recursos disponibles.
+
+CONTEXTO:
+
+1. El cliente tiene que estar registrado.
+
+2. Si el cliente es un administrador, debe tener rol de gestión de máquinas.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador con rol de gestión de máquinas)
+
+ESCENARIO PRINCIPAL
+
+1. El cliente accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de los tipos de funcionalidades (usuarios,maquinas,reservas).
+3. El cliente accede al menu de funcionalidades de maquinas.
+4. El sistema muestra un menu de funcionalidades de máquinas.
+5. El cliente accede a la funcionalidad de mostrar máquinas con recursos disponibles.
+6. El sistema muestra una lista de las máquinas con recursos disponibles.
+
+EXTENSIONES
+
+2.a) El sistema notifica error si el cliente no está registrado.
+4.a) Si el cliente es un administrador, el sistema notifica error si no tiene rol de gestión de máquinas.
+6.a) El sistema notifica error si no hay ninguna máquina con recursos disponibles.

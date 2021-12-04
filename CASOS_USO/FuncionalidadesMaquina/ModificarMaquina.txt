@@ -1,0 +1,34 @@
+CASO DE USO: ModificarMaquina
+
+IDENTIFICADOR: CU10
+
+OBJETIVO: El administrador con rol de gestión de máquinas quiere modificar los datos de una máquina.
+
+CONTEXTO:
+
+1. El administrador debe estar registrado.
+2. El administrador debe tener rol de gestión de máquinas.
+3. La máquina tiene que estar registrada.
+4. El nuevo número de recursos de la máquina debe ser positivo (0 o mayor)
+
+ACTOR PRINCIPAL: Administrador con rol de gestión de máquinas.
+
+ESCENARIO PRINCIPAL:
+
+1. El administrador accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de los tipos de funcionalidades (usuarios,maquinas,reservas).
+3. El administrador accede al menu de funcionalidades de máquinas.
+4. El sistema muestra un menu de funcionalidades de máquinas.
+5. El administrador accede a la funcionalidad de modificar una máquina.
+6. El sistema pide el identificador de la máquina a modificar.
+7. El administrador introduce el identificador de la máquina a modificar.
+8. El sistema pide el nuevo número de recursos de la máquina.
+9. El administrador introduce el nuevo número de recursos de la máquina.
+10. El sistema modifica el número de recursos de la máquina.
+
+EXTENSIONES
+
+2.a) El sistema notifica error si el administrador no esta registrado.
+4.a) El sistema notifica error si el administrador no tiene rol de gestión de máquinas.
+8.a) El sistema notifica error si la máquina no está registrada.
+10.a) El sistema notifica error si el nuevo número de recursos de la máquina es inferior a 0

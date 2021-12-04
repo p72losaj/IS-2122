@@ -1,0 +1,34 @@
+
+CASO DE USO: MostrarMaquinas
+
+IDENTIFICADOR: CU8
+
+OBJETIVO: El cliente quiere obtener una lista de las máquinas registradas en el sistema.
+
+CONTEXTO:
+
+1. El cliente debe estar registrado en el sistema
+
+2. Si el cliente es un administrador, debe tener rol de gestión de máquinas.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador con rol de gestión de máquinas).
+
+ESCENARIO PRINCIPAL
+
+1. El cliente accede al sistema mediante su dni y contrasena.
+
+2. El sistema muestra un menu de los tipos de funcionalidades del sistema (usuario,máquinas,reservas).
+
+3. El cliente accede al menu de máquinas.
+
+4. El sistema muestra las funcionalidades de máquinas.
+
+5. El cliente accede a la funcionalidad de mostrar máquinas.
+
+6. El sistema muestra la información de las máquinas registradas en el sistema.
+
+EXTENSIONES
+
+2.a) El sistema notifica error si el cliente no está registrado.
+
+4.a) Si el cliente es un administrador, el sistema notifica error si el administrador no tiene rol de gestión de máquinas.
