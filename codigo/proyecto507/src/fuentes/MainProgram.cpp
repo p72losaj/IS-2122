@@ -21,6 +21,8 @@ int main(){
     USUARIO usuario; // Usuario que ha accedido al sistema
     ADMINISTRADOR administrador;
     // Lectura de los usuarios registrados en el sistema
+    // string ficheroAdministradores = "../ficheros/administradores.txt";
+    // string ficheroUsuarios = "../ficheros/usuarios.txt";
     string ficheroAdministradores = "../../ficheros/administradores.txt";
     string ficheroUsuarios = "../../ficheros/usuarios.txt";
     leerAdministradores(ficheroAdministradores,administradores);

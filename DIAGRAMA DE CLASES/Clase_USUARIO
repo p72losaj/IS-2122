@@ -1,0 +1,46 @@
+CLASE USUARIO
+
+Clase que gestiona los datos únicos de un usuario y da acceso a sus reservas, además de permitir comprobar sus reservas activas. Hereda la clase cliente
+
+OPERACIONES:
+
++ USUARIO(): USUARIO -> Contructor de clase vacio
+
++ USUARIO(): USUARIO -> Constructor de clase
+
+* Parametro nombre: String -> Nombre del usuario
+
+* Parametro email: String -> Email del usuario
+
+* Parametro contrasena: String -> Contrasena del usuario
+
+* Parametro dni: String -> dni del usuario
+
+* Parametro tipo: String -> Tipo del usuario
+
+* Parametro nucleos: int -> Nucleos reservables del usuario
+
+* Parametro limite: int -> Limite de tiempo de reservas del usuario
+
++ modificarUsuario(): void. Modifica los datos personales del usuario
+
+* Parametro usuario: USUARIO -> Nuevos datos del usuario.
+
++ mostrarUsuario(): void -> Muestra los datos de un usuario
+
+* Parametro usuario: USUARIO -> Datos del usuario a mostrar
+
++ mostrarUsuarios(): void -> Muestra los datos de los usuarios registrados
+
++ registrarUsuario(): bool -> Registra los datos de un usuario en el sistema
+
+* Parametro usuario: USUARIO -> Datos del usuario a registrar
+
+* Parametro nombreFichero: string -> Fichero con los datos de los usuarios registrados en el sistema.
+
++ eliminarUsuario(): bool -> Elimina los datos de un usuario
+
+* Parametro dni: string -> dni del usuario a eliminar
+
+* Parametro nombreFichero: string -> Fichero de texto con los datos de los usuarios registrados en el sistema
+

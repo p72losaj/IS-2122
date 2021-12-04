@@ -1,0 +1,21 @@
+Clase ADMINISTRADOR_MAQUINA
+
+Clase que gestiona las funcionalidades sobre una maquina. Hereda de la clase administrador
+
+OPERACIONES:
+
++ ADMINISTRADOR_MAQUINA(): Constructor de clase
+
+* Parametro nombre: String -> Nombre del usuario
+
+* Parametro email: String -> Email del usuario
+
+* Parametro contrasena: String -> Contrasena del usuario
+
+* Parametro dni: String -> dni del usuario
+
+* Parametro tipo: String -> Tipo del usuario
+
+* Parametro nucleos: int -> Nucleos reservables del usuario
+
+* Parametro limite: int -> Limite de tiempo de reservas del usuario

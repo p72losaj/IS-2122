@@ -1,0 +1,55 @@
+Clase que almacena la información de una maquina
+
+ATRIBUTOS:
+
+- idMaquina: int. Identificador de la maquina
+
+- nNucleos: int. Numero de nucleos de la maquina
+
+OPERACIONES:
+
++ MAQUINA(): Constructor de clase vacío
+
++ MAQUINA(): Constructor de clase con parámetros
+
+* Atributo id: int -> Identificador de la máquina
+
+* Atributo nucleos: int -> Numero de nucleos de la máquina.
+
++ getIdMaquina(): int ->  Obtiene el identificador de la maquina
+
++ setIdMaquina(): void -> Modifica el identificador de la maquina
+
+* Parametro id: int -> Nuevo identificador de la maquina.
+
++ getNucleos(): int -> Obtiene el numero de nucleos de la maquina
+
++ setNucleos(): void -> Modifica el numero de nucleos de la maquina
+
+* Parametro nucleos: int -> Nuevo numero de nucleos de la maquina
+
++ mostrarMaquina(): void -> Muestra la informacion de una maquina
+
+* Parametro idMaquina: int -> Identificador de la maquina
+
++ mostrarMaquinas(): void -> Muestra una lista de maquinas
+
++ mostrarMaquinasDisponibles(): void -> Muestra una lista de las maquinas con recursos disponibles
+
++ registrarMaquina(): void. Registra los datos de una maquina
+
+* Parametro maquina: MAQUINA -> Datos de la maquina a registrar.
+
+* Parametro nombreFichero: string -> Fichero con los datos de las maquinas registradas en el sistema.
+
++ modificarMaquina(): void. Modifica los datos de una maquina
+
+* Parametro maquina: MAQUINA -> Datos modificados de la maquina
+
+* Parametro nombreFichero: string -> Fichero con los datos de las maquinas registradas en el sistema.
+
++ eliminarMaquina(): Boolean -> Elimina los datos de una maquina
+
+* Parametro idMaquina: int -> Identificador de la maquina a eliminar
+
+* Parametro nombreFichero: string -> Fichero con los datos de las maquinas registradas en el sistema.

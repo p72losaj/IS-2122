@@ -27,7 +27,7 @@ class USUARIO: public CLIENTE{
 };
 
 // Funcion que modifica los datos personales del usuario
-void modificarUsuario();
+void modificarUsuario(USUARIO &usuario);
 // Funcion que muestra los datos de un usuario
 void mostrarUsuario(USUARIO usuario);
 // Funcion que muestra los datos de los usuarios registrados
@@ -36,5 +36,7 @@ void mostrarUsuarios();
 bool registrarUsuario(USUARIO usuario,string nombreFichero);
 // Funcion que lee los datos de los usuarios registrados en el sistema
 bool leerUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios);
+// Funcion que elimina los datos de un usuario
+bool eliminarUsuario(string dni, string nombreFichero);
 
 #endif
