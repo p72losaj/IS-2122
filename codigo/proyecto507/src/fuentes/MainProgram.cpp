@@ -35,7 +35,7 @@ int main(){
     }
     // Funcionalidades de administrador
     else{
-        FuncionalidadesAdministrador(administrador,administradores,usuarios,ficheroAdministradores,ficheroUsuarios);
+        FuncionalidadesAdministrador(administrador,ficheroAdministradores,ficheroUsuarios);
     }
 
 }

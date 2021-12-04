@@ -4,25 +4,25 @@ Autor: Jaime Lorenzo Sanchez
 */
 
 #include "administrador.hpp"
-#include "administradorMaquina.hpp"
 #include "usuario.hpp"
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+
 #include <string>
 #include <vector>
-#include <iostream>
+
 #include <fstream>
 
 using namespace std;
 
-void FuncionalidadesAdministrador(ADMINISTRADOR &administrador, std::vector<ADMINISTRADOR> &administradores,std::vector<USUARIO> &usuarios,string ficheroAdministradores,string ficheroUsuarios){
+void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdministradores,string ficheroUsuarios){
     // Mostramos el menu de funcionalidades implementadas
     int opcion = -1;
     while(opcion != 0){
         menuFuncionalidadesAdministrador();
         cout << "Introduce una opcion: ";
         cin >> opcion;
-
         // Registro de cliente
         if(opcion == 1 && administrador.getRol() == "gestorUsuarios"){
             // Nombre del cliente
@@ -55,31 +55,30 @@ void FuncionalidadesAdministrador(ADMINISTRADOR &administrador, std::vector<ADMI
             cout << "Introduce un tipo de cliente (1 o 2): ";       
             cin >> tipoCliente;
             if(tipoCliente == 1){
+                // Creamos un usuario
                 USUARIO usuario(nombre,email,contrasena,dni,"usuario",nucleos,limite);
+                // Registramos los datos del usuario
+                if(registrarUsuario(usuario,ficheroUsuarios)){
+                    cout << "Usuario registrado"<<endl;
+                }
+                // Caso de error: Usuario no registrado
+                else{cout << "Usuario no registrado"<<endl; }
+                
             }
             else if(tipoCliente == 2){
-                // Buscamos el administrador
-                    bool encontrado = false;;
-                    for(int i=0; i < administradores.size(); i++){
-                        if(administradores[i].getDni() == dni){encontrado = true;}
-                    }
-                    if(encontrado == true){
-                        cout << "dni ya registrado"<<endl;
-                    }
-                    else{
-                        ADMINISTRADOR admin(nombre,email,contrasena,dni,"administrador",nucleos,limite);
-                        int rolAdmin;
-                        cout << "Introduce el rol de administrador \n1-Maquinas\t2-Usuarios: ";
-                        cin >> rolAdmin;
-                        // Rol de maquinas
-                        if(rolAdmin==1){admin.setRol("gestorMaquinas");}
-                        // Rol de usuario
-                        else if(rolAdmin == 2){admin.setRol("gestorUsuarios");}
-                        administradores.push_back(admin);
-                        if(registrarAdministrador(admin,ficheroAdministradores)){
-                            cout << "Administrador registrado"<<endl;
-                        }
-                    }                
+                // Creamos el nuevo administrador
+                ADMINISTRADOR admin(nombre,email,contrasena,dni,"administrador",nucleos,limite);
+                // Obtenemos el rol del nuevo administrador
+                int rolAdmin;
+                cout << "Introduce el rol de administrador \n1-Maquinas\t2-Usuarios: ";
+                cin >> rolAdmin;
+                // Rol de maquinas
+                if(rolAdmin==1){admin.setRol("gestorMaquinas");}
+                // Rol de usuario
+                else if(rolAdmin == 2){admin.setRol("gestorUsuarios");}
+                if(registrarAdministrador(admin,ficheroAdministradores)){
+                    cout << "Administrador registrado"<<endl;
+                }                 
             }
             else{cout << "Tipo de cliente no valido"<<endl;}
         }       
@@ -89,6 +88,14 @@ void FuncionalidadesAdministrador(ADMINISTRADOR &administrador, std::vector<ADMI
 
 bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero){
     bool registro = true;
+    // Leemos los datos de los administradores registrados en el fichero de administradores
+    std::vector<ADMINISTRADOR> administradores;
+    leerAdministradores(nombrefichero,administradores);
+    // Comprobamos si el administrador esta ya registrado
+    for(int i=0; i < administradores.size(); i++){
+        // Error: Administrador ya registrado
+        if(administradores[i].getDni() == administrador.getDni()){registro = false;}
+    }
     ofstream fichero;
     // Abrimos el fichero
     fichero.open(nombrefichero.c_str(), ios::app);
@@ -103,10 +110,7 @@ bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero){
         fichero << administrador.getTiempoReserva()<< " ";
         fichero << administrador.getRol();               
     }
-    else{
-        cout << "Fichero no modificado"<<endl;
-        registro = false;
-    }
+    else{registro = false;}
     fichero.close();
     return registro;
 }
@@ -118,12 +122,6 @@ void menuFuncionalidadesAdministrador(){
     cout << "1. Registrar un cliente" << endl;
 }
 
-void menuClientes(){
-    cout << "######################"<<endl;
-    cout << "TIPOS DE CLIENTES"<<endl;
-    cout << "1. USUARIO"<<endl;
-    cout << "2. ADMINISTRADOR" << endl;
-}
 
 void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &administradores){
     ifstream fichero;

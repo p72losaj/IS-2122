@@ -38,7 +38,7 @@ void eliminarAdministrador(string dni,std::vector<ADMINISTRADOR> &administradore
 // Funcion que registra los datos de un administrador
 bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero);
 // Declaracion de las funcionalidades de administrador
-void FuncionalidadesAdministrador(ADMINISTRADOR &administrador, std::vector<ADMINISTRADOR> &administradores,std::vector<USUARIO> &usuarios,string ficheroAdministradores,string ficheroUsuarios);
+void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdministradores,string ficheroUsuarios);
 // Menu de funcionalidades de administrador
 void menuFuncionalidadesAdministrador();
 // TIPOS DE CLIENTES A REGISTRAR

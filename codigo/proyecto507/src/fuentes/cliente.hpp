@@ -39,5 +39,7 @@ class CLIENTE{
         inline void setTiempoReserva(int limite){ this->tiempoReserva = limite;}
 };
 
+void menuClientes();
+
 
 #endif
