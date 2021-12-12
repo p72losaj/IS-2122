@@ -108,3 +108,4 @@ bool registrarUsuario(USUARIO usuario,string nombreFichero){
     }
     return registro;
 }
+

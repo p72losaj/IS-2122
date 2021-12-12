@@ -42,6 +42,22 @@ stdlib.h
 vector
 -
 
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.cpp
+usuario.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
 stdio.h
 -
@@ -51,4 +67,22 @@ vector
 -
 cliente.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/cliente.hpp
+
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/tests/AllTests.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+assert.h
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/tests/assert.h
+../fuentes/usuario.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+../fuentes/usuario.cpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.cpp
+../fuentes/administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
+../fuentes/administrador.cpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.cpp
 

@@ -83,6 +83,7 @@ void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdm
             else{cout << "Tipo de cliente no valido"<<endl;}
         }       
         else if(opcion == 1 && administrador.getRol() != "gestorUsuarios"){cout << "No tienes permiso de registro de un cliente" << endl;}
+        // Listar clientes
     }
 }
 
@@ -166,4 +167,11 @@ void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &admini
     else{
         cout << "Se ha producido un error al leer el fichero de propiedades"<<endl;
     }
+}
+
+void menuClientes(){
+    cout << "######################"<<endl;
+    cout << "TIPOS DE CLIENTES"<<endl;
+    cout << "1. USUARIO"<<endl;
+    cout << "2. ADMINISTRADOR" << endl;
 }
