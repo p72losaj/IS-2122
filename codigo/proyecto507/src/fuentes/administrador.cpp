@@ -1,6 +1,6 @@
 /*
 Implementacion funciones de administrador
-Autor: Jaime Lorenzo Sanchez 
+Autores: Jaime Lorenzo Sanchez / Pablo Tovar Pareja
 */
 
 #include "administrador.hpp"
@@ -83,7 +83,6 @@ void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdm
             else{cout << "Tipo de cliente no valido"<<endl;}
         }       
         else if(opcion == 1 && administrador.getRol() != "gestorUsuarios"){cout << "No tienes permiso de registro de un cliente" << endl;}
-        // Listar clientes
     }
 }
 
@@ -124,6 +123,7 @@ void menuFuncionalidadesAdministrador(){
     cout << "MENU DE FUNCIONALIDADES DEL ADMINISTRADOR" << endl;
     cout << "0. Salir del sistema" << endl;
     cout << "1. Registrar un cliente" << endl;
+    cout<<  "2. Listar clientes" << endl;
 }
 
 
@@ -169,9 +169,24 @@ void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &admini
     }
 }
 
-void menuClientes(){
-    cout << "######################"<<endl;
-    cout << "TIPOS DE CLIENTES"<<endl;
-    cout << "1. USUARIO"<<endl;
-    cout << "2. ADMINISTRADOR" << endl;
+void mostrarAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &administradores){
+    leerAdministradores();
+    for (int i=0; i<administradores.size(); i++){
+        // Numero de administrador
+        cout<<"Administrador "<<i+1<<endl;
+        // Nombre del administrador
+        cout<<"\tNombre: "<<administradores[i].getNombre()<<endl;
+        // Dni del administrador
+        cout<<"\tDni: "<<administradores[i].getDni()<<endl;
+        // Email del administrador
+        cout<<"\tEmail: "<<administradores[i].getEmail()<<endl;
+        // Tipo de cliente que es el administrador
+        cout<<"\tTipoCliente: "<<administradores[i].getTipoCliente()<<endl;
+        // Nucleos disponibles para ser reservados
+        cout<<"\tNucleosCLiente: "<<administradores[i].getNucleosCliente()<<endl;
+        // Tiempo de reserva limite del cliente
+        cout<<"\tTiempoReserva: "<<administradores[i].getTiempoReserva()<<endl;
+        // Rol del administrador
+        cout<<"\tRol: "<<administradores[i].getRol()<<endl;
+    }
 }
