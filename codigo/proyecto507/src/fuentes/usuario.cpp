@@ -1,6 +1,6 @@
 /*
 Funcionalidades de usuario
-Autor: Jaime Lorenzo Sanchez
+Autores: Jaime Lorenzo Sanchez / Pablo Tovar Pareja
 */
 
 #include "usuario.hpp"
@@ -108,4 +108,22 @@ bool registrarUsuario(USUARIO usuario,string nombreFichero){
     }
     return registro;
 }
-
+void mostrarUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios){
+    leerUsuarios();
+    for (int i=0; i<usuarios.size(); i++){
+        // Numero de usuario
+        cout<<"Usuario "<<i+1<<endl;
+        // Nombre del usuario
+        cout<<"\tNombre: "<<usuarios[i].getNombre()<<endl;
+        // Dni del usuario
+        cout<<"\tDni: "<<usuarios[i].getDni()<<endl;
+        // Email del usuario
+        cout<<"\tEmail: "<<usuarios[i].getEmail()<<endl;
+        // Tipo de cliente que es el usuario
+        cout<<"\tTipoCliente: "<<usuarios[i].getTipoCliente()<<endl;
+        // Nucleos que el usuario tiene reservados
+        cout<<"\tNucleosCliente: "<<usuarios[i].getNucleosCliente()<<endl;
+        // Tiempo de reserva limite que tiene el usuario
+        cout<<"\tTiempoReserva: "<<usuarios.getTiempoReserva()<<endl;
+    }
+}
