@@ -34,6 +34,7 @@ CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o: ../funcionalidades.cpp
 CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o: ../funcionalidades.hpp
 CMakeFiles/ejecutable.exe.dir/funcionalidades.cpp.o: ../usuario.hpp
 
+CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../administrador.hpp
 CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../cliente.hpp
 CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../usuario.cpp
 CMakeFiles/ejecutable.exe.dir/usuario.cpp.o: ../usuario.hpp

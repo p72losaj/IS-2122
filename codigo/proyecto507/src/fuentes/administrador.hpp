@@ -30,7 +30,7 @@ class ADMINISTRADOR: public CLIENTE{
 // Funcion que muestra los datos de un administrador
 void mostrarAdministrador(string dni);
 // Funcion que muestra los administradores registrados en el sistema
-void mostrarAdministradores();
+void mostrarAdministradores(string nombreFichero);
 // Funcion que modifica los datos de un administrador
 void modificarAdministrador(ADMINISTRADOR administrador);
 // Funcion que elimina los datos de un administrador

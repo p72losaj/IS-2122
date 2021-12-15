@@ -4,6 +4,7 @@ Autores: Jaime Lorenzo Sanchez / Pablo Tovar Pareja
 */
 
 #include "usuario.hpp"
+#include "administrador.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -108,9 +109,13 @@ bool registrarUsuario(USUARIO usuario,string nombreFichero){
     }
     return registro;
 }
-void mostrarUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios){
-    leerUsuarios();
-    for (int i=0; i<usuarios.size(); i++){
+
+void mostrarUsuarios(string nombreFichero){
+    std::vector<USUARIO> usuarios;
+    bool exito = leerUsuarios(nombreFichero,usuarios);
+    if(exito == false){cout<<"Se ha producido un error al leer los datos de los usuarios"<<endl;}
+    else{
+        for (int i=0; i<usuarios.size(); i++){
         // Numero de usuario
         cout<<"Usuario "<<i+1<<endl;
         // Nombre del usuario
@@ -124,6 +129,7 @@ void mostrarUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios){
         // Nucleos que el usuario tiene reservados
         cout<<"\tNucleosCliente: "<<usuarios[i].getNucleosCliente()<<endl;
         // Tiempo de reserva limite que tiene el usuario
-        cout<<"\tTiempoReserva: "<<usuarios.getTiempoReserva()<<endl;
+        cout<<"\tTiempoReserva: "<<usuarios[i].getTiempoReserva()<<endl;
+        }
     }
 }

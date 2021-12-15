@@ -31,7 +31,7 @@ void modificarUsuario(USUARIO &usuario);
 // Funcion que muestra los datos de un usuario
 void mostrarUsuario(USUARIO usuario);
 // Funcion que muestra los datos de los usuarios registrados
-void mostrarUsuarios();
+void mostrarUsuarios(string nombreFichero);
 // Funcion que registra los datos de un usuario
 bool registrarUsuario(USUARIO usuario,string nombreFichero);
 // Funcion que lee los datos de los usuarios registrados en el sistema

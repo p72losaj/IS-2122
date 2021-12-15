@@ -26,6 +26,7 @@ int main(){
     string ficheroAdministradores = "../../ficheros/administradores.txt";
     string ficheroUsuarios = "../../ficheros/usuarios.txt";
     leerAdministradores(ficheroAdministradores,administradores);
+    leerUsuarios(ficheroUsuarios,usuarios);
     // Acceso al sistema
     int acceso = accederSistema(usuarios,administradores,usuario,administrador);
     if(acceso == 0){
@@ -33,7 +34,10 @@ int main(){
     }
     // Funcionalidades de usuario
     else if(acceso == 1){
-        
+        // Mostramos los usuarios
+        mostrarUsuarios(ficheroUsuarios);
+        // Mostramos los administradores
+        mostrarAdministradores(ficheroAdministradores);
     }
     // Funcionalidades de administrador
     else{

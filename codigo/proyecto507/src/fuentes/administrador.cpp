@@ -83,6 +83,14 @@ void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdm
             else{cout << "Tipo de cliente no valido"<<endl;}
         }       
         else if(opcion == 1 && administrador.getRol() != "gestorUsuarios"){cout << "No tienes permiso de registro de un cliente" << endl;}
+
+        // ListarClientes
+        else if(opcion == 2){
+            // Mostramos los usuarios
+            mostrarUsuarios(ficheroUsuarios);
+            // Mostramos los administradores
+            mostrarAdministradores(ficheroAdministradores);
+        }
     }
 }
 
@@ -169,8 +177,9 @@ void leerAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &admini
     }
 }
 
-void mostrarAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &administradores){
-    leerAdministradores();
+void mostrarAdministradores(string nombreFichero){
+    std::vector<ADMINISTRADOR> administradores;
+    leerAdministradores(nombreFichero,administradores);
     for (int i=0; i<administradores.size(); i++){
         // Numero de administrador
         cout<<"Administrador "<<i+1<<endl;
@@ -189,4 +198,14 @@ void mostrarAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> &adm
         // Rol del administrador
         cout<<"\tRol: "<<administradores[i].getRol()<<endl;
     }
+}
+
+// Menu de clientes
+
+void menuClientes(){
+    cout << "############################"<<endl;
+    cout << "MENU DE TIPOS DE CLIENTES"<<endl;
+    cout << "1. USUARIO"<<endl;
+    cout << "2. ADMINISTRADOR"<<endl;
+    cout << "Introduce una opcion: ";
 }
