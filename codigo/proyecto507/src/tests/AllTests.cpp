@@ -20,16 +20,17 @@ void testRegistroAdministrador(ADMINISTRADOR administrador){
     cout << "Test Registro administrador: " << exito << endl;
 }
 
-void testListarUsuarios(USUARIO usuario){
-    bool exito = mostrarUsuarios(usuario,"../usuarios.txt");
+void testListarClientes(){
+    // Test de usuarios
+    std::vector<USUARIO> usuarios;
+    bool exito = leerUsuarios("../usuarios.txt",usuarios);
+    // Test de administradores
+    std::vector<ADMINISTRADOR> administradores;
+    leerAdministradores("../administradores.txt",administradores);
+    // Comprobaciones de test
     assert (exito == true);
-    cout << "Test Listar usuario: " << exito << endl;
-}
-
-void testListarAdministradores(ADMINISTRADOR administrador){
-    bool exito = mostrarAdministradores(administrador,"../administradores.txt");
-    assert (exito == true);
-    cout << "Test Listar administrador: " << exito << endl; 
+    assert(administradores.size() >= 0);
+    cout << "Test listar Clientes: true" << endl;
 }
 
 int main(){
@@ -40,11 +41,9 @@ int main(){
     ADMINISTRADOR administrador("nombre","email","contrasena","dni","administrador",4,16);
     administrador.setRol("usuarios");
     // Prueba unitaria para registrar usuario
-    testRegistroUsuario(usuario);
+    //testRegistroUsuario(usuario);
     // Prueba unitaria para registrar un administrador
-    testRegistroAdministrador(administrador);
-    //Prueba unitaria para listar usuario
-    testListarUsuarios(usuario);
-    //Prueba unitaria para listar administrador
-    testListarAdministradores(administrador);
+    //testRegistroAdministrador(administrador);
+    //Prueba unitaria para listar clientes
+    testListarClientes();
 }

@@ -45,6 +45,8 @@ vector
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.cpp
 usuario.hpp
 /home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/usuario.hpp
+administrador.hpp
+/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/administrador.hpp
 stdio.h
 -
 stdlib.h
