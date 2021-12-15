@@ -1,3 +1,0 @@
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/rebuild_cache.dir
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/edit_cache.dir
-/home/jaime/Escritorio/UCO/IS/IS-2122/codigo/proyecto507/src/fuentes/build/CMakeFiles/ejecutable.exe.dir
