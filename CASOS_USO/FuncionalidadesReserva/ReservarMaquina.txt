@@ -56,7 +56,7 @@ EXTENSIONES:
 
 6.a) El sistema notifica error si el cliente no tiene recursos de máquina disponibles a reservar.
 
-10.a) El sistema notifica que la máquina indicada no dispone de recursos disponibles, muestra una lista de máquinas con recursos disponibles (CUX: ListarMaquinasDisponibles) y repite el paso 6.
+10.a) El sistema notifica que la máquina indicada no dispone de recursos disponibles, muestra una lista de máquinas con recursos disponibles (CU9: ListarMaquinasDisponibles) y repite el paso 6.
 
 10.b) El sistema notifica que no hay máquinas con los recursos indicados por el usuario.
 

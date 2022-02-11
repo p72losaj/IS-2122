@@ -1,0 +1,32 @@
+CASO DE USO: MostrarMáquina
+
+IDENTIFICADOR: CU7
+
+OBJETIVO: Como cliente, quiero obtener los datos de una máquina.
+
+CONTEXTO: 
+
+1. El cliente debe estar registrado.
+2. La máquina tiene que estar registrada.
+3. El identificador de la máquina debes ser único.
+4. Si el cliente es un administrador, debe tener rol de gestión de máquinas.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador con rol de gestión de máquinas).
+
+ESCENARIO PRINCIPAL:
+
+1. El cliente accede al sistema mediante su dni y contraseña
+2. El sistema muestra un menu de tipos de funcionalidades (usuario,máquina,reserva).
+3. El cliente accede al menu de funcionalidades de máquina.
+4. El sistema muestra un menú de funcionalidades de máquina.
+5. El cliente accede a la funcionalidad de mostrar una máquina.
+6. El sistema pide el identificador de la máquina.
+7. El cliente introduce el identificador de la máquina.
+8. El sistema muestra los datos de la máquina.
+
+EXTENSIONES:
+
+2.a) El sistema notifica error si el cliente no está registrado.
+4.a) Si el cliente es un administrador, el sistema notifica error si no tiene rol de gestión de máquinas.
+8.a) El sistema notifica error si la máquina no está registrada en el sistema.
+

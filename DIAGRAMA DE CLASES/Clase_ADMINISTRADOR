@@ -1,0 +1,55 @@
+Clase ADMINISTRADOR
+ 
+ Clase que gestiona los datos únicos de un administrador y da acceso a las reservas registradas en el sistema, además de permitir gestionar las reservas registradas en el sistema. Hereda la clase usuario
+
+ATRIBUTOS:
+
+- rolAdministrador: string. Rol del administrador
+
+OPERACIONES:
+
+
++ ADMINISTRADOR(): Constructor de clase vacio
+
++ ADMINISTRADOR(): Constructor de clase
+
+* Parametro nombre: String -> Nombre del usuario
+
+* Parametro email: String -> Email del usuario
+
+* Parametro contrasena: String -> Contrasena del usuario
+
+* Parametro dni: String -> dni del usuario
+
+* Parametro tipo: String -> Tipo del usuario
+
+* Parametro nucleos: int -> Nucleos reservables del usuario
+
+* Parametro limite: int -> Limite de tiempo de reservas del usuario
+
++ getRol(): string -> Obtiene el rol del administrador
+
++ setRol(): void. Modifica el rol del administrador
+
+* Parametro rol: string. Nuevo rol del administrado
+
++ mostrarAdministrador(): void -> Muestra los datos de un administrador
+
+* Parametro dni: String -> Dni del administrador a mostrar
+
++ mostrarAdministradores(): void -> Muestra los datos de los usuarios registrados en el sistema
+
++ modificarAdministrador(): void -> Modifica los datos de un administrador
+
+* Parametro administrador: ADMINISTRADOR -> Datos modificados del administrador
+
++ registrarAdministrador: bool -> Registra los datos de un administrador en el sistema.
+
+* Parametro administrador: ADMINISTRADOR -> Administrador a registrar en el sistema
+
+* Parametro nombreFichero: String -> Fichero de texto que almacena los datos de los administradores
+
++ eliminarAdministrador(): void -> Elimina los datos de un administrador
+
+* Parametro dni: string -> Dni del administrador a eliminar
+

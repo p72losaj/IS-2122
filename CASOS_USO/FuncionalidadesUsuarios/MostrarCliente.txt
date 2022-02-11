@@ -1,0 +1,30 @@
+CASO DE USO: MostrarCliente
+
+IDENTIFICADOR: CU12
+
+OBJETIVO: El cliente quiere obtener los datos de un cliente registrado en el sistema.
+
+CONTEXTO
+
+1. El cliente que inicia sesión debe estar registrado en el sistema.
+2. Si el cliente que inicia sesión es un administrador, debe tener rol de gestión de usuarios.
+3. El cliente buscado debe estar registrado en el sistema.
+
+ACTOR PRINCIPAL: Cliente (usuario/administrador con rol de gestión de usuarios)
+
+ESCENARIO PRINCIPAL
+
+1. El cliente accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de tipos de funcionalidades (usuarios,máquinas,reservas)
+3. El cliente accede al menú de usuarios.
+4. El sistema muestra un menú de funcionalidades de usuarios.
+5. El cliente accede a la funcionalidad de mostrar un cliente.
+6. El sistema pide el dni del cliente buscado.
+7. El cliente introduce el dni del cliente buscado.
+8. El sistema muestra los datos registrados del cliente buscado.
+
+EXTENSIONES
+
+2.a) El sistema notifica error si el cliente no está registrado en el sistema.
+4.a) Si el cliente es un administrador, el sistema notifica error si el administrador no tiene rol de gestión de usuarios.
+8.a) El sistema notifica error si el cliente buscado no está registrado en el sistema.

@@ -1,23 +1,25 @@
 
-Clase: USUARIO
+Clase: CLIENTE
 
-Descripcion: Almacena la información principal de los usuarios, además de ser la clase padre de los distintos tipos de usuarios (usuario normal, administrador).
+Almacena la información principal de los usuarios, además de ser la clase padre de los distintos tipos de usuarios (usuario normal, administrador).
 
-Atributos:
+ATRIBUTOS:
 
-- Nombre (String): Nombre del usuario
+- nombre: String. Nombre del usuario
 
-- Email (String): Email del usuario
+- email: String. Email del usuario.
 
-- Dni (String): Dni del usuario
+- dni: String. Dni del usuario
 
-- TipoUsuario (String): Tipo del usuario
+- contrasena: string -> Contrasena del usuario
 
-- NucleosReservables (int): Numero de nucleos de maquina que puede reservar al mismo tiempo
+- tipoCliente: string -> Tipo del cliente
 
-- TiempoReserva (int): Limite de tiempo en dias de las reservas del usuario
+- nucleosReservables: int. Numero de nucleos de máquina que puede reservar al mismo tiempo el usuario
 
-Operaciones:
+- tiempoReserva: int. Limite de tiempo en dias de las reservas del usuario
+
+OPERACIONES:
 
 + getNombre(): String. Obtiene el nombre del usuario
 
@@ -37,16 +39,28 @@ Operaciones:
 
 * Parametro dni: string. Nuevo dni del usuario
 
-+ getTipoUsuario(): enum. Obtiene el tipo del usuario
++ getContrasena(): string -> Obtiene la contrasena del usuario
 
-+ setTipoUsuario(): void. Modifica el tipo del usuario
++ setContrasena(): string -> Modifica la contrasena del usuario
+
+* Parametro contrasena: string -> Nueva contrasena del usuario
+
++ getTipoCliente(): string. Obtiene el tipo de usuario del cliente
+
++ setTipoCliente(): void. Modifica el tipo de usuario del cliente
 
 * Parametro tipo: string. Nuevo tipo del usuario
 
-+ getNucleosUsuario(): int. Obtiene el numero de nucleos de maquina que puede reservar al mismo tiempo del usuario
++ getNucleosCliente(): int. Obtiene el numero de nucleos de maquina que puede reservar al mismo tiempo del usuario
 
-+ setNucleosUsuario(): void. Modifica el numero de nucleos de maquina reservables al mismo tiempo del usuario
++ setNucleosCliente(): void. Modifica el numero de nucleos de maquina reservables al mismo tiempo del usuario
 
-* Parametro nucleos: int. Nuevo numero de nucleos de maquina reservables del usuario
+* Parametro nucleos: int. Nuevo numero de nucleos de maquina reservables del usuario.
 
++ getTiempoReserva(): int -> Obtiene el tiempo limite de reserva del cliente.
 
++ setTiempoReserva(): void -> Modifica el tiempo limite de reserva del cliente.
+
+* Parametro limite: int -> Nuevo tiempo limite de reserva del cliente.
+
++ menuClientes: void -> Muestra un menu de los distintos tipos de clientes que se pueden registrar en el sistema.

@@ -13,13 +13,4 @@ using namespace std;
 // Menu con las funcionalidades implementadas
 void menuPrincipal();
 
-// Funcion que escribe los usuarios en un fichero de texto
-void escribirUsuarios(string nombreFichero, std::vector<USUARIO> usuarios);
-
-// Funcion que obtiene los usuarios de un fichero de texto
-void leerUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios);
-
-// Funcion que escribe los administradores en un fichero de texto
-void escribirAdministradores(string nombreFichero,std::vector<ADMINISTRADOR> administradores);
-
 #endif

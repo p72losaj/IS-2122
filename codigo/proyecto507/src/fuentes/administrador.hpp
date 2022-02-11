@@ -28,17 +28,17 @@ class ADMINISTRADOR: public CLIENTE{
     inline void setRol(string rol){ this->rolAdministrador = rol;}
 };
 // Funcion que muestra los datos de un administrador
-void mostrarAdministrador(ADMINISTRADOR administrador);
+void mostrarAdministrador(string dni);
 // Funcion que muestra los administradores registrados en el sistema
-void mostrarAdministradores(std::vector<ADMINISTRADOR> administradores);
+void mostrarAdministradores(string nombreFichero);
 // Funcion que modifica los datos de un administrador
-void modificarAdministrador(ADMINISTRADOR administrador, std::vector<ADMINISTRADOR> &administradores);
+void modificarAdministrador(ADMINISTRADOR administrador);
 // Funcion que elimina los datos de un administrador
-void eliminarAdministrador(string dni,std::vector<ADMINISTRADOR> &administradores);
+void eliminarAdministrador(string dni);
 // Funcion que registra los datos de un administrador
 bool registrarAdministrador(ADMINISTRADOR administrador,string nombrefichero);
 // Declaracion de las funcionalidades de administrador
-void FuncionalidadesAdministrador(ADMINISTRADOR &administrador, std::vector<ADMINISTRADOR> &administradores,std::vector<USUARIO> &usuarios,string ficheroAdministradores,string ficheroUsuarios);
+void FuncionalidadesAdministrador(ADMINISTRADOR &administrador,string ficheroAdministradores,string ficheroUsuarios);
 // Menu de funcionalidades de administrador
 void menuFuncionalidadesAdministrador();
 // TIPOS DE CLIENTES A REGISTRAR

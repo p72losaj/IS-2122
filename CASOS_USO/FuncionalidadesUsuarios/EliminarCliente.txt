@@ -1,0 +1,31 @@
+CASO DE USO: EliminarCliente
+
+IDENTIFICADOR: CU16
+
+OBJETIVO: El administrador con rol de gestión de usuarios desea eliminar los datos de un cliente registrado en el sistema.
+
+CONTEXTO:
+
+1. El administrador que accede al sistema debe estar registrado.
+2. El administrador que accede al sistema debe tener rol de gestión de usuarios
+3. El cliente a eliminar debe estar registrado en el sistema
+
+ACTOR PRINCIPAL: Administrador con rol de gestión de usuarios
+
+ESCENARIO PRINCIPAL:
+
+1. El administrador accede al sistema mediante su dni y su contraseña
+2. El sistema muestra un menu de tipos de funcionalidades (usuarios,maquinas,reservas)
+3. El administrador accede al menú de funcionalidades de usuarios.
+4. El sistema muestra un menú de funcionalidades de usuarios.
+5. El administrador accede a la funcionalidad de eliminar un cliente.
+6. El sistema pide el dni del cliente a eliminar.
+7. El administrador introduce el dni del cliente a eliminar.
+8. El sistema elimina los datos del cliente a eliminar.
+
+EXTENSIONES
+
+2a) El sistema notifica error si el administrador no está registrado en el sistema.
+4a) El sistema notifica error si el administrador no tiene rol de gestión de usuarios.
+8a) El sistema notifica error si el cliente a eliminar no está registrado en el sistema.
+8b) El sistema elimina las reservas cuyo autor sea el cliente a eliminar (CU5: CancelarReserva).

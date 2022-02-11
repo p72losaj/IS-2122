@@ -1,9 +1,13 @@
 ##### Funcionalidad de modificar una reserva ######################	
 
 CASO DE USO: ModificarReserva
+
 IDENTIFICADOR: CU4
+
 OBJETIVO: El cliente quiere modificar los datos de una reserva.
+
 CONTEXTO:
+
 1. El cliente tiene que estar registrado.
 2. La reserva tiene que estar registrada.
 3. Si el cliente es un usuario, debe ser el autor de la reserva.
@@ -11,8 +15,11 @@ CONTEXTO:
 5. La nueva fecha límite de la reserva debe ser válida.
 6. No se puede superar el tiempo límite de reserva del cliente.
 7. La nueva fecha límite de la reserva debe ser posterior a la fecha actual.
+
 ACTOR PRINCIPAL: CLIENTE (USUARIO,ADMINISTRADOR)
+
 ESCENARIO PRINCIPAL
+
 1. El cliente accede al sistema mediante su dni y contraseña.
 2. El sistema muestra un menu de los tipos de funcionalidades (usuario,maquina,reserva)
 3. El cliente accede al menu de reserva.
@@ -23,11 +30,13 @@ ESCENARIO PRINCIPAL
 8. El sistema muestra los datos registrados de la reserva y pide al cliente los nuevos datos de la reserva (recursos reservados,fecha limite de reserva).
 9. El usuario introduce los nuevos datos de la reserva.
 10. El sistema modifica los datos de la reserva.
+
 EXTENSIONES
+
 2.a) El sistema notifica error si el cliente no está registrado.
 8.a) El sistema notifica error si la máquina no está reservada.
 8.b) Si el cliente es un usuario, el sistema notifica error si no es el autor de la reserva.
 10.a) El sistema notifica error si los nuevos recursos a reservar de la máquina no están disponibles en dicha máquina.
 10.b) El sistema notifica error si la nueva fecha límite de la reserva no es válida.
 10.c) El sistema notifica error si la nueva fecha límite de la reserva es anterior a la fecha actual.
-10.d) Si los nuevos recursos a reservar de la máquina son menores a los que ya estaban reservados, el sistema aumenta los recursos disponibles de la máquina (CUX: ModificarMáquina).
+10.d) Si los nuevos recursos a reservar de la máquina son menores a los que ya estaban reservados, el sistema aumenta los recursos disponibles de la máquina (CU10: ModificarMáquina).

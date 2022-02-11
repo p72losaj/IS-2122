@@ -1,3 +1,4 @@
 31872814N Jaime p72losaj@uco.es is administrador 8 15 gestorUsuarios
 21782914E Ana ana@hotmail.com ana1965 administrador 4 2 gestorMaquinas
 20730159E Ramon ralonu@gmail.com ralonu.57 administrador 9 150 gestorUsuarios
+dni nombre email contrasena administrador 4 16 usuarios

@@ -1,0 +1,31 @@
+CASO DE USO: EliminarMaquina
+
+IDENTIFICADOR: CU11
+
+OBJETIVO: El administrador con rol de gestión de máquinas desea eliminar los datos de una máquina registrada en el sistema.
+
+CONTEXTO
+
+1. El administrador debe estar registrado en el sistema.
+2. El administrador debe tener rol de gestión de máquinas.
+3. La máquina debe estar registrada en el sistema.
+
+ACTOR PRINCIPAL: Administrador con rol de gestión de máquinas.
+
+ESCENARIO PRINCIPAL
+
+1. El administrador accede al sistema mediante su dni y contraseña.
+2. El sistema muestra un menu de tipos de funcionalidades del sistema (usuarios, máquinas, reservas).
+3. El administrador accede al menu de funcionalidades de máquinas.
+4. El sistema muestra un menu de funcionalidades de máquinas.
+5. El administrador accede a la funcionalidad de eliminar una máquina
+6. El sistema pide el identificador de la máquina.
+7. El administrador introduce el identificador de la máquina a eliminar.
+8. El sistema elimina los datos de la máquina.
+
+EXTENSIONES
+
+2.a) El sistema notifica error si el administrador no está registrado en el sistema.
+4.a) El sistema notifica error si el administrador no tiene rol de gestión de máquinas.
+8.a) El sistema notifica error si la máquina no está registrada en el sistema.
+8.b) Si la máquina a eliminar está reservada, el sistema cancela las reservas que tengan núcleos de la máquina reservas (CU5: CancelarReserva)

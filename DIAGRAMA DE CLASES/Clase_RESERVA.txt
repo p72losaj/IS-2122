@@ -1,0 +1,49 @@
+Clase que almacena la información de una reserva. Depende de la existencia de la clase usuario y de la clase maquina
+
+ATRIBUTOS:
+
+- dniUsuario: String -> dni del usuario autor de la reserva
+
+- idMaquina: int -> Identificador de la maquina reservada.
+
+- nRecursos: int ->  Numero de recursos reservados de la maquina
+
+- fecha: Date -> Fecha limite de la reserva (dd/mm/yyyy)
+
+PARAMETROS:
+
++ RESERVA(): Constructor de clase vacio
+
++ RESERVA(): Constructor de clase con parametros
+
+* Parametro dni: string -> dni del usuario autor de la reserva
+
+* Parametro idMaquina: int -> Identificador de la maquina a reservar
+
+* Parametro recursos: int -> Numero de recursos a reservar de la maquina
+
+* Parametro fecha: Date -> Fecha limite de la reserva.
+
++ getDni(): string -> Obtiene el dni del autor de la reserva
+
++ setDni(): void -> Modifica el dni del autor de la reserva
+
+* Parametro dni: string -> dni del nuevo autor de la reserva.
+
++ getIdMaquina(): int -> Obtiene el identificador de la maquina
+
++ setIdMaquina(): void -> Modifica el identificador de la maquina
+
+* Parametro id: int -> Nuevo identificador de la maquina
+
++ getRecursos(): int -> Obtiene el numero de recursos reservados de la maquina
+
++ setRecursos(): void -> Modifica el numero de recursos reservados de la maquina
+
+* Parametro recursos: int -> Nuevos recursos reservados de la maquina
+
++ getFecha(): date -> Obtiene la fecha limite de la reserva (dd/mm/yyyy)
+
++ setFecha(): void -> Modifica la fecha limite de la reserva
+
+* Parametro fecha: Date -> Nueva fecha limite de la reserva

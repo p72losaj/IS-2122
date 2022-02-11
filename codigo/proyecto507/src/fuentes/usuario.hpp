@@ -24,16 +24,19 @@ class USUARIO: public CLIENTE{
         this->setNucleosCliente(nucleos);
         this->setTiempoReserva(limite);
     }
-    // Funcion que modifica los datos personales del usuario
-    void modificarUsuario(USUARIO &usuario, std::vector<USUARIO> &usuarios);
-    // Funcion que muestra los datos de un usuario
-    void mostrarUsuario(USUARIO usuario);
-    // Funcion que muestra los datos de los usuarios registrados
-    void mostrarUsuarios(std::vector<USUARIO> usuarios);
-    // Funcion que elimina los datos de un usuario
-    void eliminarUsuario(string dni, std::vector<USUARIO> &usuarios);
-    // Funcion que registra los datos de un usuario
-    bool registrarUsuario(USUARIO usuario,std::vector<USUARIO> &usuarios);
 };
+
+// Funcion que modifica los datos personales del usuario
+void modificarUsuario(USUARIO &usuario);
+// Funcion que muestra los datos de un usuario
+void mostrarUsuario(USUARIO usuario);
+// Funcion que muestra los datos de los usuarios registrados
+void mostrarUsuarios(string nombreFichero);
+// Funcion que registra los datos de un usuario
+bool registrarUsuario(USUARIO usuario,string nombreFichero);
+// Funcion que lee los datos de los usuarios registrados en el sistema
+bool leerUsuarios(string nombreFichero,std::vector<USUARIO> &usuarios);
+// Funcion que elimina los datos de un usuario
+bool eliminarUsuario(string dni, string nombreFichero);
 
 #endif
